@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    
+    <base href="../">
+    
+	<!-- Start - Title -->
+	<title>Kripton - Crypto Admin Dashboard Bootstrap Template</title>
+	<!-- End - Title -->
+
+	<!-- Start - Meta -->
+    <meta charset="UTF-8">
+	<meta name="author" content="DexignZone">
+	<meta name="robots" content="index, follow">
+	<meta name="format-detection" content="telephone=no">
+	
+	<meta name="keywords" content="Kripton, crypto admin dashboard, cryptocurrency Bootstrap template, crypto analytics, trading dashboard, wallet management, responsive admin template, blockchain admin UI, Bootstrap 5 dashboard, exchange platform, financial dashboard, trading platform UI" >
+	<meta name="description" content="Kripton is a powerful Crypto Admin Dashboard Bootstrap Template designed for trading platforms, wallet management, and crypto analytics. Built with Bootstrap 5, fully responsive and customizable." >
+
+	<meta property="og:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta property="og:description" content="Kripton is a modern Bootstrap-based crypto admin dashboard, perfect for exchanges, trading platforms, and crypto analytics systems." >
+	<meta property="og:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<meta property="og:url" content="https://kripton.dexignzone.com/" >
+	<meta property="og:type" content="website" >
+
+	<meta name="twitter:card" content="summary_large_image" >
+	<meta name="twitter:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta name="twitter:description" content="Build powerful crypto trading platforms and admin dashboards with Kripton – a responsive Bootstrap template for the cryptocurrency industry." >
+	<meta name="twitter:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<!-- End - Meta -->
+
+	<!-- Start -  MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- End -  MOBILE SPECIFIC -->
+	
+    <!-- Start - Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.avif">
+	<!-- End - Favicon -->
+
+	@@include("../elements/layout/basic-css.html")
+       
+</head>
+
+<body class="vh-100">
+    
+    <!-- Start - Autentication Wrapper -->
+    <div class="auth-wrapper">
+        <div class="container">
+            <div class="row justify-content-center vh-100">
+                <div class="col-lg-5 col-md-6 mx-auto align-self-center bg-white shadow">
+                    <div class="auth-form m-0 px-4 py-5">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <a href="index.html"><img class="logo-auth" src="assets/images/logo-full.avif" alt=""></a>
+                            </div>
+                            <h4 class="text-center mb-4">Account Locked</h4>
+                            <form action="index.html">
+                                <div class="mb-4">
+									<label class="form-label">Password</label>
+									<div class="position-relative">
+										<input type="password" autocomplete="current-password" class="form-control dz-password" placeholder="Enter your password">
+										<span class="show-pass position-absolute top-50 end-0 me-2 translate-middle">
+											<span class="show"><i class="fa fa-eye-slash"></i></span>
+											<span class="hide"><i class="fa fa-eye"></i></span>
+										</span>
+									</div>
+								</div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-block w-100 fs-16">Unlock</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End - Autentication Wrapper -->
+
+	@@include("../elements/layout/script.html")
+	
+	<!-- Script For Multiple Languages -->
+	<script src="assets/vendor/i18n/i18n.js"></script>
+	<script src="assets/js/translator.js"></script>
+	
+	<!-- Script For Custom JS -->
+	<script src="assets/js/deznav-init.js"></script>
+    <script src="assets/js/custom.js"></script>
+	
+	<!-- Script For demo Styleswitcher -->
+	<script src="assets/js/demo.js"></script>
+    <script src="assets/js/styleSwitcher.js"></script>
+	
+</body>
+</html>

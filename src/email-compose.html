@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+	<!-- Start - Title -->
+	<title>Kripton - Crypto Admin Dashboard Bootstrap Template</title>
+	<!-- End - Title -->
+
+	<!-- Start - Meta -->
+    <meta charset="UTF-8">
+	<meta name="author" content="DexignZone">
+	<meta name="robots" content="index, follow">
+	<meta name="format-detection" content="telephone=no">
+	
+	<meta name="keywords" content="Kripton, crypto admin dashboard, cryptocurrency Bootstrap template, crypto analytics, trading dashboard, wallet management, responsive admin template, blockchain admin UI, Bootstrap 5 dashboard, exchange platform, financial dashboard, trading platform UI" >
+	<meta name="description" content="Kripton is a powerful Crypto Admin Dashboard Bootstrap Template designed for trading platforms, wallet management, and crypto analytics. Built with Bootstrap 5, fully responsive and customizable." >
+
+	<meta property="og:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta property="og:description" content="Kripton is a modern Bootstrap-based crypto admin dashboard, perfect for exchanges, trading platforms, and crypto analytics systems." >
+	<meta property="og:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<meta property="og:url" content="https://kripton.dexignzone.com/" >
+	<meta property="og:type" content="website" >
+
+	<meta name="twitter:card" content="summary_large_image" >
+	<meta name="twitter:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta name="twitter:description" content="Build powerful crypto trading platforms and admin dashboards with Kripton – a responsive Bootstrap template for the cryptocurrency industry." >
+	<meta name="twitter:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<!-- End - Meta -->
+
+	<!-- Start -  MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- End -  MOBILE SPECIFIC -->
+	
+    <!-- Start - Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.avif">
+	<!-- End - Favicon -->
+
+	<!-- Start - Required CSS -->
+	<link href="assets/vendor/dropzone/dropzone.min.css" rel="stylesheet">
+	<!-- End - Required CSS -->
+    
+	@@include("elements/layout/basic-css.html")
+	
+</head>
+
+<body>
+
+    <!-- Start - Main Wrapper -->
+    <div id="main-wrapper">
+        
+        @@include("elements/layout/nav-header.html")
+        
+		@@include("elements/layout/chatbox.html")
+		
+		@@include("elements/layout/header.html",{
+			"fileName": "Compose",
+		})
+
+		@@include("elements/layout/sidebar.html")
+
+		<!-- Start - Content Body -->
+        <main class="content-body">
+			<div class="container-fluid">
+					
+				<!-- Start - Page Title & Breadcrumb -->
+				<div class="page-title">
+					@@include("elements/layout/breadcrumb.html",{
+						"fileName": "Compose",
+					})
+				</div>
+				<!-- End - Page Title & Breadcrumb -->
+				
+				<div class="card border-0 rounded-0 mb-0 h-auto">
+					<div class="card-body p-0">
+						<div class="row gx-0">
+
+							<!-- Start - Email Sidebar -->
+							<div class="col-xxl-2 col-xl-3 col-lg-4 email-left-body">
+								<div class="email-left-column dz-scroll" id="email-left">
+									<div class="mb-4">
+										<a href="email-compose.html" class="btn btn-dark w-100"><i class="fa-solid fa-plus"></i> Compose Email</a>
+									</div>
+									<div class="mail-list-group">
+										<a href="email-inbox.html" class="list-group-item active">
+											<i class="fa-regular fa-envelope"></i> Inbox
+											<span class="badge badge-purple badge-sm float-end rounded">2</span>
+										</a>
+										<a href="javascript:void(0);" class="list-group-item">
+											<i class="fa-regular fa-paper-plane"></i> Sent
+										</a> 	
+										<a href="javascript:void(0);" class="list-group-item">
+											<i class="fa-regular fa-star"></i> Favorite
+										</a>
+										<a href="javascript:void(0);" class="list-group-item">
+											<i class="fa-regular fa-file"></i> Draft
+										</a>
+										<a href="javascript:void(0);" class="list-group-item">
+											<i class="fa-solid fa-tag"></i> Important
+										</a>
+										<a href="javascript:void(0);" class="list-group-item">
+											<i class="fa-regular fa-clock"></i> Scheduled
+										</a>
+										<a href="javascript:void(0);" class="list-group-item">
+											<i class="fa-solid fa-angle-down"></i> Move
+										</a>
+									</div>
+									<div class="mail-list-group">
+										<h5 class="mb-3 px-3">Categories</h5>
+										<a href="email-inbox.html" class="list-group-item opacity-75"> <i class="fa fa-circle text-primary"></i> Work </a>
+										<a href="email-inbox.html" class="list-group-item opacity-75"> <i class="fa fa-circle text-purple"></i> Private </a>
+										<a href="email-inbox.html" class="list-group-item opacity-75"> <i class="fa fa-circle text-success"></i> Support </a>
+										<a href="email-inbox.html" class="list-group-item opacity-75"> <i class="fa fa-circle text-primary text-danger"></i> Social </a>
+									</div>
+								</div>
+							</div>
+							<!-- End - Email Sidebar -->
+
+							<!-- Start - Compose Email -->
+							<div class="col-xxl-10 col-xl-9 col-lg-8">
+								<div class="email-right-column">
+									<div class="compose-wrapper" id="compose-content">
+										<div class="align-items-center justify-content-between d-flex d-lg-none mb-3">
+											<h4 class="mb-0">Email</h4>
+											<a href="javascript:void(0);" class="mobile-email-panel btn btn-square btn-primary light btn-sm">
+												<i class="fa-solid fa-list-ul"></i>
+											</a>
+										</div>
+										<div class="compose-content">
+											<form action="#">
+												<div class="row">
+													<div class="col-sm-12 mb-3">
+														<input type="text" class="form-control" placeholder="To">
+													</div>
+													<div class="col-sm-12 mb-3">
+														<input type="text" class="form-control" placeholder="Subject">
+													</div>
+													<div class="col-sm-12 mb-3">
+														<textarea class="form-control" rows="7" placeholder="Type Message"></textarea>
+													</div>
+												</div>
+											</form>
+											<h5 class="mt-2 mb-3"><i class="fa fa-paperclip me-1"></i> Attatchment</h5>
+											<form action="#" class="dropzone">
+												<div class="fallback">																
+													<input name="file" type="file" multiple>
+												</div>
+											</form>
+										</div>
+										<div class="mt-4">
+											<button class="btn btn-danger light" type="button"><i class="fa fa-times"></i> Discard</button>
+											<button class="btn btn-primary ms-2" type="button"><i class="fa fa-paper-plane"></i> Send</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End - Compose Email -->
+
+						</div>
+					</div>
+				</div>
+            </div>
+			
+        </main>
+		<!-- End - Content Body -->
+		
+		@@include("elements/layout/footer.html")
+
+	</div>
+	<!-- End - Main Wrapper -->
+
+    @@include("elements/layout/script.html")
+	
+    <!-- Script For Dropzone -->
+	<script src="assets/vendor/dropzone/dropzone.min.js"></script>
+	
+    <!-- Script For Multiple Languages -->
+	<script src="assets/vendor/i18n/i18n.js"></script>
+	<script src="assets/js/translator.js"></script>
+	
+	<!-- Script For Custom JS -->
+	<script src="assets/js/deznav-init.js"></script>
+    <script src="assets/js/custom.js"></script>
+	
+	<!-- Script For demo Styleswitcher -->
+	<script src="assets/js/demo.js"></script>
+    <script src="assets/js/styleSwitcher.js"></script>
+	
+</body>
+</html>

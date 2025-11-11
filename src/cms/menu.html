@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<base href="../">
+
+	<!-- Start - Title -->
+	<title>Kripton - Crypto Admin Dashboard Bootstrap Template</title>
+	<!-- End - Title -->
+
+	<!-- Start - Meta -->
+    <meta charset="UTF-8">
+	<meta name="author" content="DexignZone">
+	<meta name="robots" content="index, follow">
+	<meta name="format-detection" content="telephone=no">
+	
+	<meta name="keywords" content="Kripton, crypto admin dashboard, cryptocurrency Bootstrap template, crypto analytics, trading dashboard, wallet management, responsive admin template, blockchain admin UI, Bootstrap 5 dashboard, exchange platform, financial dashboard, trading platform UI" >
+	<meta name="description" content="Kripton is a powerful Crypto Admin Dashboard Bootstrap Template designed for trading platforms, wallet management, and crypto analytics. Built with Bootstrap 5, fully responsive and customizable." >
+
+	<meta property="og:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta property="og:description" content="Kripton is a modern Bootstrap-based crypto admin dashboard, perfect for exchanges, trading platforms, and crypto analytics systems." >
+	<meta property="og:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<meta property="og:url" content="https://kripton.dexignzone.com/" >
+	<meta property="og:type" content="website" >
+
+	<meta name="twitter:card" content="summary_large_image" >
+	<meta name="twitter:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta name="twitter:description" content="Build powerful crypto trading platforms and admin dashboards with Kripton – a responsive Bootstrap template for the cryptocurrency industry." >
+	<meta name="twitter:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<!-- End - Meta -->
+
+	<!-- Start -  MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- End -  MOBILE SPECIFIC -->
+	
+    <!-- Start - Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.avif">
+	<!-- End - Favicon -->
+
+	<!-- Start - Required CSS -->
+	<link href="assets/vendor/nestable2/css/jquery.nestable.min.css" rel="stylesheet">
+	<!-- End - Required CSS -->
+
+	@@include("../elements/layout/basic-css.html")
+         
+</head>
+<body>
+
+    <!-- Start - Main Wrapper -->
+    <div id="main-wrapper">
+
+        @@include("../elements/layout/nav-header.html")
+        
+		@@include("../elements/layout/chatbox.html")
+		
+		@@include("../elements/layout/header.html",{
+			"fileName": "Menu",
+		})
+
+		@@include("../elements/layout/sidebar.html")
+		
+		<!-- Start - Content Body -->
+		<main class="content-body">
+			<div class="container-fluid">
+				
+				<!-- Start - Page Title & Breadcrumb -->
+				<div class="page-title">
+					@@include("../elements/layout/breadcrumb.html",{
+						"fileName": "Menu",
+					})
+				</div>
+				<!-- End - Page Title & Breadcrumb -->
+				
+				<div class="row">
+
+					<!-- Start - Menus -->
+					<div class="col-xl-12">
+						<div class="card card-collapse">
+							<div class="card-header">
+								<h4 class="card-title"><i class="fa-sharp fa-solid fa-filter text-primary me-1"></i>Menus</h4>
+								<a class="collapse-indicator" data-bs-toggle="collapse" href="#collapseFilter" role="button" aria-expanded="false" aria-controls="collapseFilter">
+									<i class="fa fa-angle-down"></i>
+								</a>
+							</div>
+							<div class="collapsed collapse show" id="collapseFilter">
+								<div class="card-body">
+									<div class="row align-items-center pt-md-2">
+										<div class="col-xxl-3">
+											<label class="form-label">Select a menu to edit: <span class="text-danger">*</span></label>
+										</div>
+										<div class="col-xxl-5 col-xl-8 mb-3">
+											<select class="selectpicker form-select">
+												<option value="AL">Select Menu</option>
+												<option value="WY">India</option>
+												<option value="WY">Information</option>
+												<option value="WY">New Menu</option>
+												<option value="WY">Page Menu</option>
+											</select>
+										</div>
+										<div class="col-xxl-4 col-xl-4 mb-1 mb-xl-3">
+											<a href="javascript:void(0);" class="btn btn-primary">Select</a>
+											<span class="mx-2">or</span>
+											<a href="javascript:void(0);" class="btn btn-primary light">Create New Menu</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End - Menus -->
+					
+					<!-- Start - Menus 2 -->
+					<div class="col-xl-4">
+						<div class="card card-collapse">
+							<div class="card-header">
+								<h4 class="card-title">Menus</h4>
+								<a class="collapse-indicator" data-bs-toggle="collapse" href="#collapseContactmenu" role="button" aria-expanded="false" aria-controls="collapseContactmenu">
+									<i class="fa fa-angle-down"></i>
+								</a>
+							</div>
+							<div class="collapsed collapse show" id="collapseContactmenu">
+								<div class="card-body">
+									<div class="card card-collapse mb-3 shadow-none">
+										<div class="card-header">
+											<h4 class="card-title text-primary">Page</h4>
+											<a class="collapse-indicator" data-bs-toggle="collapse" href="#collapseContactpage" role="button" aria-expanded="false" aria-controls="collapseContactpage">
+												<i class="fa fa-angle-down"></i>
+											</a>
+										</div>
+										<div class="collapsed collapse show" id="collapseContactpage">
+											<div class="card-body ItemsCheckboxSec">
+												<ul class="nav nav-pills nav-pills-sm nav-pills-bg mb-3 gap-2" id="myTab" role="tablist">
+													<li class="nav-item" role="presentation">
+														<button class="nav-link active" id="Viewall-tab" data-bs-toggle="tab" data-bs-target="#Viewall-tab-pane" type="button" role="tab" aria-controls="Viewall-tab-pane" aria-selected="true">View All</button>
+													</li>
+													<li class="nav-item" role="presentation">
+														<button class="nav-link" id="Search-tab" data-bs-toggle="tab" data-bs-target="#Search-tab-pane" type="button" role="tab" aria-controls="Search-tab-pane" aria-selected="false">Search</button>
+													</li>
+												</ul>
+												<div class="tab-content check-wrapper" id="myTabContent">
+													<div class="tab-pane fade show active" id="Viewall-tab-pane" role="tabpanel" aria-labelledby="Viewall-tab" tabindex="0">
+														<div class="border rounded p-3 mb-3">
+															<div class="form-check mb-2">
+																<input class="form-check-input check-input" type="checkbox" value="" id="flexCheckDefault">
+																<label class="form-check-label" for="flexCheckDefault">Privacy Policy</label>
+															</div>
+															<div class="form-check mb-2">
+																<input class="form-check-input check-input" type="checkbox" value="" id="flexCheckDefault-1">
+																<label class="form-check-label" for="flexCheckDefault-1">Contact Us</label>
+															</div>
+															<div class="form-check mb-2">
+																<input class="form-check-input check-input" type="checkbox" value="" id="flexCheckDefault-2">
+																<label class="form-check-label" for="flexCheckDefault-2">Important Information</label>
+															</div>
+															<div class="form-check mb-0">
+																<input class="form-check-input check-input" type="checkbox" value="" id="flexCheckDefault-3">
+																<label class="form-check-label" for="flexCheckDefault-3">About Us</label>
+															</div>
+														</div>
+													</div>
+													<div class="tab-pane fade" id="Search-tab-pane" role="tabpanel" aria-labelledby="Search-tab" tabindex="0">
+														<div class="border rounded p-3 mb-3">
+															<label for="exampleFormControlInput1" class="form-label">Search</label>
+															<input type="text" class="form-control solid" id="exampleFormControlInput1" placeholder="Enter Page Name">
+														</div>
+													</div>
+													<div class="d-flex align-items-center flex-wrap mb-3">
+														<a href="javascript:void(0);" class="check-all">Select All</a>
+														<span class="mx-2 opacity-50">|</span>
+														<a href="javascript:void(0);" class="unCheckAllInput text-muted">Deselect All</a>
+													</div>
+													<a class="btn btn-primary">Add to Menu</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="card card-collapse shadow-none">
+										<div class="card-header">
+											<h4 class="card-title text-primary">Links </h4>
+											<a class="collapse-indicator" data-bs-toggle="collapse" href="#collapseContactlink" role="button" aria-expanded="false" aria-controls="collapseContactlink">
+												<i class="fa fa-angle-down"></i>
+											</a>
+										</div>
+										<div class="collapsed collapse show" id="collapseContactlink">
+											<div class="card-body">
+												<div class="row align-items-center">
+													<div class="col-xl-4">
+														<h6 class="form-label">URL</h6>
+													</div>
+													<div class="col-xl-8">
+														 <input type="text" class="form-control mb-2" placeholder="">
+													</div>
+													<div class="col-xl-4">
+														<h6 class="form-label">Link Text</h6>
+													</div>
+													<div class="col-xl-8">
+														 <input type="text" class="form-control" placeholder="Menu items">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End - Menus 2 -->
+					
+					<!-- Start - Menus Name -->
+					<div class="col-xl-8">
+						<div class="card shadow-sm">
+							<div class="card-header align-items-center gap-2 gap-sm-3 flex-wrap">
+								<h4 class="card-title">Menu Name</h4>
+								<input type="text" class="form-control w-auto" placeholder="information">
+								<button type="button" class="btn btn-secondary ms-sm-auto">Save Menu</button>
+							</div>
+							<div class="card-body">
+								<h6 class="mb-0">Menus Structure</h6>
+								<p>Add Menus items from the column on the left.</p>
+								
+								<div class="dd nestable-style1" id="nestable">
+									<ol class="dd-list">
+										<li class="dd-item">
+											<div class="dd-header">
+												<div class="dd-handle">
+													<i class="fa-solid fa-arrows-up-down-left-right"></i>
+												</div>
+												<a class="dd-button collapsed" data-bs-toggle="collapse" href="#ddItem1" role="button" aria-expanded="false" aria-controls="ddItem1">Contact Us <i class="fa fa-angle-down collapse-indicator"></i></a>
+											</div>
+											<div class="collapse" id="ddItem1">
+												<div class="dd-body">
+													<form>
+														<div class="row">
+															<div class="col-xl-12 mb-3">
+																<label class="form-label">URL</label>
+																<input type="text" class="form-control" placeholder="www.example.com">
+															</div>
+															<div class="col-xl-6 mb-3">
+																<label class="form-label">Navigation Label</label>
+																<input type="text" class="form-control">
+															</div>
+															<div class="col-xl-6 mb-3">
+																<label class="form-label">Title Attribute</label>
+																<input type="text" class="form-control">
+															</div>
+														</div>
+														<div class="d-flex align-items-center">
+															<a href="javascript:void(0);">Remove</a>
+															<span class="mx-2 opacity-50">|</span>
+															<a class="text-danger" data-bs-toggle="collapse" href="#ddItem1" role="button" aria-expanded="false" aria-controls="ddItem1">Cancel</a>
+														</div>
+													</form>
+												</div>
+											</div>
+										</li>
+										<li class="dd-item">
+											<div class="dd-header">
+												<div class="dd-handle">
+													<i class="fa-solid fa-arrows-up-down-left-right"></i>
+												</div>
+												<a class="dd-button collapsed" data-bs-toggle="collapse" href="#ddItem2" role="button" aria-expanded="false" aria-controls="ddItem2">Privacy Policy <i class="fa fa-angle-down collapse-indicator"></i></a>
+											</div>
+											<div class="collapse" id="ddItem2">
+												<div class="dd-body">
+													<form>
+														<div class="row">
+															<div class="col-xl-6 mb-3">
+																<label class="form-label">Navigation Label</label>
+																<input type="text" class="form-control">
+															</div>
+															<div class="col-xl-6 mb-3">
+																<label class="form-label">Title Attribute</label>
+																<input type="text" class="form-control">
+															</div>
+															<div class="col-xl-12 mb-3">
+																<input type="text" class="form-control" value="Original Privacy Policy" disabled readonly="">
+															</div>
+														</div>
+														<div class="d-flex align-items-center">
+															<a href="javascript:void(0);">Remove</a>
+															<span class="mx-2 opacity-50">|</span>
+															<a class="text-danger" data-bs-toggle="collapse" href="#ddItem2" role="button" aria-expanded="false" aria-controls="ddItem2">Cancel</a>
+														</div>
+													</form>
+												</div>
+											</div>
+										</li>
+										<li class="dd-item">
+											<div class="dd-header">
+												<div class="dd-handle">
+													<i class="fa-solid fa-arrows-up-down-left-right"></i>
+												</div>
+												<a class="dd-button collapsed" data-bs-toggle="collapse" href="#ddItem3" role="button" aria-expanded="false" aria-controls="ddItem3">Terms and Conditions <i class="fa fa-angle-down collapse-indicator"></i></a>
+											</div>
+											<div class="collapse" id="ddItem3">
+												<div class="dd-body">
+													<form>
+														<div class="row">
+															<div class="col-xl-6 mb-3">
+																<label class="form-label">Navigation Label</label>
+																<input type="text" class="form-control">
+															</div>
+															<div class="col-xl-6 mb-3">
+																<label class="form-label">Title Attribute</label>
+																<input type="text" class="form-control">
+															</div>
+															<div class="col-xl-12 mb-3">
+																<input type="text" class="form-control" value="Original: Terms and Conditions" disabled readonly="">
+															</div>
+														</div>
+														<div class="d-flex align-items-center">
+															<a href="javascript:void(0);">Remove</a>
+															<span class="mx-2 opacity-50">|</span>
+															<a class="text-danger" data-bs-toggle="collapse" href="#ddItem3" role="button" aria-expanded="false" aria-controls="ddItem3">Cancel</a>
+														</div>
+													</form>
+												</div>
+											</div>
+										</li>
+										<li class="dd-item">
+											<div class="dd-header">
+												<div class="dd-handle">
+													<i class="fa-solid fa-arrows-up-down-left-right"></i>
+												</div>
+												<a class="dd-button collapsed" data-bs-toggle="collapse" href="#ddItem4" role="button" aria-expanded="false" aria-controls="ddItem4">About Us <i class="fa fa-angle-down collapse-indicator"></i></a>
+											</div>
+											<div class="collapse" id="ddItem4">
+												<div class="dd-body">
+													<form>
+														<div class="row">
+															<div class="col-xl-6 mb-3">
+																<label class="form-label">Navigation Label</label>
+																<input type="text" class="form-control">
+															</div>
+															<div class="col-xl-6 mb-3">
+																<label class="form-label">Title Attribute</label>
+																<input type="text" class="form-control">
+															</div>
+															<div class="col-xl-12 mb-3">
+																<input type="text" class="form-control" value="Original: About Us" disabled readonly="">
+															</div>
+														</div>
+														<div class="d-flex align-items-center">
+															<a href="javascript:void(0);">Remove</a>
+															<span class="mx-2 opacity-50">|</span>
+															<a class="text-danger" data-bs-toggle="collapse" href="#ddItem4" role="button" aria-expanded="false" aria-controls="ddItem4">Cancel</a>
+														</div>
+													</form>
+												</div>
+											</div>
+										</li>
+										<li class="dd-item">
+											<div class="dd-header">
+												<div class="dd-handle">
+													<i class="fa-solid fa-arrows-up-down-left-right"></i>
+												</div>
+												<a class="dd-button collapsed" data-bs-toggle="collapse" href="#ddItem5" role="button" aria-expanded="false" aria-controls="ddItem5">Important Information <i class="fa fa-angle-down collapse-indicator"></i></a>
+											</div>
+											<div class="collapse" id="ddItem5">
+												<div class="dd-body">
+													<form>
+														<div class="row">
+															<div class="col-xl-6 mb-3">
+																<label class="form-label">Navigation Label</label>
+																<input type="text" class="form-control">
+															</div>
+															<div class="col-xl-6 mb-3">
+																<label class="form-label">Title Attribute</label>
+																<input type="text" class="form-control">
+															</div>
+															<div class="col-xl-12 mb-3">
+																<input type="text" class="form-control" value="Original: Terms and Conditions" disabled readonly="">
+															</div>
+														</div>
+														<div class="d-flex align-items-center">
+															<a href="javascript:void(0);">Remove</a>
+															<span class="mx-2 opacity-50">|</span>
+															<a class="text-danger" data-bs-toggle="collapse" href="#ddItem5" role="button" aria-expanded="false" aria-controls="ddItem5">Cancel</a>
+														</div>
+													</form>
+												</div>
+											</div>
+										</li>
+									</ol>
+								</div>
+								
+							</div>
+							<div class="card-footer d-flex justify-content-between">
+								<button type="button" class="btn text-dark">Delete Menu</button>								 
+								<button type="button" class="btn btn-secondary">Save Menu</button>
+							</div>
+						</div>
+					</div>
+					<!-- End - Menus Name -->
+					
+				</div>
+			</div>
+		
+		</main>
+		<!-- End - Content Body -->
+
+       @@include("../elements/layout/footer.html")
+
+
+    </div>
+    <!-- End - Main Wrapper -->
+
+    @@include("../elements/layout/script.html")
+	
+	<!-- Script For Nestable File -->
+	<script src="assets/vendor/nestable2/js/jquery.nestable.min.js"></script>
+	<script src="assets/js/plugins-init/nestable-init.js"></script>
+	
+	<!-- Script For Multiple Languages -->
+	<script src="assets/vendor/i18n/i18n.js"></script>
+	<script src="assets/js/translator.js"></script>
+	
+	<!-- Script For Custom JS -->
+	<script src="assets/js/deznav-init.js"></script>
+    <script src="assets/js/custom.js"></script>
+	
+	<!-- Script For demo Styleswitcher -->
+	<script src="assets/js/demo.js"></script>
+    <script src="assets/js/styleSwitcher.js"></script>
+
+</body>
+</html>

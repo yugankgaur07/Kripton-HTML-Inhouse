@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<base href="../">
+
+	<!-- Start - Title -->
+	<title>Kripton - Crypto Admin Dashboard Bootstrap Template</title>
+	<!-- End - Title -->
+
+	<!-- Start - Meta -->
+    <meta charset="UTF-8">
+	<meta name="author" content="DexignZone">
+	<meta name="robots" content="index, follow">
+	<meta name="format-detection" content="telephone=no">
+	
+	<meta name="keywords" content="Kripton, crypto admin dashboard, cryptocurrency Bootstrap template, crypto analytics, trading dashboard, wallet management, responsive admin template, blockchain admin UI, Bootstrap 5 dashboard, exchange platform, financial dashboard, trading platform UI" >
+	<meta name="description" content="Kripton is a powerful Crypto Admin Dashboard Bootstrap Template designed for trading platforms, wallet management, and crypto analytics. Built with Bootstrap 5, fully responsive and customizable." >
+
+	<meta property="og:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta property="og:description" content="Kripton is a modern Bootstrap-based crypto admin dashboard, perfect for exchanges, trading platforms, and crypto analytics systems." >
+	<meta property="og:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<meta property="og:url" content="https://kripton.dexignzone.com/" >
+	<meta property="og:type" content="website" >
+
+	<meta name="twitter:card" content="summary_large_image" >
+	<meta name="twitter:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta name="twitter:description" content="Build powerful crypto trading platforms and admin dashboards with Kripton – a responsive Bootstrap template for the cryptocurrency industry." >
+	<meta name="twitter:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<!-- End - Meta -->
+
+	<!-- Start -  MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- End -  MOBILE SPECIFIC -->
+	
+    <!-- Start - Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.avif">
+	<!-- End - Favicon -->
+
+	@@include("../elements/layout/basic-css.html")
+         
+</head>
+<body>
+
+	<!-- Start - Main Wrapper -->
+	<div id="main-wrapper">
+
+		@@include("../elements/layout/nav-header.html")
+        
+		@@include("../elements/layout/chatbox.html")
+		
+		@@include("../elements/layout/header.html",{
+			"fileName": "Add Email",
+		})
+
+		@@include("../elements/layout/sidebar.html")
+
+		<!-- Start - Content Body -->
+        <main class="content-body">
+			<div class="container-fluid">
+				
+				<!-- Start - Page Title & Breadcrumb -->
+				<div class="page-title">
+					@@include("../elements/layout/breadcrumb.html",{
+						"fileName": "Add Email",
+					})
+				</div>
+				<!-- End - Page Title & Breadcrumb -->
+				
+				<!-- Start - Add Email -->
+				<div class="row">
+					<div class="col-xl-12">
+						<a href="cms/email-template.html" class="btn btn-primary mb-3">List Email Template</a>
+					</div>
+					<div class="col-xl-12">
+						<div class="card card-collapse">
+							<div class="card-header">
+								<h4 class="card-title"><i class="fa-solid fa-envelope me-1 text-primary"></i> Add Email Template</h4>
+								<a class="collapse-indicator" data-bs-toggle="collapse" href="#collapseFilter" role="button" aria-expanded="false" aria-controls="collapseFilter">
+									<i class="fa fa-angle-down"></i>
+								</a>
+							</div>
+							<div class="collapsed collapse show" id="collapseFilter">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-xl-6">
+											<form>
+												<div class="mb-3">
+													<label class="form-label">Title</label>
+													<input type="text" class="form-control">
+													<div class="form-text">Title should be meaning full like : registration email, forgot password email.</div>
+												</div>
+												<div class="mb-3">
+													<label class="form-label">Description</label>
+													<textarea class="form-control" rows="5"></textarea>
+													<div class="form-text">Decribe about this email template. </div>
+												</div>
+											</form>
+										</div>
+										<div class="col-xl-6">
+											<div class="mb-3">
+												<label class="form-label">Slug</label>
+												<input class="form-control bg-light" type="text" placeholder="Slug" aria-label="Disabled input example" disabled="">
+												<div class="form-text">slug will use for url. can't edited.</div>
+											</div>
+											<div class="mb-3">
+												<label class="form-label">Placeholder</label>
+												<div class="bg-light dz-scroll height140 p-3 rounded">
+													<div class="d-grid mb-3">
+														<h6 class="mb-0">User Configuration</h6>
+														<span>#USERNAME#: Username can display with this placeholder.</span>
+														<span>#USERNAME#: Username can display with this placeholder.</span>
+														<span>#LASTNAME#: Lastname can display with this placeholder.</span>
+														<span>#TELEPHONE#: Contact number can display with this placeholder.</span>
+														<span>#PASSWORD#: password can display with this placeholder.</span>
+														<span>#SITENAME#: Site name can display with this placeholder.</span>
+													</div>
+													<div class="d-grid mb-3">
+														<h6 class="mb-0">Config Configuration</h6>
+														<span>#SITENAME#: Site name can display with this placeholder.</span>
+														<span>#ADMINEMAIL#: Admin email can display with this placeholder.</span>
+														<span>#SUPPORTEMAIL#: Support email can display with this placeholder.</span>
+														<span>#SITEADDRESS#: Site address can display with this placeholder.</span>
+													</div>
+													<div class="d-grid mb-3">
+														<h6 class="mb-0">Generate Configuration</h6>
+														<span>#ACTIVATIONLINK#: Activation link can display with this placeholder.</span>
+														<span>#SITELOGO#: Site logo can display with this placeholder.</span>
+														<span>#LOGINLINK#: Login link can display with this placeholder.</span>
+														<span>#REGESTERLINK#: Registration link can display with this placeholder.</span>
+														<span>#REGESTERLINK#: Registration link can display with this placeholder.</span>
+													</div>
+													<div class="d-grid mb-3">
+														<h6 class="mb-0">Contact Configuration</h6>
+														<span>#NAME#: Contact user name can display with this placeholder.</span>
+														<span>#EMAIL#: Contact user email can display with this placeholder.</span>
+														<span>#MESSAGE#: Contact user message can display with this placeholder.</span>
+													</div>
+													<div class="d-grid mb-3">
+														<h6>Subscribe Configuration</h6>
+														<span>#USERNAME#: Subscribe user email can display with this placeholder.</span>
+													</div>
+													<div class="d-grid mb-3">
+														<h6 class="mb-0">Order Configuration</h6>
+														<span>#STATUS#: Order Status can display with this placeholder.</span>
+														<span>#FIRSTNAME#: User first name can display with this placeholder.</span>
+														<span>#LASTNAME#: User last name can display with this placeholder.</span>
+														<span>#MESSAGE#: Delivery details or expected deliery date. This message will deliver to customer.</span>
+														<span>#ID#: Order number can display with this placeholder.</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="col-xl-12">
+											<label class="form-label">Email Template</label>
+											<div id="ckeditor"></div>
+											<div class="form-text mb-3">This design will show in recieved email and place holders will replace with dynamic content.</div>
+											
+											<label class="form-label">Status</label>
+											<div class="form-check custom-checkbox mb-3">
+												<input class="form-check-input" type="checkbox" id="checkboxDeactivation" required="">
+												<label class="form-check-label" for="checkboxDeactivation">Active status template will use in email sending only.</label>
+											</div>
+											<div class="text-end">
+												<button type="button" class="btn btn-primary">Save Email Template</button>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End - Add Email -->
+			
+			</div>
+			
+		</main>
+		<!-- End - Content Body -->
+
+		@@include("../elements/layout/footer.html")
+
+
+	</div>
+	<!-- End - Main Wrapper -->
+
+    @@include("../elements/layout/script.html")
+	
+	<!-- Ck Editor -->
+	<script src="assets/vendor/ckeditor/ckeditor.js"></script>
+	
+	<!-- Script For Multiple Languages -->
+	<script src="assets/vendor/i18n/i18n.js"></script>
+	<script src="assets/js/translator.js"></script>
+	
+	<!-- Script For Custom JS -->
+	<script src="assets/js/deznav-init.js"></script>
+    <script src="assets/js/custom.js"></script>
+	
+	<!-- Script For demo Styleswitcher -->
+	<script src="assets/js/demo.js"></script>
+    <script src="assets/js/styleSwitcher.js"></script>
+	
+</body>
+
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+	<!-- Start - Title -->
+	<title>Kripton - Crypto Admin Dashboard Bootstrap Template</title>
+	<!-- End - Title -->
+
+	<!-- Start - Meta -->
+    <meta charset="UTF-8">
+	<meta name="author" content="DexignZone">
+	<meta name="robots" content="index, follow">
+	<meta name="format-detection" content="telephone=no">
+	
+	<meta name="keywords" content="Kripton, crypto admin dashboard, cryptocurrency Bootstrap template, crypto analytics, trading dashboard, wallet management, responsive admin template, blockchain admin UI, Bootstrap 5 dashboard, exchange platform, financial dashboard, trading platform UI" >
+	<meta name="description" content="Kripton is a powerful Crypto Admin Dashboard Bootstrap Template designed for trading platforms, wallet management, and crypto analytics. Built with Bootstrap 5, fully responsive and customizable." >
+
+	<meta property="og:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta property="og:description" content="Kripton is a modern Bootstrap-based crypto admin dashboard, perfect for exchanges, trading platforms, and crypto analytics systems." >
+	<meta property="og:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<meta property="og:url" content="https://kripton.dexignzone.com/" >
+	<meta property="og:type" content="website" >
+
+	<meta name="twitter:card" content="summary_large_image" >
+	<meta name="twitter:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta name="twitter:description" content="Build powerful crypto trading platforms and admin dashboards with Kripton – a responsive Bootstrap template for the cryptocurrency industry." >
+	<meta name="twitter:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<!-- End - Meta -->
+
+	<!-- Start -  MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- End -  MOBILE SPECIFIC -->
+	
+    <!-- Start - Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.avif">
+	<!-- End - Favicon -->
+
+	<!-- Start - All Required Plugins -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/star-rating/star-rating-svg.css">
+	<link href="assets/vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<!-- End - All Required Plugins -->
+	
+	@@include("elements/layout/basic-css.html")
+	
+</head>
+
+<body>
+
+    <!-- Start - Main wrapper -->
+    <div id="main-wrapper">
+
+        @@include("elements/layout/nav-header.html")
+		
+		@@include("elements/layout/chatbox.html")
+		
+		@@include("elements/layout/header.html",{
+			"fileName": "Product Details",
+		})
+
+		@@include("elements/layout/sidebar.html")
+		
+        <!-- Start - Content Body -->
+        <main class="content-body">
+            <div class="container-fluid">
+				
+                <!-- Start - Page Title & Breadcrumb -->
+                <div class="page-title">
+                    @@include("elements/layout/breadcrumb.html",{
+                        "fileName": "Product Details",
+                    })
+                </div>
+                <!-- End - Page Title & Breadcrumb -->
+                
+                <div class="row">
+
+					<!-- Start - Product -->
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+
+									<!-- Start - Product Tab -->
+                                    <div class="col-xl-3 col-lg-6 col-md-6">
+                                        <div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+												<img class="img-fluid rounded  " src="assets/images/product/1.webp" alt="">
+											</div>
+											<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+												<img class="img-fluid rounded " src="assets/images/product/2.webp" alt="">
+											</div>
+											<div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+												<img class="img-fluid rounded" src="assets/images/product/3.webp" alt="">
+											</div>
+											<div class="tab-pane fade" id="end-tab-pane" role="tabpanel" aria-labelledby="end-tab" tabindex="0">
+												<img class="img-fluid rounded" src="assets/images/product/4.webp" alt="">
+											</div>
+										</div>
+										<ul class="nav nav-pills nav-pills-light nav-pills-sm flex-nowrap mt-2" id="myTab" role="tablist">
+											<li class="nav-item" role="presentation">
+												<a href="#first" class="nav-link p-1 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+													<img class="rounded" src="assets/images/tab/1.webp" alt="">
+												</a>
+											</li>
+											<li class="nav-item" role="presentation">
+												<a href="#second" class="nav-link p-1" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+													<img class="rounded" src="assets/images/tab/2.webp" alt="">
+												</a>
+											</li>
+											<li class="nav-item" role="presentation">
+												<a href="#third" class="nav-link p-1" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+													<img class="rounded" src="assets/images/tab/3.webp" alt="">
+												</a>
+											</li>
+											<li class="nav-item" role="presentation">
+												<a href="#for" class="nav-link p-1" id="end-tab" data-bs-toggle="tab" data-bs-target="#end-tab-pane" role="tab" aria-controls=	"end-tab-pane" aria-selected="false">
+													<img class="rounded" src="assets/images/tab/4.webp" alt="">
+												</a>
+											</li>
+										</ul>
+                                    </div>
+									<!-- End - Product Tab -->
+                                    
+									<!-- Start - Product Details -->
+                                    <div class="col-xxl-9 col-xl-8 col-md-7 pt-3">
+										<h3 class="fw-semibold mb-1">White Offshoulder Dress</h3>
+										<div class="d-flex gap-2 mb-2 flex-wrap">
+											<ul class="d-flex align-items-start gap-1">
+												<li class="text-warning"><i class="fa fa-star"></i></li>
+												<li class="text-warning"><i class="fa fa-star"></i></li>
+												<li class="text-warning"><i class="fa fa-star"></i></li>
+												<li class="text-warning"><i class="fa fa-star"></i></li>
+												<li class="text-warning"><i class="fa fa-star"></i></li>
+											</ul>
+											<span class="ms-2">(34 reviews) / </span><a  href="javascrpt:void(0)"  class="text-decoration-underline" data-bs-toggle="modal" data-bs-target="#reviewModal">Write a review?</a>
+										</div>
+										<span class="fs-24 fw-semibold text-primary mb-3 d-block">$325.00</span>
+										<ul class="mb-3">
+											<li class="fs-12 mb-2">
+												<span class="fw-medium fs-14 me-1">Availability:</span> In Stock <i class="fa fa-shopping-basket text-success"></i>
+											</li>
+											<li class="fs-12 mb-2">
+												<span class="fw-medium fs-14 me-1">Product Code:</span> 0405689
+											</li>
+											<li class="fs-12 mb-2">
+												<span class="fw-medium fs-14 me-1">Brand:</span> Lee
+											</li>
+										</ul>
+										<p>
+											<span class="fw-medium fs-14 me-1">Product Tags:</span>
+											<span class="badge badge-primary badge-sm light">Bags</span>
+											<span class="badge badge-success badge-sm light">Clothes</span>
+											<span class="badge badge-info badge-sm light">Shoes</span>
+											<span class="badge badge-danger badge-sm light">Dresses</span>
+										</p>
+										<p class="lh-lg">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
+										<h6 class="mb-0">Select size</h6>
+										<div class="d-flex align-items-center gap-3 flex-wrap mb-3">
+											<div class="d-flex gap-1" role="group" aria-label="Basic radio toggle button group">
+												<input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked>
+												<label class="btn btn-outline-primary btn-square" for="btnradio1">XS</label>
+
+												<input type="radio" class="btn-check" name="btnradio" id="btnradio2">
+												<label class="btn btn-outline-primary btn-square" for="btnradio2">SM</label>
+
+												<input type="radio" class="btn-check" name="btnradio" id="btnradio3">
+												<label class="btn btn-outline-primary btn-square" for="btnradio3">MD</label>
+
+												<input type="radio" class="btn-check" name="btnradio" id="btnradio4">
+												<label class="btn btn-outline-primary btn-square" for="btnradio4">LG</label>
+											  
+												<input type="radio" class="btn-check" name="btnradio" id="btnradio5">
+												<label class="btn btn-outline-primary btn-square" for="btnradio5">XL</label>
+											</div>
+											<input type="number" name="num" class="form-control form-control-sm input-btn input-number width190" value="1">
+											<a class="btn btn-primary fs-16 btn-lg" href="javascript:void(0);"><i class="fa fa-shopping-basket me-2"></i>Add to cart</a>
+										</div>
+                                    </div>
+									<!-- End - Product Details -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<!-- End - Product -->
+					
+					<!-- Start - Modal Review -->
+					<div class="modal fade" id="reviewModal">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Review</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal">
+									</button>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="text-center mb-4">
+											<img class="img-fluid rounded" width="78" src="assets/images/avatar/1.webp" alt="DexignZone">
+										</div>
+										<div class="form-group">
+											<div class="rating-widget mb-4 text-center">
+												<!-- Rating Stars Box -->
+												<div class="rating-stars">
+													<ul id="stars">
+														<li class="star" title="Poor" data-value="1">
+															<i class="fa fa-star fa-fw"></i>
+														</li>
+														<li class="star" title="Fair" data-value="2">
+															<i class="fa fa-star fa-fw"></i>
+														</li>
+														<li class="star" title="Good" data-value="3">
+															<i class="fa fa-star fa-fw"></i>
+														</li>
+														<li class="star" title="Excellent" data-value="4">
+															<i class="fa fa-star fa-fw"></i>
+														</li>
+														<li class="star" title="WOW!!!" data-value="5">
+															<i class="fa fa-star fa-fw"></i>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<textarea class="form-control" placeholder="Comment" rows="5"></textarea>
+										</div>
+										<button class="btn btn-success btn-block w-100 mt-3">RATE</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End - Modal Review -->
+
+					<!-- Start - Similar Proucts -->
+					<div>
+						<h4 class="fs-20 fw-semibold my-4">SIMILAR PRODUCTS</h4>
+						<div class="owl-carousel card-slider">
+
+							<!-- Start - Product 1 -->
+							<div class="clearfix">
+								<div class="card">
+									<div class="card-body">
+										<div class="new-arrival-product">
+											<div class="overflow-hidden rounded">
+												<img class="img-fluid" src="assets/images/product/1.webp" alt="">
+											</div>
+											<div class="text-center mt-3">
+												<h5><a href="ecom-product-detail.html">White Solid Dress</a></h5>
+												<ul class="d-flex flex-row-reverse justify-content-center gap-1">
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+												</ul>
+												<span class="fs-24 fw-semibold text-primary">$71.00</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End - Product 1 -->
+
+							<!-- Start - Product 2 -->
+							<div class="clearfix">
+								<div class="card">
+									<div class="card-body">
+										<div class="new-arrival-product">
+											<div class="overflow-hidden rounded">
+												<img class="img-fluid" src="assets/images/product/2.webp" alt="">
+											</div>
+											<div class="text-center mt-3">
+												<h5><a href="ecom-product-detail.html">Black Jumpsuit</a></h5>
+												<ul class="d-flex flex-row-reverse justify-content-center gap-1">
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+												</ul>
+												<span class="fs-24 fw-semibold text-primary">$61.00</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End - Product 2 -->
+
+							<!-- Start - Product 3 -->
+							<div class="clearfix">
+								<div class="card">
+									<div class="card-body">
+										<div class="new-arrival-product">
+											<div class="overflow-hidden rounded">
+												<img class="img-fluid" src="assets/images/product/3.webp" alt="">
+											</div>
+											<div class="text-center mt-3">
+												<h5><a href="ecom-product-detail.html">White Dress</a></h5>
+												<ul class="d-flex flex-row-reverse justify-content-center gap-1">
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+												</ul>
+												<span class="fs-24 fw-semibold text-primary">$50.00</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End - Product 3 -->
+
+							<!-- Start - Product 4 -->
+							<div class="clearfix">
+								<div class="card">
+									<div class="card-body">
+										<div class="new-arrival-product">
+											<div class="overflow-hidden rounded">
+												<img class="img-fluid" src="assets/images/product/4.webp" alt="">
+											</div>
+											<div class="text-center mt-3">
+												<h5><a href="ecom-product-detail.html">Solid One Piece</a></h5>
+												<ul class="d-flex flex-row-reverse justify-content-center gap-1">
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+												</ul>
+												<span class="fs-24 fw-semibold text-primary">$40.00</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End - Product 4 -->
+
+							<!-- Start - Product 5 -->
+							<div class="clearfix">
+								<div class="card">
+									<div class="card-body">
+										<div class="new-arrival-product">
+											<div class="overflow-hidden rounded">
+												<img class="img-fluid" src="assets/images/product/5.webp" alt="">
+											</div>
+											<div class="text-center mt-3">
+												<h5><a href="ecom-product-detail.html">BodyFit Dress</a></h5>
+												<ul class="d-flex flex-row-reverse justify-content-center gap-1">
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+												</ul>
+												<span class="fs-24 fw-semibold text-primary">$30.00</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End - Product 5 -->
+
+							<!-- Start - Product 6 -->
+							<div class="clearfix">
+								<div class="card">
+									<div class="card-body">
+										<div class="new-arrival-product">
+											<div class="overflow-hidden rounded">
+												<img class="img-fluid" src="assets/images/product/6.webp" alt="">
+											</div>
+											<div class="text-center mt-3">
+												<h5><a href="ecom-product-detail.html">Black Offshoulder</a></h5>
+												<ul class="d-flex flex-row-reverse justify-content-center gap-1">
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star text-warning"></i></li>
+													<li><i class="fa fa-star"></i></li>
+													<li><i class="fa fa-star"></i></li>
+												</ul>
+												<span class="fs-24 fw-semibold text-primary">$20.00</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End - Product 6 -->
+
+						</div>
+					</div>
+					<!-- End - Similar Proucts -->
+
+                </div>
+            </div>
+        </main>
+        <!-- End - Content Body -->
+
+        @@include("elements/layout/footer.html")
+
+    </div>
+    <!-- End - Main wrapper -->
+
+    @@include("elements/layout/script.html")
+	
+	<!-- Script For Star  Rating JS -->
+	<script src="assets/vendor/star-rating/jquery.star-rating-svg.js"></script>
+	
+	<!-- Script For Owl Carousel -->
+	<script src="assets/vendor/owl-carousel/owl.carousel.js"></script>
+	
+	<!-- Script For Multiple Languages -->
+	<script src="assets/vendor/i18n/i18n.js"></script>
+	<script src="assets/js/translator.js"></script>
+	
+	<!-- Script For Custom JS -->
+	<script src="assets/js/deznav-init.js"></script>
+    <script src="assets/js/custom.js"></script>
+	
+	<!-- Script For demo Styleswitcher -->
+    <script src="assets/js/styleSwitcher.js"></script>
+	<script src="assets/js/demo.js"></script>
+
+	<!-- Script For Slider -->
+	<script>
+		jQuery('.card-slider').owlCarousel({
+			loop: true,
+			margin: 20,
+			nav: false,
+			autoplay: true,
+			rtl: true,
+
+			//center:true,
+			slideSpeed: 3000,
+			paginationSpeed: 3000,
+			dots: false,
+			navText: ['', ''],
+			responsive: {
+				0: {
+					items: 1
+				},
+				576: {
+					items: 3
+				},
+				800: {
+					items: 3
+				},
+				991: {
+					items: 4
+				},
+				1200: {
+					items: 5
+				}
+			}
+		});
+	</script>
+
+</body>
+</html>

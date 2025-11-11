@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+	<!-- Start - Title -->
+	<title>Kripton - Crypto Admin Dashboard Bootstrap Template</title>
+	<!-- End - Title -->
+
+	<!-- Start - Meta -->
+    <meta charset="UTF-8">
+	<meta name="author" content="DexignZone">
+	<meta name="robots" content="index, follow">
+	<meta name="format-detection" content="telephone=no">
+	
+	<meta name="keywords" content="Kripton, crypto admin dashboard, cryptocurrency Bootstrap template, crypto analytics, trading dashboard, wallet management, responsive admin template, blockchain admin UI, Bootstrap 5 dashboard, exchange platform, financial dashboard, trading platform UI" >
+	<meta name="description" content="Kripton is a powerful Crypto Admin Dashboard Bootstrap Template designed for trading platforms, wallet management, and crypto analytics. Built with Bootstrap 5, fully responsive and customizable." >
+
+	<meta property="og:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta property="og:description" content="Kripton is a modern Bootstrap-based crypto admin dashboard, perfect for exchanges, trading platforms, and crypto analytics systems." >
+	<meta property="og:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<meta property="og:url" content="https://kripton.dexignzone.com/" >
+	<meta property="og:type" content="website" >
+
+	<meta name="twitter:card" content="summary_large_image" >
+	<meta name="twitter:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta name="twitter:description" content="Build powerful crypto trading platforms and admin dashboards with Kripton – a responsive Bootstrap template for the cryptocurrency industry." >
+	<meta name="twitter:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<!-- End - Meta -->
+
+	<!-- Start -  MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- End -  MOBILE SPECIFIC -->
+	
+    <!-- Start - Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.avif">
+	<!-- End - Favicon -->
+
+	<!-- Start - All Required Css -->
+	<link href="assets/vendor/sweetalert2/sweetalert2.min.css" rel="stylesheet">
+	<link href="assets/vendor/lightgallery/css/lightgallery.min.css" rel="stylesheet">
+	<!-- End - All Required Css -->
+  	
+	@@include("elements/layout/basic-css.html")
+
+</head>
+
+<body>
+
+    <!-- Start - Main wrapper -->
+    <div id="main-wrapper">
+
+		@@include("elements/layout/nav-header.html")
+        
+		@@include("elements/layout/chatbox.html")
+		
+		@@include("elements/layout/header.html",{
+			"fileName": "Post Details",
+		})
+
+		@@include("elements/layout/sidebar.html")
+		
+		<!-- Start - Content Body -->
+		<main class="content-body default-height">
+			<div class="container-fluid">
+				
+				<!-- Start - Page Title & Breadcrumb -->
+				<div class="page-title">
+					@@include("elements/layout/breadcrumb.html",{
+						"fileName": "Post Details",
+					})
+				</div>
+				<!-- End - Page Title & Breadcrumb -->
+				
+				<!-- Start - Profile Header -->
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="card-profile card card-body p-2 pb-0">
+							<div class="photo-content">
+								<div class="cover-photo rounded"></div>
+							</div>
+							<div class="p-sm-3 p-2 d-sm-flex w-100">
+								<div class="profile-photo me-sm-3">
+									<img src="assets/images/profile/profile.avif" class="img-fluid rounded-circle border border-4 border-white" alt="">
+								</div>
+								<div class="d-flex w-100 py-2 py-sm-0">
+									<div class="d-flex flex-wrap w-100 gap-3">
+										<div class="clearfix">
+											<h5 class="mb-0">Mitchell C. Shay</h5>
+											<span>UX / UI Designer</span>
+										</div>
+										<div class="clearfix">
+											<h5 class="mb-0">hello@email.com</h5>
+											<span>Email</span>
+										</div>
+									</div>
+									<div class="dropdown ms-auto">
+										<button class="btn btn-sm btn-square btn-primary light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<i class="fa-solid fa-ellipsis"></i>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="javascript:void(0);">
+												<i class="fa fa-user-circle text-primary me-2"></i> View profile</a>
+											</li>
+											<li><a class="dropdown-item" href="javascript:void(0);">
+												<i class="fa fa-users text-primary me-2"></i> Add to friends</a>
+											</li>
+											<li><a class="dropdown-item" href="javascript:void(0);">
+												<i class="fa fa-plus text-primary me-2"></i> Add to group</a>
+											</li>
+											<li><a class="dropdown-item" href="javascript:void(0);">
+												<i class="fa fa-ban text-primary me-2"></i> Block</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End - Profile Header -->
+
+				<!-- Start - Profile Feed -->
+				<div class="row">
+					<div class="col-xl-4 col-xxl-3">
+						<div class="row">
+							<div class="col-xl-12">
+								<div class="card">
+									<div class="card-body text-center">
+										<div class="row">
+											<div class="col">
+												<span class="mb-0 d-block h2">150</span>
+												<span>Follower</span>
+											</div>
+											<div class="col">
+												<span class="mb-0 d-block h2">140</span>
+												<span>Place Stay</span>
+											</div>
+											<div class="col">
+												<span class="mb-0 d-block h2">45</span>
+												<span>Reviews</span>
+											</div>
+										</div>
+										<div class="mt-4">
+											<a href="javascript:void();" class="btn btn-primary mb-1 me-1">Follow</a> 
+											<a href="javascript:void();" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#sendMessageModal">Send Message</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-xl-12">
+								<div class="card">
+									<div class="card-header border-0 pb-0">
+										<h4 class="card-title">Today Highlights</h4>
+									</div>
+									<div class="card-body">
+										<img src="assets/images/profile/1.webp" alt="" class="img-fluid mb-3 w-100 rounded">
+										<h5><a href="post-details.html">Darwin Creative Agency Theme</a></h5>
+										<p class="mb-0">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-xl-12">
+								<div class="card">
+									<div class="card-header border-0 pb-0">
+										<h4 class="card-title">Interest</h4>
+									</div>
+									<div class="card-body">
+										<div class="row g-1" id="lightgallery">
+											<a href="assets/images/profile/2.webp" data-exthumbimage="assets/images/profile/2.webp" data-src="assets/images/profile/2.webp" class="col-4">
+												<img src="assets/images/profile/2.webp" alt="" class="img-fluid rounded">
+											</a>
+											<a href="assets/images/profile/3.webp" data-exthumbimage="assets/images/profile/3.webp" data-src="assets/images/profile/3.webp" class="col-4">
+												<img src="assets/images/profile/3.webp" alt="" class="img-fluid rounded">
+											</a>
+											<a href="assets/images/profile/4.webp" data-exthumbimage="assets/images/profile/4.webp" data-src="assets/images/profile/4.webp" class="col-4">
+												<img src="assets/images/profile/4.webp" alt="" class="img-fluid rounded">
+											</a>
+											<a href="assets/images/profile/3.webp" data-exthumbimage="assets/images/profile/3.webp" data-src="assets/images/profile/3.webp" class="col-4">
+												<img src="assets/images/profile/3.webp" alt="" class="img-fluid rounded">
+											</a>
+											<a href="assets/images/profile/4.webp" data-exthumbimage="assets/images/profile/4.webp" data-src="assets/images/profile/4.webp" class="col-4">
+												<img src="assets/images/profile/4.webp" alt="" class="img-fluid rounded">
+											</a>
+											<a href="assets/images/profile/2.webp" data-exthumbimage="assets/images/profile/2.webp" data-src="assets/images/profile/2.webp" class="col-4">
+												<img src="assets/images/profile/2.webp" alt="" class="img-fluid rounded">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-xl-12">
+								<div class="card">
+									<div class="card-header border-0 pb-0">
+										<h4 class="card-title">Our Latest News</h4>
+									</div>
+									<div class="card-body py-3">
+										<div class="d-flex py-2 align-items-center">
+											<img src="assets/images/profile/5.webp" alt="image" class="avatar avatar-lg rounded">
+											<div class="ms-3">
+												<h6 class="mb-1"><a href="post-details.html">Collection of textile samples</a></h6>
+												<p class="mb-0">I shared this on my fb wall a few months back, and I thought.</p>
+											</div>
+										</div>
+										<div class="d-flex py-2 align-items-center">
+											<img src="assets/images/profile/6.webp" alt="image" class="avatar avatar-lg rounded">
+											<div class="ms-3">
+												<h6 class="mb-1"><a href="post-details.html">Website Developer </a></h6>
+												<p class="mb-0">I shared this on my fb wall a few months back, and I thought.</p>
+											</div>
+										</div>
+										<div class="d-flex py-2 align-items-center">
+											<img src="assets/images/profile/7.webp" alt="image" class="avatar avatar-lg rounded">
+											<div class="ms-3">
+												<h6 class="mb-1"><a href="post-details.html">Mern stack Developer</a></h6>
+												<p class="mb-0">I shared this on my fb wall a few months back, and I thought.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xl-8 col-xxl-9">
+						<div class="card">
+							<div class="card-body">
+								<h2 class="mb-1">Collection of textile samples lay spread</h2>
+								<ul class="mb-4 d-flex flex-wrap">
+									<li class="me-3">By Admin</li>
+									<li class="me-3"><i class="far fa-calendar-plus me-2"></i>18 Nov 2020</li>
+									<li class=""><i class="far fa-comment me-2"></i>28</li>
+								</ul>
+								<img src="assets/images/profile/8.webp" alt="" class="img-fluid mb-3 w-100 rounded">
+								<p>A wonderful serenity has take possession of my entire soul like these sweet morning of spare which enjoy whole heart.A wonderful serenity has take possession of my entire soul like these sweet morning of spare which enjoy whole heart.</p>
+								<p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
+								<figure class="bg-primary-subtle border-start border-3 border-primary p-3 rounded text-dark">
+									<blockquote class="blockquote">
+										<p>A well-known quote, contained in a blockquote element.</p>
+									</blockquote>
+									<figcaption class="blockquote-footer mb-0">
+										Someone famous in <cite title="Source Title">Source Title</cite>
+									</figcaption>
+								</figure>
+								<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence was created for the bliss of souls like mine.I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
+								
+								<div class="py-3 my-4 border-top border-bottom">
+									<h4 class="text-primary mb-2">Skills</h4>
+									<a href="javascript:void();;" class="btn btn-primary light btn-sm mb-1">Admin</a>
+									<a href="javascript:void();;" class="btn btn-primary light btn-sm mb-1">Dashboard</a>
+									<a href="javascript:void();;" class="btn btn-primary light btn-sm mb-1">Photoshop</a>
+									<a href="javascript:void();;" class="btn btn-primary light btn-sm mb-1">Bootstrap</a>
+									<a href="javascript:void();;" class="btn btn-primary light btn-sm mb-1">Responsive</a>
+									<a href="javascript:void();;" class="btn btn-primary light btn-sm mb-1">Crypto</a>
+								</div>
+								
+								<div class="comment-respond" id="respond">
+									<h4 class="comment-reply-title text-primary mb-3" id="reply-title">Leave a Reply </h4>
+									<form class="comment-form" id="commentform" method="post">
+										<div class="row"> 
+											<div class="col-lg-6">
+												<div class="mb-3">
+													<label for="author" class="form-label">Name <span class="required">*</span></label>
+													<input type="text" class="form-control" value="Author" name="Author" placeholder="Author" id="author">
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="mb-3">
+													<label for="email" class="form-label">Email <span class="required">*</span></label>
+													<input type="text" class="form-control" value="Email" placeholder="Email" name="Email" id="email">
+												</div>
+											</div>
+											<div class="col-lg-12">
+												<div class="mb-3">
+													<label for="comment" class="form-label">Comment</label>
+													<textarea rows="6" class="form-control" name="comment" placeholder="Comment" id="comment"></textarea>
+												</div>
+											</div>
+											<div class="col-lg-12">
+												<input type="submit" value="Post Comment" class="submit btn btn-primary" id="submit" name="submit">
+											</div>
+										</div>
+									</form>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- End - Profile Feed -->
+
+			</div>
+		</main>
+		<!-- Start - Content Body -->
+
+        @@include("elements/layout/footer.html")
+
+    </div>
+    <!-- End - Main wrapper -->
+
+	<!-- Start - Page Scripts -->
+    @@include("elements/layout/script.html")
+	
+	<!-- Script For Sweetalert -->
+	<script src="assets/vendor/sweetalert2/sweetalert2.min.js"></script>
+	
+	<!-- Script For Lightgallery -->
+	<script src="assets/vendor/lightgallery/js/lightgallery-all.min.js"></script>
+    
+	<!-- Script For Multiple Languages -->
+	<script src="assets/vendor/i18n/i18n.js"></script>
+	<script src="assets/js/translator.js"></script>
+	
+	<!-- Script For Custom JS -->
+	<script src="assets/js/deznav-init.js"></script>
+    <script src="assets/js/custom.js"></script>
+	
+	<!-- Script For demo Styleswitcher -->
+	<script src="assets/js/demo.js"></script>
+    <script src="assets/js/styleSwitcher.js"></script>
+
+	<script>
+		document.querySelector(".sweet-confirm").onclick = function () { 
+			Swal.fire({ 
+				title: "Block Profile?", 
+				text: "Are you sure you want to block profile", 
+				type: "warning", showCancelButton: !0, 
+				confirmButtonColor: "#DD6B55", 
+				confirmButtonText: "Block", 
+				closeOnConfirm: !1 
+			})
+		}
+	</script>
+		
+</body>
+</html>

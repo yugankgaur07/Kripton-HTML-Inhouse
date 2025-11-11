@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+	<!-- Start - Title -->
+	<title>Kripton - Crypto Admin Dashboard Bootstrap Template</title>
+	<!-- End - Title -->
+
+	<!-- Start - Meta -->
+    <meta charset="UTF-8">
+	<meta name="author" content="DexignZone">
+	<meta name="robots" content="index, follow">
+	<meta name="format-detection" content="telephone=no">
+	
+	<meta name="keywords" content="Kripton, crypto admin dashboard, cryptocurrency Bootstrap template, crypto analytics, trading dashboard, wallet management, responsive admin template, blockchain admin UI, Bootstrap 5 dashboard, exchange platform, financial dashboard, trading platform UI" >
+	<meta name="description" content="Kripton is a powerful Crypto Admin Dashboard Bootstrap Template designed for trading platforms, wallet management, and crypto analytics. Built with Bootstrap 5, fully responsive and customizable." >
+
+	<meta property="og:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta property="og:description" content="Kripton is a modern Bootstrap-based crypto admin dashboard, perfect for exchanges, trading platforms, and crypto analytics systems." >
+	<meta property="og:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<meta property="og:url" content="https://kripton.dexignzone.com/" >
+	<meta property="og:type" content="website" >
+
+	<meta name="twitter:card" content="summary_large_image" >
+	<meta name="twitter:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta name="twitter:description" content="Build powerful crypto trading platforms and admin dashboards with Kripton – a responsive Bootstrap template for the cryptocurrency industry." >
+	<meta name="twitter:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<!-- End - Meta -->
+
+	<!-- Start -  MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- End -  MOBILE SPECIFIC -->
+	
+    <!-- Start - Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.avif">
+	<!-- End - Favicon -->
+
+	@@include("elements/layout/basic-css.html")
+	
+</head>
+
+<body>
+
+	<!-- Start - Main wrapper -->
+    <div id="main-wrapper">
+
+        @@include("elements/layout/nav-header.html")
+		
+		@@include("elements/layout/chatbox.html")
+		
+		@@include("elements/layout/header.html",{
+			"fileName": "Order",
+		})
+
+		@@include("elements/layout/sidebar.html")
+		
+        <!-- Start - Content Body -->
+        <main class="content-body">
+            <div class="container-fluid">
+                    
+                <!-- Start - Page Title & Breadcrumb -->
+                <div class="page-title">
+                    @@include("elements/layout/breadcrumb.html",{
+                        "fileName": "Order",
+                    })
+                </div>
+                <!-- End - Page Title & Breadcrumb -->
+                
+                <div class="row">
+
+                    <!-- Start - Order Table -->
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="p-1">
+                                <div class="table-responsive check-wrapper">
+                                    <table class="table mb-0 table-bottom-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th class="mw-50">
+                                                    <div class="form-check custom-checkbox">
+														<input type="checkbox" class="form-check-input check-all" required="">
+													</div>
+                                                </th>
+                                                <th class="mw-250">Order</th>
+                                                <th class="mw-120">Date</th>
+                                                <th class="mw-300">Ship To</th>
+                                                <th class="mw-120 text-end">Status</th>
+                                                <th class="mw-120 text-end">Amount</th>
+                                                <th class="no-sort"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+													<div class="form-check custom-checkbox checkbox-success">
+														<input type="checkbox" class="form-check-input check-input" required="">
+													</div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);">#181</a> by Ricky Antony<br>
+													<a href="mailto:ricky@example.com">ricky@example.com</a>
+												</td>
+												<td>20/04/2020</td>
+                                                <td>Ricky Antony, 2392 Main Avenue, Penasauka, New Jersey 02149 Via Flat Rate</td>
+                                                <td class="text-end">
+													<span class="badge text-bg-success badge-sm">Completed<span class="ms-1 fa fa-check"></span></span>
+                                                </td>
+                                                <td class="text-end">$99</td>
+                                                <td class="text-end">
+                                                    <div class="dropdown">
+														<button class="btn btn-sm btn-primary light btn-square" type="button" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+															<i class="fa-solid fa-ellipsis-vertical"></i>
+														</button>
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Completed</a>
+															<a class="dropdown-item" href="javascript:void(0);">Processing</a>
+															<a class="dropdown-item" href="javascript:void(0);">On Hold</a>
+															<a class="dropdown-item" href="javascript:void(0);">Pending</a>
+															<div class="dropdown-divider m-0"></div>
+															<a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check custom-checkbox">
+														<input type="checkbox" class="form-check-input check-input" required="">
+													</div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);">#182</a> by Kin Rossow<br>
+													<a href="mailto:kin@example.com">kin@example.com</a>
+												</td>
+                                                <td>20/04/2020</td>
+                                                <td>Kin Rossow, 1 Hollywood Blvd,Beverly Hills, California 90210 Via Free Shipping</td>
+                                                <td class="text-end"><span class="badge text-bg-primary badge-sm">Processing<span class="ms-1 fa fa-redo"></span></span></td>
+                                                <td class="text-end">$120</td>
+                                                <td class="text-end">
+                                                    <div class="dropdown">
+														<button class="btn btn-sm btn-primary light btn-square" type="button" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+															<i class="fa-solid fa-ellipsis-vertical"></i>
+														</button>
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Completed</a>
+															<a class="dropdown-item" href="javascript:void(0);">Processing</a>
+															<a class="dropdown-item" href="javascript:void(0);">On Hold</a>
+															<a class="dropdown-item" href="javascript:void(0);">Pending</a>
+															<div class="dropdown-divider m-0"></div>
+															<a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+													<div class="form-check custom-checkbox checkbox-secondary">
+														<input type="checkbox" class="form-check-input check-input" required="">
+													</div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);">#183</a> by Merry Diana<br>
+													<a href="mailto:merry@example.com">merry@example.com</a>
+												</td>
+                                                <td>30/04/2020</td>
+                                                <td>Merry Diana, 1 Infinite Loop, Cupertino, California 90210 Via Link Road</td>
+                                                <td class="text-end"><span class="badge text-bg-secondary badge-sm">On Hold<span class="ms-1 fa fa-ban"></span></span></td>
+                                                <td class="text-end">$70</td>
+                                                <td class="text-end">
+                                                    <div class="dropdown">
+														<button class="btn btn-sm btn-primary light btn-square" type="button" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+															<i class="fa-solid fa-ellipsis-vertical"></i>
+														</button>
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Completed</a>
+															<a class="dropdown-item" href="javascript:void(0);">Processing</a>
+															<a class="dropdown-item" href="javascript:void(0);">On Hold</a>
+															<a class="dropdown-item" href="javascript:void(0);">Pending</a>
+															<div class="dropdown-divider m-0"></div>
+															<a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+													<div class="form-check custom-checkbox checkbox-warning">
+														<input type="checkbox" class="form-check-input check-input" required="">
+													</div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);">#184</a> by Bucky Robert<br>
+													<a href="mailto:bucky@example.com">bucky@example.com</a>
+												</td>
+                                                <td>30/04/2020</td>
+                                                <td>Bucky Robert, 1 Infinite Loop, Cupertino, California 90210 Via Free Shipping</td>
+                                                <td class="text-end"><span class="badge text-bg-warning badge-sm">Pending <span class="ms-1 fas fa-stream"></span></span></td>
+                                                <td class="text-end">$92</td>
+                                                <td class="text-end">
+                                                    <div class="dropdown">
+														<button class="btn btn-sm btn-primary light btn-square" type="button" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+															<i class="fa-solid fa-ellipsis-vertical"></i>
+														</button>
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Completed</a>
+															<a class="dropdown-item" href="javascript:void(0);">Processing</a>
+															<a class="dropdown-item" href="javascript:void(0);">On Hold</a>
+															<a class="dropdown-item" href="javascript:void(0);">Pending</a>
+															<div class="dropdown-divider m-0"></div>
+															<a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+													<div class="form-check custom-checkbox checkbox-secondary">
+														<input type="checkbox" class="form-check-input check-input" required="">
+													</div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);">#185</a> by Rocky Zampa<br>
+													<a href="mailto:rocky@example.com">rocky@example.com</a>
+												</td>
+                                                <td>30/04/2020</td>
+                                                <td>Rocky Zampa, 1 Infinite Loop, Cupertino, California 90210 Via Free Road</td>
+                                                <td class="text-end"><span class="badge text-bg-secondary badge-sm">On Hold<span class="ms-1 fa fa-ban"></span></span></td>
+                                                <td class="text-end">$120</td>
+                                                <td class="text-end">
+                                                    <div class="dropdown">
+														<button class="btn btn-sm btn-primary light btn-square" type="button" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+															<i class="fa-solid fa-ellipsis-vertical"></i>
+														</button>
+														<div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Completed</a>
+															<a class="dropdown-item" href="javascript:void(0);">Processing</a>
+															<a class="dropdown-item" href="javascript:void(0);">On Hold</a>
+															<a class="dropdown-item" href="javascript:void(0);">Pending</a>
+															<div class="dropdown-divider m-0"></div>
+															<a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+													<div class="form-check custom-checkbox">
+														<input type="checkbox" class="form-check-input check-input" required="">
+													</div>
+                                                </td>
+                                                <td>
+													<a href="javascript:void(0);">#186</a> by Ricky John<br>
+													<a href="mailto:ricky@example.com">ricky@example.com</a>
+												</td>
+                                                <td>30/04/2020</td>
+                                                <td>Ricky John, 1 Infinite Loop, Cupertino, California 90210 Via Free Shipping</td>
+                                                <td class="text-end"><span class="badge text-bg-primary badge-sm">Processing<span class="ms-1 fa fa-redo"></span></span></td>
+                                                <td class="text-end">$145</td>
+                                                <td class="text-end">
+                                                    <div class="dropdown">
+														<button class="btn btn-sm btn-primary light btn-square" type="button" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+															<i class="fa-solid fa-ellipsis-vertical"></i>
+														</button>
+														<div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Completed</a>
+															<a class="dropdown-item" href="javascript:void(0);">Processing</a>
+															<a class="dropdown-item" href="javascript:void(0);">On Hold</a>
+															<a class="dropdown-item" href="javascript:void(0);">Pending</a>
+															<div class="dropdown-divider m-0"></div>
+															<a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+													<div class="form-check custom-checkbox checkbox-success">
+														<input type="checkbox" class="form-check-input check-input" required="">
+													</div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);">#187</a> by Cristofer Henric<br>
+													<a href="mailto:cristofer@example.com">cristofer@example.com</a>
+                                                </td>
+                                                <td>30/04/2020</td>
+                                                <td>Cristofer Henric, 1 Infinite Loop, Cupertino, California 90210 Via Flat Rate</td>
+                                                <td class="text-end"><span class="badge text-bg-success badge-sm">Completed<span class="ms-1 fa fa-check"></span></span></td>
+                                                <td class="text-end">$55</td>
+                                                <td class="text-end">
+                                                    <div class="dropdown">
+														<button class="btn btn-sm btn-primary light btn-square" type="button" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+															<i class="fa-solid fa-ellipsis-vertical"></i>
+														</button>
+														<div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Completed</a>
+															<a class="dropdown-item" href="javascript:void(0);">Processing</a>
+															<a class="dropdown-item" href="javascript:void(0);">On Hold</a>
+															<a class="dropdown-item" href="javascript:void(0);">Pending</a>
+															<div class="dropdown-divider m-0"></div>
+															<a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+													<div class="form-check custom-checkbox checkbox-secondary">
+														<input type="checkbox" class="form-check-input check-input" required="">
+													</div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);">#188</a> by Brate Lee<br>
+													<a href="mailto:lee@example.com">lee@example.com</a>
+												</td>
+                                                <td>29/04/2020</td>
+                                                <td>Brate Lee, 1 Infinite Loop, Cupertino, California 90210 Via Link Road</td>
+                                                <td class="text-end"><span class="badge text-bg-secondary badge-sm">On Hold<span class="ms-1 fa fa-ban"></span></span></td>
+                                                <td class="text-end">$90</td>
+                                                <td class="text-end">
+                                                    <div class="dropdown">
+														<button class="btn btn-sm btn-primary light btn-square" type="button" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+															<i class="fa-solid fa-ellipsis-vertical"></i>
+														</button>
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Completed</a>
+															<a class="dropdown-item" href="javascript:void(0);">Processing</a>
+															<a class="dropdown-item" href="javascript:void(0);">On Hold</a>
+															<a class="dropdown-item" href="javascript:void(0);">Pending</a>
+															<div class="dropdown-divider m-0"></div>
+															<a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+													<div class="form-check custom-checkbox">
+														<input type="checkbox" class="form-check-input check-input" required="">
+													</div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);">#189</a> by Thomas Stephenson<br>
+													<a href="mailto:Stephenson@example.com">Stephenson@example.com</a>
+                                                </td>
+                                                <td>29/04/2020</td>
+                                                <td>Thomas Stephenson, 116 Ballifeary Road, Bamff Via Flat Rate</td>
+                                                <td class="text-end"><span class="badge text-bg-primary badge-sm">Processing<span class="ms-1 fa fa-redo"></span></span></td>
+                                                <td class="text-end">$52</td>
+                                                <td class="text-end">
+                                                    <div class="dropdown">
+														<button class="btn btn-sm btn-primary light btn-square" type="button" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+															<i class="fa-solid fa-ellipsis-vertical"></i>
+														</button>
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Completed</a>
+															<a class="dropdown-item" href="javascript:void(0);">Processing</a>
+															<a class="dropdown-item" href="javascript:void(0);">On Hold</a>
+															<a class="dropdown-item" href="javascript:void(0);">Pending</a>
+															<div class="dropdown-divider m-0"></div>
+															<a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+													<div class="form-check custom-checkbox checkbox-success">
+														<input type="checkbox" class="form-check-input check-input" required="">
+													</div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);">#190</a> by Evie Singh<br>
+													<a href="mailto:eviewsing@example.com">eviewsing@example.com</a>
+                                                </td>
+                                                <td>29/04/2020</td>
+                                                <td>Evie Singh, 54 Castledore Road, Tunstead Via Flat Rate</td>
+                                                <td class="text-end"><span class="badge text-bg-success badge-sm">Completed<span class="ms-1 fa fa-check"></span></span></td>
+                                                <td class="text-end">$90</td>
+                                                <td class="text-end">
+                                                    <div class="dropdown">
+														<button class="btn btn-sm btn-primary light btn-square" type="button" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+															<i class="fa-solid fa-ellipsis-vertical"></i>
+														</button>
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Completed</a>
+															<a class="dropdown-item" href="javascript:void(0);">Processing</a>
+															<a class="dropdown-item" href="javascript:void(0);">On Hold</a>
+															<a class="dropdown-item" href="javascript:void(0);">Pending</a>
+															<div class="dropdown-divider m-0"></div>
+															<a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+													<div class="form-check custom-checkbox checkbox-success">
+														<input type="checkbox" class="form-check-input check-input" required="">
+													</div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);">#191</a> by David Peters<br>
+													<a href="mailto:peter@example.com">peter@example.com</a>
+												</td>
+                                                <td>29/04/2020</td>
+                                                <td>David Peters, Rhyd Y Groes, Rhosgoch, LL66 0AT Via Link Road</td>
+                                                <td class="text-end"><span class="badge text-bg-success badge-sm">Completed<span class="ms-1 fa fa-check"></span></span></td>
+                                                <td class="text-end">$69</td>
+                                                <td class="text-end">
+                                                    <div class="dropdown">
+														<button class="btn btn-sm btn-primary light btn-square" type="button" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+															<i class="fa-solid fa-ellipsis-vertical"></i>
+														</button>
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Completed</a>
+															<a class="dropdown-item" href="javascript:void(0);">Processing</a>
+															<a class="dropdown-item" href="javascript:void(0);">On Hold</a>
+															<a class="dropdown-item" href="javascript:void(0);">Pending</a>
+															<div class="dropdown-divider m-0"></div>
+															<a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+													<div class="form-check custom-checkbox">
+														<input type="checkbox" class="form-check-input check-input" required="">
+													</div>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);">#192</a> by Jennifer Johnson<br>
+													<a href="mailto:jennifer@example.com">jennifer@example.com</a>
+												</td>
+                                                <td>28/04/2020</td>
+                                                <td>Jennifer Johnson, Rhyd Y Groes, Rhosgoch, LL66 0AT Via Flat Rate</td>
+                                                <td class="text-end"><span class="badge text-bg-primary badge-sm">Processing<span class="ms-1 fa fa-redo"></span></span></td>
+                                                <td class="text-end">$112</td>
+                                                <td class="text-end">
+                                                    <div class="dropdown">
+														<button class="btn btn-sm btn-primary light btn-square" type="button" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+															<i class="fa-solid fa-ellipsis-vertical"></i>
+														</button>
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Completed</a>
+															<a class="dropdown-item" href="javascript:void(0);">Processing</a>
+															<a class="dropdown-item" href="javascript:void(0);">On Hold</a>
+															<a class="dropdown-item" href="javascript:void(0);">Pending</a>
+															<div class="dropdown-divider m-0"></div>
+															<a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End - Order Table -->
+
+                </div>
+            </div>
+			
+        </main>
+        <!-- End - Content Body -->
+
+        @@include("elements/layout/footer.html")
+
+    </div>
+    <!-- End - Main wrapper -->
+
+    @@include("elements/layout/script.html")
+	
+    <!-- Script For Multiple Languages -->
+	<script src="assets/vendor/i18n/i18n.js"></script>
+	<script src="assets/js/translator.js"></script>
+	
+	<!-- Script For Custom JS -->
+	<script src="assets/js/deznav-init.js"></script>
+    <script src="assets/js/custom.js"></script>
+	
+	<!-- Script For demo Styleswitcher -->
+    <script src="assets/js/styleSwitcher.js"></script>
+	<script src="assets/js/demo.js"></script>
+
+</body>
+</html>

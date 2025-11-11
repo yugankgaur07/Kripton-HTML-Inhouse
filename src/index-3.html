@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+	<!-- Start - Title -->
+	<title>Kripton - Crypto Admin Dashboard Bootstrap Template</title>
+	<!-- End - Title -->
+
+	<!-- Start - Meta -->
+    <meta charset="UTF-8">
+	<meta name="author" content="DexignZone">
+	<meta name="robots" content="index, follow">
+	<meta name="format-detection" content="telephone=no">
+	
+	<meta name="keywords" content="Kripton, crypto admin dashboard, cryptocurrency Bootstrap template, crypto analytics, trading dashboard, wallet management, responsive admin template, blockchain admin UI, Bootstrap 5 dashboard, exchange platform, financial dashboard, trading platform UI" >
+	<meta name="description" content="Kripton is a powerful Crypto Admin Dashboard Bootstrap Template designed for trading platforms, wallet management, and crypto analytics. Built with Bootstrap 5, fully responsive and customizable." >
+
+	<meta property="og:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta property="og:description" content="Kripton is a modern Bootstrap-based crypto admin dashboard, perfect for exchanges, trading platforms, and crypto analytics systems." >
+	<meta property="og:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<meta property="og:url" content="https://kripton.dexignzone.com/" >
+	<meta property="og:type" content="website" >
+
+	<meta name="twitter:card" content="summary_large_image" >
+	<meta name="twitter:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta name="twitter:description" content="Build powerful crypto trading platforms and admin dashboards with Kripton – a responsive Bootstrap template for the cryptocurrency industry." >
+	<meta name="twitter:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<!-- End - Meta -->
+
+	<!-- Start -  MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- End -  MOBILE SPECIFIC -->
+	
+    <!-- Start - Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.avif">
+	<!-- End - Favicon -->
+
+	@@include("elements/layout/basic-css.html")
+         
+</head>
+<body>
+
+    <!-- Start - Main wrapper -->
+    <div id="main-wrapper">
+
+		@@include("elements/layout/nav-header.html")
+        
+		@@include("elements/layout/chatbox.html")
+		
+		@@include("elements/layout/header.html",{
+			"fileName": "Dashboard 3",
+		})
+
+		@@include("elements/layout/sidebar.html")
+		
+		<!-- Start - Content body -->
+        <main class="content-body">
+			<div class="container-fluid">
+				<div class="row">
+					
+					<!-- Start - Marquee -->
+					<div class="col-xl-12">
+						<div class="overflow-hidden bg-transparent dz-crypto-scroll shadow-none">
+							<div class="js-conveyor-example">
+								<ul id="crypto-webticker">
+									<li class="ff-poppins">
+										<div class="card rounded-2 overflow-hidden">
+											<div class="py-3 px-4 d-flex align-items-center">
+												<div class="me-4">
+													<p class="mb-2 fs-13 fw-medium"><i class="fa fa-caret-up scale5 me-2 text-success" aria-hidden="true"></i>4%(30 days)</p>
+													<h4 class="fs-26 fw-semibold mb-0">$65,123</h4>
+												</div>
+												<svg width="35" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M28.5 16.5002C28.4986 14.844 27.156 13.5018 25.5003 13.5H16.5002V19.4999H25.5003C27.156 19.4985 28.4986 18.1559 28.5 16.5002Z" fill="#FFAB2D"/>
+													<path d="M16.5002 28.5H25.5003C27.1569 28.5 28.5 27.157 28.5 25.5003C28.5 23.8432 27.1569 22.5001 25.5003 22.5001H16.5002V28.5Z" fill="#FFAB2D"/>
+													<path d="M21 0.00012207C9.4021 0.00012207 9.15527e-05 9.40213 9.15527e-05 21C9.15527e-05 32.5979 9.4021 41.9999 21 41.9999C32.5979 41.9999 41.9999 32.5979 41.9999 21C41.9866 9.40762 32.5924 0.0133972 21 0.00012207ZM31.5002 25.4998C31.4961 28.8122 28.8122 31.4961 25.5003 31.4998V32.9998C25.5003 33.8284 24.8283 34.4999 24.0002 34.4999C23.1716 34.4999 22.5001 33.8284 22.5001 32.9998V31.4998H19.5004V32.9998C19.5004 33.8284 18.8284 34.4999 18.0003 34.4999C17.1717 34.4999 16.5002 33.8284 16.5002 32.9998V31.4998H12.0004C11.1718 31.4998 10.5003 30.8282 10.5003 30.0001C10.5003 29.1716 11.1718 28.5 12.0004 28.5H13.5V13.5H12.0004C11.1718 13.5 10.5003 12.8285 10.5003 11.9999C10.5003 11.1714 11.1718 10.4998 12.0004 10.4998H16.5002V9.00021C16.5002 8.17166 17.1717 7.50012 18.0003 7.50012C18.8288 7.50012 19.5004 8.17166 19.5004 9.00021V10.4998H22.5001V9.00021C22.5001 8.17166 23.1716 7.50012 24.0002 7.50012C24.8287 7.50012 25.5003 8.17166 25.5003 9.00021V10.4998C28.7998 10.4861 31.486 13.1494 31.5002 16.4489C31.5075 18.1962 30.7499 19.8593 29.4265 21C30.7375 22.128 31.4942 23.77 31.5002 25.4998Z" fill="#FFAB2D"/>
+												</svg>
+											</div>
+										</div>
+									</li>
+									<li class="ff-poppins">
+										<div class="card rounded-2 overflow-hidden">
+											<div class="py-3 px-4 d-flex align-items-center">
+												<div class="me-4">
+													<p class="mb-2 fs-13 fw-medium"><i class="fa fa-caret-down scale5 me-2 text-danger" aria-hidden="true"></i>4%(30 days)</p>
+													<h4 class="fs-26 fw-semibold mb-0">$65,123</h4>
+												</div>
+												<svg width="35" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21 0.00012207C9.4021 0.00012207 9.15527e-05 9.40213 9.15527e-05 21C9.15527e-05 32.5979 9.4021 41.9999 21 41.9999C32.5979 41.9999 41.9999 32.5979 41.9999 21C41.9871 9.40762 32.5924 0.0129395 21 0.00012207ZM12.3281 19.4999H18.328C19.1566 19.4999 19.8281 20.1715 19.8281 21C19.8281 21.8286 19.1566 22.5001 18.328 22.5001H12.3281C11.4996 22.5001 10.828 21.8286 10.828 21C10.828 20.1715 11.5 19.4999 12.3281 19.4999ZM31.0841 17.3658L29.28 26.392C28.8552 28.4872 27.0155 29.9951 24.8777 30.0001H12.3281C11.4996 30.0001 10.828 29.3286 10.828 28.5C10.828 27.6715 11.5 26.9999 12.3281 26.9999H24.8777C25.5868 26.9981 26.197 26.4982 26.338 25.8033L28.1425 16.7772C28.3027 15.9715 27.7799 15.1887 26.9747 15.0285C26.8791 15.0097 26.782 15.0001 26.685 15.0001H15.3283C14.4998 15.0001 13.8282 14.3286 13.8282 13.5C13.8282 12.6715 14.4998 11.9999 15.3283 11.9999H26.685C29.1633 12.0009 31.1715 14.01 31.1711 16.4883C31.1711 16.7827 31.1418 17.0765 31.0841 17.3658Z" fill="#3693FF"/>
+												</svg>
+											</div>
+										</div>
+									</li>
+									<li class="ff-poppins">
+										<div class="card rounded-2 overflow-hidden">
+											<div class="py-3 px-4 d-flex align-items-center">
+												<div class="me-4">
+													<p class="mb-2 fs-13 fw-medium"><i class="fa fa-caret-down scale5 me-2 text-danger" aria-hidden="true"></i>4%(30 days)</p>
+													<h4 class="fs-26 fw-semibold mb-0">$65,123</h4>
+												</div>
+												<svg width="35" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21 0.00012207C9.4021 0.00012207 9.15527e-05 9.40213 9.15527e-05 21C9.15527e-05 32.5979 9.4021 41.9999 21 41.9999C32.5979 41.9999 41.9999 32.5979 41.9999 21C41.9871 9.40762 32.5924 0.0129395 21 0.00012207ZM26.9999 30.0001H22.5001V34.4999C22.5001 35.3285 21.8286 36 21 36C20.1714 36 19.4999 35.3285 19.4999 34.4999V30.0001H15.0001C14.1715 30.0006 13.4995 29.3295 13.4991 28.5009C13.4991 28.1599 13.6149 27.8289 13.8282 27.5625L23.8784 15.0001H15.0001C14.1715 15.0001 13.5 14.3286 13.5 13.5C13.5 12.6715 14.1715 11.9999 15.0001 11.9999H19.4999V7.50012C19.4999 6.67157 20.1714 6.00003 21 6.00003C21.8286 6.00003 22.5001 6.67203 22.5001 7.50012V11.9999H26.9999C27.8294 12.0013 28.5005 12.6747 28.4995 13.5037C28.4991 13.8429 28.3833 14.1725 28.1718 14.4375L18.1216 26.9999H26.9999C27.8285 26.9999 28.5 27.6719 28.5 28.5C28.5 29.3286 27.8285 30.0001 26.9999 30.0001Z" fill="#5B5D81"/>
+												</svg>
+											</div>
+										</div>
+									</li>
+									<li class="ff-poppins">
+										<div class="card rounded-2 overflow-hidden">
+											<div class="py-3 px-4 d-flex align-items-center">
+												<div class="me-4">
+													<p class="mb-2 fs-13 fw-medium"><i class="fa fa-caret-up scale5 me-2 text-success" aria-hidden="true"></i>4%(30 days)</p>
+													<h4 class="fs-26 fw-semibold mb-0">$65,123</h4>
+												</div>
+												<svg width="35" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.5566 23.893C21.1991 24.0359 20.8009 24.0359 20.4434 23.893L16.6064 22.3582L21 31.1454L25.3936 22.3582L21.5566 23.893Z" fill="#AC4CBC"/>
+													<path d="M21 20.8846L26.2771 18.7739L21 10.3304L15.7229 18.7739L21 20.8846Z" fill="#AC4CBC"/>
+													<path d="M21 0.00012207C9.40213 0.00012207 0.00012207 9.40213 0.00012207 21C0.00012207 32.5979 9.40213 41.9999 21 41.9999C32.5979 41.9999 41.9999 32.5979 41.9999 21C41.9871 9.40762 32.5924 0.0129395 21 0.00012207ZM29.8417 20.171L22.3417 35.171C21.9714 35.9121 21.0701 36.2124 20.3294 35.8421C20.0387 35.697 19.8034 35.4617 19.6583 35.171L12.1583 20.171C11.9253 19.7032 11.9519 19.1479 12.2284 18.7043L19.7284 6.70453C20.2269 6.00232 21.1996 5.83661 21.9018 6.33511C22.0451 6.43674 22.1701 6.56125 22.2717 6.70453L29.7712 18.7043C30.0482 19.1479 30.0747 19.7032 29.8417 20.171Z" fill="#AC4CBC"/>
+												</svg>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- End - Marquee -->
+					
+					<!-- Start - Buy Crypto -->
+					<div class="col-xl-6">
+						<div class="card">
+							<div class="card-header border-bottom">
+							  <h4 class="mb-0 card-title">Buy</h4>
+							  <p class="mb-0">0.03253643</p>
+							</div>
+							<div class="card-body">
+								<div>
+									<form class="form-wrapper trade-form">
+										<div class="form-group d-flex align-items-center mb-3">
+											<label class="col-sm-3 col-form-label fs-16">Balance:</label>
+											<a class="text-primary mb-0 fs-14">0.00000000 BTC</a>
+										</div>
+										<div class="input-group input-group-lg mb-3">
+											<label class="col-sm-3 col-form-label fs-16">Amount:</label>
+											<input class="form-control rounded-start" type="number" placeholder="1.00000000">
+											<span class="input-group-text bg-primary text-white">ETH</span>
+										</div>	
+										<div class="input-group mb-3 input-group-lg mb-3">
+											<label class="col-sm-3 col-form-label fs-16">Price:</label>
+											<input class="form-control rounded-start" type="number" placeholder="0.03240000">
+											<span class="input-group-text bg-primary text-white">BTC</span>
+										</div>	
+										<div class="input-group mb-3 input-group-lg mb-3">
+											<label class="col-sm-3 col-form-label fs-16">Total:</label>
+											<input class="form-control rounded-start" type="number" placeholder="0.03240000">
+											<span class="input-group-text bg-primary text-white">BTC</span>
+										</div>
+										<div class="input-group mb-3 input-group-lg mb-3">
+											<label class="col-sm-3 col-form-label fs-16">Fee (0.2%):</label>
+											<input class="form-control rounded-start" type="number" placeholder="0.00006480">
+											<span class="input-group-text bg-primary text-white">BTC</span>
+										</div>
+										<div class="input-group mb-3 input-group-lg mb-3">
+											<label class="col-sm-3 col-form-label fs-16">Total + Fee:</label>
+											<input class="form-control rounded-start" type="number" placeholder="0.03246480">
+											<span class="input-group-text bg-primary text-white">BTC</span>
+										</div>
+										<div>
+											<a href="javascript:void(0);" class="btn d-block btn-lg btn-success">
+												BUY
+												<svg class="ms-4 scale3" width="16" height="16" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M16.9638 11.5104L16.9721 14.9391L3.78954 1.7565C3.22815 1.19511 2.31799 1.19511 1.75661 1.7565C1.19522 2.31789 1.19522 3.22805 1.75661 3.78943L14.9392 16.972L11.5105 16.9637L11.5105 16.9637C10.7166 16.9619 10.0715 17.6039 10.0696 18.3978C10.0677 19.1919 10.7099 19.8369 11.5036 19.8388L11.5049 19.3388L11.5036 19.8388L18.3976 19.8554L18.4146 19.8555L18.4159 19.8555C18.418 19.8555 18.42 19.8555 18.422 19.8555C19.2131 19.8533 19.8528 19.2114 19.8555 18.4231C19.8556 18.4196 19.8556 18.4158 19.8556 18.4117L19.8389 11.5035L19.8389 11.5035C19.8369 10.7097 19.1919 10.0676 18.3979 10.0695C17.604 10.0713 16.9619 10.7164 16.9638 11.5103L16.9638 11.5104Z" fill="white" stroke="white"></path>
+												</svg>
+											</a>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End - Buy Crypto -->
+
+					<!-- Start - Sell Crypto -->
+					<div class="col-xl-6">
+						<div class="card">
+							<div class="card-header border-bottom">
+							  <h4 class="mb-0 card-title">Sell</h4>
+							  <p class="mb-0">0.03253643</p>
+							</div>
+							<div class="card-body">
+								<div>
+									<form class="form-wrapper trade-form">
+										<div class="form-group d-flex align-items-center mb-3">
+											<label class="col-sm-3 col-form-label fs-16">Balance:</label>
+											<a class="text-primary mb-0 fs-14">0.00000000 ETH</a>
+										</div>
+										<div class="input-group input-group-lg mb-3">
+											<label class="col-sm-3 col-form-label fs-16">Amount:</label>
+											<input class="form-control rounded-start" type="number" placeholder="1.00000000">
+											<span class="input-group-text bg-primary text-white">ETH</span>
+										</div>	
+										<div class="input-group mb-3 input-group-lg mb-3">
+											<label class="col-sm-3 col-form-label fs-16">Price:</label>
+											<input class="form-control rounded-start" type="number" placeholder="0.03240000">
+											<span class="input-group-text bg-primary text-white">BTC</span>
+										</div>	
+										<div class="input-group mb-3 input-group-lg mb-3">
+											<label class="col-sm-3 col-form-label fs-16">Total:</label>
+											<input class="form-control rounded-start" type="number" placeholder="0.03240000">
+											<span class="input-group-text bg-primary text-white">BTC</span>
+										</div>
+										<div class="input-group mb-3 input-group-lg mb-3">
+											<label class="col-sm-3 col-form-label fs-16">Fee (0.2%):</label>
+											<input class="form-control rounded-start" type="number" placeholder="0.00006480">
+											<span class="input-group-text bg-primary text-white">BTC</span>
+										</div>
+										<div class="input-group mb-3 input-group-lg mb-3">
+											<label class="col-sm-3 col-form-label fs-16">Total + Fee:</label>
+											<input class="form-control rounded-start" type="number" placeholder="0.03246480">
+											<span class="input-group-text bg-primary text-white">BTC</span>
+										</div>
+										<div>
+											<a href="javascript:void(0);" class="btn d-block btn-lg btn-danger">
+												Sell
+												<svg class="ms-4 scale5" width="16" height="16" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.35182 13.4965L5.35182 13.4965L5.33512 6.58823C5.33508 6.5844 5.3351 6.58084 5.33514 6.57759M5.35182 13.4965L5.83514 6.58306L5.33514 6.58221C5.33517 6.56908 5.33572 6.55882 5.33597 6.5545L5.33606 6.55298C5.33585 6.55628 5.33533 6.56514 5.33516 6.57648C5.33515 6.57684 5.33514 6.57721 5.33514 6.57759M5.35182 13.4965C5.35375 14.2903 5.99878 14.9324 6.79278 14.9305C7.58669 14.9287 8.22874 14.2836 8.22686 13.4897L8.22686 13.4896L8.21853 10.0609M5.35182 13.4965L8.21853 10.0609M5.33514 6.57759C5.33752 5.789 5.97736 5.14667 6.76872 5.14454C6.77041 5.14452 6.77217 5.14451 6.77397 5.14451L6.77603 5.1445L6.79319 5.14456L13.687 5.16121L13.6858 5.66121L13.687 5.16121C14.4807 5.16314 15.123 5.80809 15.1211 6.6022C15.1192 7.3961 14.4741 8.03814 13.6802 8.03626L13.6802 8.03626L10.2515 8.02798L23.4341 21.2106C23.9955 21.772 23.9955 22.6821 23.4341 23.2435C22.8727 23.8049 21.9625 23.8049 21.4011 23.2435L8.21853 10.0609M5.33514 6.57759C5.33513 6.57959 5.33514 6.58159 5.33514 6.5836L8.21853 10.0609M6.77407 5.14454C6.77472 5.14454 6.77537 5.14454 6.77603 5.14454L6.77407 5.14454Z" fill="white" stroke="white"></path>
+												</svg>
+											</a>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End - Sell Crypto -->
+
+					<!-- Start - Crypto Chart -->
+					<div class="col-xl-8">
+						<div class="card">
+							<div class="card-header border-bottom">
+								<h4 class="mb-0 card-title">ETH/BTC</h4>
+							</div>
+							<div class="card-body">
+								<div id="coin-chart"></div>
+							</div>
+						</div>
+					</div>
+					<!-- End - Crypto Chart -->
+
+					<!-- Start - Sell Order -->
+					<div class="col-xl-4">
+						<div class="card">
+							<div class="card-header border-0 pb-0">
+								<h4 class="mb-0 card-title">Sell Order</h4>
+								<div class="dropdown ms-auto">
+									<div class="btn-link" data-bs-toggle="dropdown">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
+									</div>
+									<div class="dropdown-menu dropdown-menu-right">
+										<a class="dropdown-item" href="#">Edit</a>
+										<a class="dropdown-item" href="#">Delete</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table text-center table-borderless sell-table">
+										<thead>
+											<tr>
+												<th class="text-start">Price</th>
+												<th class="text-center">Amount</th>
+												<th class="text-end">Total</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="text-start">82.3</td>
+												<td>0.15</td>
+												<td class="text-end">$134,12</td>
+											</tr>
+											<tr>
+												<td class="text-start">83.9</td>
+												<td>0.18</td>
+												<td class="text-end">$237,31</td>
+											</tr>
+											<tr>
+												<td class="text-start">84.2</td>
+												<td>0.25</td>
+												<td class="text-end">$252,58</td>
+											</tr>
+											<tr>
+												<td class="text-start">86.2</td>
+												<td>0.35</td>
+												<td class="text-end">$126,26</td>
+											</tr>
+											<tr>
+												<td class="text-start">91.6</td>
+												<td>0.75</td>
+												<td class="text-end">$46,92</td>
+											</tr>
+											<tr>
+												<td class="text-start">92.6</td>
+												<td>0.21</td>
+												<td class="text-end">$123,27</td>
+											</tr>
+											<tr>
+												<td class="text-start">93.9</td>
+												<td>0.55</td>
+												<td class="text-end">$212,56</td>
+											</tr>
+											<tr>
+												<td class="text-start">94.2</td>
+												<td>0.18</td>
+												<td class="text-end">$129,26</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End - Sell Order -->
+
+					<!-- Start - Trades Chart -->
+					<div class="col-xl-12">
+						<div class="card">
+							<div class="card-header pb-0">
+								<div class="mt-3 mt-sm-0">
+									<ul class="nav nav-tabs">
+										<li class="nav-item">
+											<a class="nav-link active fs-16" data-bs-toggle="tab" href="#navpills-1">MY TRADES</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link fs-16" data-bs-toggle="tab" href="#navpills-2">MY OFFERS</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link fs-16" data-bs-toggle="tab" href="#navpills-3">STOP-LIMIT</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="tab-content">
+									<div id="navpills-1" class="tab-pane active">	
+										<div class="table-responsive">
+										  	<table class="table table-bordered trade-tbl table-responsive-lg">
+											  	<thead>
+													<tr>
+														<th scope="col">Date - Time</th>
+														<th scope="col">Asset</th>
+														<th scope="col">Base</th>
+														<th scope="col">Cr. Amount</th>
+														<th scope="col">Price</th>
+														<th scope="col">Buy/Sell</th>
+													</tr>
+											  	</thead>
+											 	<tbody>
+													<tr>
+														<td>Thu Oct 17 2019 11:03:53</td>
+														<td>BTC</td>
+														<td>USD</td>
+														<td>0.0099&nbsp;BTC</td>
+														<td>7500.000000</td>
+														<td class="text-success">Buy</td>
+													</tr>
+													<tr>
+														<td>Thu Oct 17 2019 11:03:53</td>
+														<td>BTC</td>
+														<td>USD</td>
+														<td>6874.73481179324&nbsp;USD</td>
+														<td>7016.438810</td>
+														<td class="text-danger">Sell</td>
+													</tr>
+													<tr>
+														<td>Tue Oct 15 2019 10:08:36</td>
+														<td>ETH</td>
+														<td>USD</td>
+														<td>0.994504&nbsp;USD</td>
+														<td>172.000000</td>
+														<td class="text-danger">Sell</td>
+													</tr>
+													<tr>
+														<td>Tue Oct 15 2019 06:38:03</td>
+														<td>BTC</td>
+														<td>USD</td>
+														<td>0.08428&nbsp;USD</td>
+														<td>172.000000</td>
+														<td class="text-danger">Sell</td>
+													</tr>
+													<tr class="filter buy">
+														<td>Tue Oct 15 2019 06:38:03</td>
+														<td>BTC</td>
+														<td>USD</td>
+														<td>0.0005&nbsp;BTC</td>
+														<td>172.000000</td>
+														<td class="text-success">Buy</td>
+													</tr>
+													<tr>
+														<td>Mon Oct 14 2019 14:39:54</td>
+														<td>BTC</td>
+														<td>USD</td>
+														<td>28.13926219202&nbsp;USD</td>
+														<td>7556.192855</td>
+														<td class="text-danger">Sell</td>
+													</tr>
+													<tr>
+														<td>Mon Oct 14 2019 14:37:09</td>
+														<td>BTC</td>
+														<td>USD</td>
+														<td>44.90991599955&nbsp;USD</td>
+														<td>8039.727175</td>
+														<td class="text-danger">Sell</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div id="navpills-2" class="tab-pane">
+										<div class="table-responsive">
+										  <table class="table table-bordered trade-tbl table-responsive-lg">
+												<thead>
+													<tr>
+														<th scope="col">Time</th>
+														<th scope="col">Offer Id</th>
+														<th scope="col">Amount</th>
+														<th scope="col">Price</th>
+														<th scope="col">Total Value</th>
+														<th scope="col">Buy/Sell</th>
+														<th scope="col">Edit</th>
+														<th scope="col">Delete</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Wed Oct 16 2019 09:56:03</td>
+														<td>14374</td>
+														<td>0.1</td>
+														<td>8500</td>
+														<td>850</td>
+														<td class="text-danger">Sell</td>
+														<td>
+															<button class="btn btn-info btn-sm">Modify</button>
+														</td>
+														<td>
+															<button class="btn btn-danger btn-sm">Delete</button>
+														</td>
+													</tr>
+													<tr>
+														<td>Wed Oct 16 2019 09:48:47</td>
+														<td>14366</td>
+														<td>0.01</td>
+														<td>6500</td>
+														<td>65</td>
+														<td class="text-success">Buy</td>
+														<td>
+															<button class="btn btn-info btn-sm">Modify</button>
+														</td>
+														<td>
+															<button class="btn btn-danger btn-sm">Delete</button>
+														</td>
+													</tr>
+													<tr>
+														<td>Wed Oct 16 2019 08:11:23</td>
+														<td>14263</td>
+														<td>0.0001</td>
+														<td>7500</td>
+														<td>0.75</td>
+														<td class="text-success">Buy</td>
+														<td>
+															<button class="btn btn-info btn-sm">Modify</button>
+														</td>
+														<td>
+															<button class="btn btn-danger btn-sm">Delete</button>
+														</td>
+													</tr>
+													<tr>
+														<td>Tue Oct 15 2019 06:38:03</td>
+														<td>12714</td>
+														<td>0.0009</td>
+														<td>7000</td>
+														<td>6.3</td>
+														<td class="text-success">Buy</td>
+														<td>
+															<button class="btn btn-info btn-sm">Modify</button>
+														</td>
+														<td>
+															<button class="btn btn-danger btn-sm">Delete</button>
+														</td>
+													</tr>
+													<tr>
+														<td>Mon Oct 14 2019 14:39:54</td>
+														<td>11758</td>
+														<td>0.001</td>
+														<td>172</td>
+														<td>0.17200000000000001</td>
+														<td class="text-danger">Sell</td>
+														<td>
+															<button class="btn btn-info btn-sm">Modify</button>
+														</td>
+														<td>
+															<button class="btn btn-danger btn-sm">Delete</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div id="navpills-3" class="tab-pane">
+										<div class="table-responsive">
+										  <table class="table table-bordered trade-tbl table-responsive-lg">
+												<thead>
+													<tr>
+														<th scope="col">Time</th>
+														<th scope="col">Offer Id</th>
+														<th scope="col">Amount</th>
+														<th scope="col">Stop-limit Price</th>
+														<th scope="col">Trigger Price</th>
+														<th scope="col">Buy/Sell</th>
+														<th scope="col">Edit</th>
+														<th scope="col">Delete</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Aug 28, 2019, 3:49:55 PM</td>
+														<td>566</td>
+														<td>1</td>
+														<td>80</td>
+														<td>90</td>
+														<td class="text-danger">Sell</td>
+														<td>
+															<button class="btn btn-info btn-sm">Modify</button>
+														</td>
+														<td>
+															<button class="btn btn-danger btn-sm">Delete</button>
+														</td>
+													</tr>
+													<tr>
+														<td>Aug 28, 2019, 3:49:55 PM</td>
+														<td>566</td>
+														<td>1</td>
+														<td>80</td>
+														<td>90</td>
+														<td class="text-danger">Sell</td>
+														<td>
+															<button class="btn btn-info btn-sm">Modify</button>
+														</td>
+														<td>
+															<button class="btn btn-danger btn-sm">Delete</button>
+														</td>
+													</tr>
+													<tr>
+														<td>Aug 28, 2019, 3:49:55 PM</td>
+														<td>566</td>
+														<td>1</td>
+														<td>80</td>
+														<td>90</td>
+														<td class="text-danger">Sell</td>
+														<td>
+															<button class="btn btn-info btn-sm">Modify</button>
+														</td>
+														<td>
+															<button class="btn btn-danger btn-sm">Delete</button>
+														</td>
+													</tr>
+													<tr>
+														<td>Aug 28, 2019, 3:49:55 PM</td>
+														<td>566</td>
+														<td>1</td>
+														<td>80</td>
+														<td>90</td>
+														<td class="text-danger">Sell</td>
+														<td>
+															<button class="btn btn-info btn-sm">Modify</button>
+														</td>
+														<td>
+															<button class="btn btn-danger btn-sm">Delete</button>
+														</td>
+													</tr>
+													<tr>
+														<td>Aug 28, 2019, 3:49:55 PM</td>
+														<td>566</td>
+														<td>1</td>
+														<td>80</td>
+														<td>90</td>
+														<td class="text-danger">Sell</td>
+														<td>
+															<button class="btn btn-info btn-sm">Modify</button>
+														</td>
+														<td>
+															<button class="btn btn-danger btn-sm">Delete</button>
+														</td>
+													</tr>
+													<tr>
+														<td>Aug 28, 2019, 3:49:55 PM</td>
+														<td>566</td>
+														<td>1</td>
+														<td>80</td>
+														<td>90</td>
+														<td class="text-danger">Sell</td>
+														<td>
+															<button class="btn btn-info btn-sm">Modify</button>
+														</td>
+														<td>
+															<button class="btn btn-danger btn-sm">Delete</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>																	
+							</div>
+						</div>
+					</div>
+					<!-- End - Trades Chart -->
+
+				</div>
+            </div>
+        </main>
+        <!-- End - Content body -->
+
+        @@include("elements/layout/footer.html")
+
+	</div>
+    <!-- End - Main wrapper -->
+
+	@@include("elements/layout/script.html")
+
+	<!-- Script For Webticker -->
+	<script src="assets/vendor/webticker/jquery.webticker.min.js"></script>
+
+	<!-- Script For Apex Chart -->
+	<script src="assets/vendor/apexchart/apexchart.js"></script>
+	
+	<!-- Script For Dashboard 3 -->
+	<script src="assets/js/dashboard/dashboard-3.js"></script>
+	
+	<!-- Script For Multiple Languages -->
+	<script src="assets/vendor/i18n/i18n.js"></script>
+    <script src="assets/js/translator.js"></script>
+
+	<!-- Script For Custom JS -->
+	<script src="assets/js/deznav-init.js"></script>
+    <script src="assets/js/custom.js"></script>
+	
+	<!-- Script For demo Styleswitcher -->
+	<script src="assets/js/demo.js"></script>
+    <script src="assets/js/styleSwitcher.js"></script>
+	<!-- End - Page Scripts -->
+	
+</body>
+</html>

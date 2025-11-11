@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<base href="../">
+
+	<!-- Start - Title -->
+	<title>Kripton - Crypto Admin Dashboard Bootstrap Template</title>
+	<!-- End - Title -->
+
+	<!-- Start - Meta -->
+    <meta charset="UTF-8">
+	<meta name="author" content="DexignZone">
+	<meta name="robots" content="index, follow">
+	<meta name="format-detection" content="telephone=no">
+	
+	<meta name="keywords" content="Kripton, crypto admin dashboard, cryptocurrency Bootstrap template, crypto analytics, trading dashboard, wallet management, responsive admin template, blockchain admin UI, Bootstrap 5 dashboard, exchange platform, financial dashboard, trading platform UI" >
+	<meta name="description" content="Kripton is a powerful Crypto Admin Dashboard Bootstrap Template designed for trading platforms, wallet management, and crypto analytics. Built with Bootstrap 5, fully responsive and customizable." >
+
+	<meta property="og:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta property="og:description" content="Kripton is a modern Bootstrap-based crypto admin dashboard, perfect for exchanges, trading platforms, and crypto analytics systems." >
+	<meta property="og:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<meta property="og:url" content="https://kripton.dexignzone.com/" >
+	<meta property="og:type" content="website" >
+
+	<meta name="twitter:card" content="summary_large_image" >
+	<meta name="twitter:title" content="Kripton – Crypto Admin Dashboard Bootstrap Template | DexignZone" >
+	<meta name="twitter:description" content="Build powerful crypto trading platforms and admin dashboards with Kripton – a responsive Bootstrap template for the cryptocurrency industry." >
+	<meta name="twitter:image" content="https://kripton.dexignzone.com/social-image.avif" >
+	<!-- End - Meta -->
+
+	<!-- Start -  MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- End -  MOBILE SPECIFIC -->
+	
+    <!-- Start - Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.avif">
+	<!-- End - Favicon -->
+
+	@@include("../elements/layout/basic-css.html")
+         
+</head>
+
+<body>
+
+	<!-- Start - Main Wrapper -->
+	<div id="main-wrapper">
+
+		@@include("../elements/layout/nav-header.html")
+        
+		@@include("../elements/layout/chatbox.html")
+		
+		@@include("../elements/layout/header.html",{
+			"fileName": "Blog Category",
+		})
+
+		@@include("../elements/layout/sidebar.html")
+
+		<!-- Start - Content Body -->
+        <main class="content-body">
+			<div class="container-fluid">
+				
+				<!-- Start - Page Title & Breadcrumb -->
+				<div class="page-title">
+					@@include("../elements/layout/breadcrumb.html",{
+						"fileName": "Blog Category",
+					})
+				</div>
+				<!-- End - Page Title & Breadcrumb -->
+				
+				<div class="row">
+					
+					<!-- Start - Add Blog Category -->
+					<div class="col-xl-4">
+						<div class="card card-collapse">
+							<div class="card-header">
+								<h4 class="card-title">Add Blog Category</h4>
+								<a class="collapse-indicator" data-bs-toggle="collapse" href="#collapseFilter" role="button" aria-expanded="false" aria-controls="collapseFilter">
+									<i class="fa fa-angle-down"></i>
+								</a>
+							</div>
+							<div class="collapsed collapse show" id="collapseFilter">
+								<div class="card-body">
+									<div class="mb-3">
+										<label class="form-label">Name</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="mb-3">
+										<label class="form-label">Slug</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="mb-3">
+										<label for="exampleFormControlTextarea1" class="form-label">Type Message</label>
+										<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+									</div>
+									<div class="clearfix">
+										<button type="button" class="btn btn-primary">Save</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Start - Add Blog Category -->
+					
+					<!-- Start - Blog Category -->
+					<div class="col-xl-8">
+						<div class="card card-collapse">
+							<div class="card-header">
+								<h4 class="card-title"><i class="fa-solid fa-file-lines me-1 text-primary"></i>Blog Category</h4>
+								<a class="collapse-indicator" data-bs-toggle="collapse" href="#collapseContactList" role="button" aria-expanded="false" aria-controls="collapseContactList">
+									<i class="fa fa-angle-down"></i>
+								</a>
+							</div>
+							<div class="collapsed collapse show" id="collapseContactList">
+								<div class="card-body ">
+									<div class="table-responsive">
+										<table class="table table-bordered table-striped verticle-middle table-responsive-sm">
+											<thead>
+												<tr>
+													<th scope="col" class="mw-80">S.No</th>
+													<th scope="col" class="mw-150">Name</th>
+													<th scope="col" class="mw-250 text-end">Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>Beauty</td>
+													<td class="text-end">
+														<a href="javascript:void(0);">Edit</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-success">Up</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-warning">Down</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-danger">Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>Fashion</td>
+													<td class="text-end">
+														<a href="javascript:void(0);">Edit</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-success">Up</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-warning">Down</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-danger">Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>Lifestyle</td>
+													<td class="text-end">
+														<a href="javascript:void(0);">Edit</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-success">Up</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-warning">Down</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-danger">Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>Food</td>
+													<td class="text-end">
+														<a href="javascript:void(0);">Edit</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-success">Up</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-warning">Down</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-danger">Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>Beauty</td>
+													<td class="text-end">
+														<a href="javascript:void(0);">Edit</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-success">Up</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-warning">Down</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-danger">Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td>6</td>
+													<td>Fashion</td>
+													<td class="text-end">
+														<a href="javascript:void(0);">Edit</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-success">Up</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-warning">Down</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-danger">Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td>7</td>
+													<td>Lifestyle</td>
+													<td class="text-end">
+														<a href="javascript:void(0);">Edit</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-success">Up</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-warning">Down</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-danger">Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td>8</td>
+													<td>Food</td>
+													<td class="text-end">
+														<a href="javascript:void(0);">Edit</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-success">Up</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-warning">Down</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-danger">Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td>9</td>
+													<td>Lifestyle</td>
+													<td class="text-end">
+														<a href="javascript:void(0);">Edit</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-success">Up</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-warning">Down</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-danger">Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td>10</td>
+													<td>Food</td>
+													<td class="text-end">
+														<a href="javascript:void(0);">Edit</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-success">Up</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-warning">Down</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-danger">Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td>11</td>
+													<td>Fashion</td>
+													<td class="text-end">
+														<a href="javascript:void(0);">Edit</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-success">Up</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-warning">Down</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-danger">Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td>12</td>
+													<td>Lifestyle</td>
+													<td class="text-end">
+														<a href="javascript:void(0);">Edit</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-success">Up</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-warning">Down</a>
+														<span class="opacity-50 mx-1">|</span>
+														<a href="javascript:void(0);" class="text-danger">Delete</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End - Blog Category -->
+					
+				</div>
+			</div>
+			
+		</main>
+		<!-- End - Content Body -->
+
+		@@include("../elements/layout/footer.html")
+
+
+	</div>
+	<!-- End - Main Wrapper -->
+
+    @@include("../elements/layout/script.html")
+	
+	<!-- Script For Multiple Languages -->
+	<script src="assets/vendor/i18n/i18n.js"></script>
+	<script src="assets/js/translator.js"></script>
+	
+	<!-- Script For Custom JS -->
+	<script src="assets/js/deznav-init.js"></script>
+    <script src="assets/js/custom.js"></script>
+	
+	<!-- Script For demo Styleswitcher -->
+	<script src="assets/js/demo.js"></script>
+    <script src="assets/js/styleSwitcher.js"></script>
+
+</body>
+</html>
