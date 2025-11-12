@@ -645,28 +645,31 @@
 				}
 			  }
 			},
-			 responsive: [{
-				breakpoint: 575,
-				options: {
-					plotOptions: {
-					  bar: {
-						columnWidth: '40%',
-						
-					  },
-					},
-					chart:{
-						height:250,
-					},
-					xaxis: {
-				
-					  labels: {
-					   style: {
-						  fontSize: '10px',
-						},
-					  },
-					},
-				}
-			 }]
+			responsive: [
+            {
+                breakpoint: 991, // Tablets
+                options: {
+                    chart: { height: 260 },
+                    plotOptions: { bar: { columnWidth: '45%' } },
+                    xaxis: { labels: { rotate: -30, fontSize: '11px' } },
+                }
+            },
+            {
+                breakpoint: 575, // Mobiles
+                options: {
+                    chart: { height: 220 },
+                    plotOptions: { bar: { columnWidth: '35%' } },
+                    xaxis: {
+                        labels: {
+                            rotate: -90,
+                            fontSize: '9px',
+                            style: { fontWeight: 500 }
+                        }
+                    },
+                    grid: { padding: { left: 0, right: 0 } }
+                }
+            }
+        ]
 			};
 
 			var chartBarRunningObject = new ApexCharts(document.querySelector("#chartBarRunning"), chartBarRunningOptions);
@@ -712,6 +715,7 @@
 			},
 			
 			resize:function(){
+				chartBarRunning();
 			}
 		}
 	

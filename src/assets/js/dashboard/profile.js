@@ -24,11 +24,12 @@ var dzProfile = function(){
 								fontSize: '24px',
 								fontWeight:'600',
 								offsetY: -16,
+								color:' var(--bs-heading-color)',
 							},
 							total: {
 								show: true,
 								fontSize: '14px',
-								color:'#888888',
+								color:' var(--bs-body-color)',
 								fontWeight:'500',
 								label: 'Total',
 								
@@ -79,7 +80,7 @@ var dzProfile = function(){
 			series: [17, 8, 8, 17, 17, 8, 25],
 			chart: {
 				type: 'donut',
-				width: 280,
+				width: 320,
 			},
 			plotOptions: {
 				pie: {
@@ -96,11 +97,12 @@ var dzProfile = function(){
 								fontSize: '24px',
 								fontWeight:'600',
 								offsetY: -16,
+								color:' var(--bs-heading-color)',
 							},
 							total: {
 								show: true,
 								fontSize: '14px',
-								color:'#888888',
+								color:' var(--bs-body-color)',
 								fontWeight:'500',
 								label: 'Total',
 								
@@ -219,7 +221,7 @@ var dzProfile = function(){
 				colors: ['transparent']
 			},
 			grid: {
-				borderColor: 'var(--border-light)',
+				borderColor: 'var(--bs-border-color)',
 			},
 			xaxis: {
 				categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
@@ -409,7 +411,7 @@ var dzProfile = function(){
 				colors: ['transparent']
 			},
 			grid: {
-				borderColor: 'var(--border-light)',
+				borderColor: 'var(--bs-border-color)',
 			},
 			xaxis: {
 				categories: ['Jan', 'Feb', 'Mar','Apr','May','Jun','Jul','Aug', 'Sep', 'Oct','Nov','Dec'],
@@ -449,7 +451,7 @@ var dzProfile = function(){
 				opacity: 1,
 				colors:[
 					'var(--bs-primary)',
-					'var(--dark)'
+					'var(--bs-dark)'
 				],
 			},
 			tooltip: {
@@ -525,7 +527,7 @@ var dzProfile = function(){
 					data: [90, 120, 120, 100, 100, 90]
 				},
 				{
-					name: 'Comple',
+					name: 'Complete',
 					data: [50, 75, 75, 55, 55, 70]
 				}
 			],
@@ -553,7 +555,7 @@ var dzProfile = function(){
 			grid:{
 				show: true,
 				strokeDashArray: 3,
-				borderColor: 'var(--border-light)',
+				borderColor: 'var(--bs-border-color)',
 			},
 			yaxis: {
 				min: 0,
@@ -561,7 +563,7 @@ var dzProfile = function(){
 				tickAmount: 4,
 				labels: {
 					style: {
-						colors: '#888888',
+						colors: 'var(--bs-body-color)',
 						fontSize: '14px',
 					},
 					formatter: function (value) {
@@ -573,7 +575,7 @@ var dzProfile = function(){
 				categories: ["Jun", "Jul", "Aug", "Sep", "Oct", "Nov"],
 				labels:{
 					style: {
-						colors: '#888888',
+						colors: 'var(--bs-body-color)',
 						fontSize: '12px',
 					},
 				},
@@ -704,7 +706,7 @@ var dzProfile = function(){
 			grid:{
 				show: true,
 				strokeDashArray: 3,
-				borderColor: 'var(--border-light)',
+				borderColor: 'var(--bs-border-color)',
 			},
 			yaxis: {
 				labels:{
@@ -814,13 +816,11 @@ var dzProfile = function(){
 		if($('#tableLicenseUsage').length > 0){
 			var table = $('#tableLicenseUsage').DataTable({
 				'dom': 'ZBfrltip',
-				buttons: [
-					{
-						extend: 'excel',
-						text: '<i class="las la-file"></i> Export Report',
-						className: 'btn btn-primary tp-btn-light btn-sm mb-0 me-0'
-					}
-				],
+				buttons: [{
+					extend: 'excel',
+					text: '<i class="fa-solid fa-file-excel"></i> Export Report',
+					className: 'btn btn-primary light btn-sm'
+				}],
 				searching: false,
 				pageLength: 10,
 				select: false,            
@@ -845,15 +845,13 @@ var dzProfile = function(){
 		if($('#tableLogs').length > 0){
 			var table = $('#tableLogs').DataTable({
 				'dom': 'ZBfrltip',
-				buttons: [
-					{
-						extend: 'excel',
-						text: '<i class="las la-file"></i> Export Report',
-						className: 'btn btn-primary tp-btn-light btn-sm mb-0 me-0'
-					}
-				],
+				buttons: [{
+					extend: 'excel',
+					text: '<i class="fa-solid fa-file-excel"></i> Export Report',
+					className: 'btn btn-primary light btn-sm'
+				}],
 				searching: false,
-				pageLength: 5,
+				pageLength: 6,
 				select: false,            
 				lengthChange: false,
 				paging: true,
@@ -872,24 +870,16 @@ var dzProfile = function(){
 		}
 	}
 	
-	var cardCarousel = function () {
-		var isRTL = $('body').attr('direction') === 'rtl';
-
-		if ($('.card-carousel').length > 0) {
-
-			$('.card-carousel').trigger('destroy.owl.carousel');
-			$('.card-carousel').removeClass('owl-loaded owl-hidden');
-			$('.card-carousel').find('.owl-stage-outer').children().unwrap();
-
+	var cardCarousel = function(){
+		if($('.card-carousel').length > 0){
 			$('.card-carousel').owlCarousel({
-				items: 1,
-				rtl: isRTL,
-				loop: true,
-				margin: 5,
-				nav: false,
-				autoplay: true,
+				items:1,
+				loop:true,
+				margin:5,
+				nav:false,
+				autoplay:true,
 				autoplayTimeout: 3000,
-				autoplayHoverPause: true
+				autoplayHoverPause:true
 			});
 		}
 	}
@@ -899,7 +889,7 @@ var dzProfile = function(){
 			series: [30, 40, 20, 10],
 			chart: {
 				type: 'donut',
-				width: 230,
+				width: 250,
 			},
 			plotOptions: {
 				pie: {
@@ -1001,7 +991,7 @@ var dzProfile = function(){
 			},
 			grid: {
 				show:true,
-				borderColor: '#eee',
+				borderColor: 'var(--bs-border-color)',
 				
 				xaxis: {
 					lines: {
@@ -1021,6 +1011,10 @@ var dzProfile = function(){
 				max: 800,
 				labels:{
 					offsetX:50,
+					style: {
+						colors: 'var(--bs-body-color)',
+						fontSize: '12px'
+					}
 				}
 			},
 			xaxis: {
@@ -1047,13 +1041,14 @@ var dzProfile = function(){
 					offsetX: 25,
 					
 					style: {
-						fontSize: '12px',
+						colors: 'var(--bs-body-color)',
+						fontSize: '12px'
 					}
 				},
 			},
 			fill: {
 				opacity: 0.5,
-				colors:'var(--bs-primary)',
+				colors:'var(--primary)',
 				type: 'gradient', 
 				gradient: {
 					colorStops:[
@@ -1272,6 +1267,70 @@ var dzProfile = function(){
 	 
 	}
 	
+	var projectChart = function(){
+		if(jQuery("#projectChart").length>0) {
+			var options = {
+				series: [30, 40, 20, 10],
+				chart: {
+					type: 'donut',
+					width: 250,
+				},
+				plotOptions: {
+					pie: {
+						donut: {
+							size: '90%',
+							labels: {
+								show: true,
+								name: {
+									show: true,
+									offsetY: 12,
+									color: 'var(--bs-body-color)',
+								},
+								value: {
+									show: true,
+									fontSize: '24px',
+									fontFamily:'Arial',
+									fontWeight:'500',
+									offsetY: -17,
+									color:' var(--bs-heading-color)',
+								},
+								total: {
+									show: true,
+									fontSize: '11px',
+									fontWeight:'500',
+									fontFamily:'Arial',
+									label: 'Total projects',
+									color: 'var(--bs-body-color)',
+								   
+									formatter: function (w) {
+										return w.globals.seriesTotals.reduce((a, b) => {
+											return a + b
+										}, 0)
+									}
+								}
+							}
+						}
+					}
+				},
+				stroke: {
+					show: true,
+					width: 2,
+					colors: ['var(--bs-body-bg)'],
+				},
+				legend: {
+					show: false,
+				},
+				colors: ['var(--bs-warning)', 'var(--bs-primary)', 'var(--bs-success)', 'var(--bs-danger)'],
+				labels: ["Pending", "Completed", "Progress", "Cancelled"],
+				dataLabels: {
+					enabled: false,
+				},
+			};
+			var chartBar1 = new ApexCharts(document.querySelector("#projectChart"), options);
+			chartBar1.render();
+		}
+	}
+		
 	/* Function ============ */
 	return {
 		
@@ -1288,6 +1347,7 @@ var dzProfile = function(){
 			chartProfileProgress();
 			chartProjectChart();
 			lineChartSecuritySummary();
+			projectChart();
 		},
 		
 		resize:function(){

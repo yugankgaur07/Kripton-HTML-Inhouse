@@ -51,6 +51,10 @@
 }
 [data-bs-theme=dark] .btn-primary.light {
   color: #fff !important;
+  background-color: rgba(var(--bs-primary-rgb), 0.5) !important;
+}
+[data-bs-theme=dark] .page-title .breadcrumb li.active {
+  --bs-primary: #7468cb;
 }
 [data-bs-theme=dark] .btn-secondary {
   --bs-btn-color: #fff;
@@ -4485,8 +4489,8 @@ textarea.form-control-lg {
   --bs-card-border-radius: var(--bs-border-radius);
   --bs-card-box-shadow: 0px 0px 13px 0px rgba(82, 63, 105, 0.05);
   --bs-card-inner-border-radius: calc(var(--bs-border-radius) - 1px);
-  --bs-card-cap-padding-y: 1.5rem;
-  --bs-card-cap-padding-x: 1.875rem;
+  --bs-card-cap-padding-y: 1rem;
+  --bs-card-cap-padding-x: 1.5rem;
   --bs-card-cap-bg: transparent;
   --bs-card-cap-color: ;
   --bs-card-height: ;
@@ -14463,7 +14467,7 @@ svg.pulse-svg .first-circle, svg.pulse-svg .third-circle, svg.pulse-svg .second-
   transform: scale(0.3);
   transform-origin: center center;
   animation: pulse-me 3s linear infinite;
-  fill: #363062;
+  fill: var(--bs-primary);
 }
 svg.pulse-svg .second-circle {
   animation-delay: 1s;
@@ -14737,7 +14741,7 @@ svg.pulse-svg .third-circle {
 }
 .header-right .notification_dropdown .nav-link {
   position: relative;
-  color: var(--bs-primary);
+  color: #363062;
   background: #fff;
   border-radius: var(--bs-border-radius);
   border: 1px solid #D8B9C3;
@@ -14745,7 +14749,7 @@ svg.pulse-svg .third-circle {
   line-height: 1;
 }
 .header-right .notification_dropdown .nav-link svg {
-  stroke: var(--bs-primary);
+  stroke: #363062;
 }
 @media only screen and (max-width: 87.5rem) {
   .header-right .notification_dropdown .nav-link {
@@ -14855,7 +14859,7 @@ svg.pulse-svg .third-circle {
   min-width: 12.5rem;
 }
 .header-right .header-profile .dropdown-menu a:hover, .header-right .header-profile .dropdown-menu a:focus, .header-right .header-profile .dropdown-menu a.active {
-  color: #363062;
+  color: var(--bs-primary);
 }
 .header-right .header-profile img {
   width: 55px;
@@ -14877,7 +14881,7 @@ svg.pulse-svg .third-circle {
   }
 }
 .header-right .header-profile .profile_title {
-  background: #363062;
+  background: var(--bs-primary);
   color: #fff;
   padding: 10px 20px;
 }
@@ -14915,7 +14919,7 @@ svg.pulse-svg .third-circle {
   top: 100%;
 }
 .notification_dropdown .dropdown-menu-end .notification_title {
-  background: #363062;
+  background: var(--bs-primary);
   color: #fff;
   padding: 10px 20px;
 }
@@ -14942,7 +14946,7 @@ svg.pulse-svg .third-circle {
 }
 .notification_dropdown .dropdown-menu-end .media > span.primary {
   background: var(--bs-primary-subtle);
-  color: #363062;
+  color: var(--bs-primary);
 }
 .notification_dropdown .dropdown-menu-end .media > span.danger {
   background: var(--bs-danger-subtle);
@@ -15237,13 +15241,13 @@ svg.pulse-svg .third-circle {
   fill: #8088a1;
 }
 .deznav .metismenu > li:hover > a, .deznav .metismenu > li:focus > a {
-  color: #363062;
+  color: var(--bs-primary);
 }
 .deznav .metismenu > li:hover > a g [fill], .deznav .metismenu > li:focus > a g [fill] {
-  fill: #363062;
+  fill: var(--bs-primary);
 }
 .deznav .metismenu > li.mm-active > a {
-  background: #363062;
+  background: var(--bs-primary);
   color: #fff;
   font-weight: 600;
   box-shadow: none;
@@ -15253,12 +15257,12 @@ svg.pulse-svg .third-circle {
   font-weight: 100;
 }
 .deznav .metismenu > li.mm-active > a g [fill] {
-  fill: #363062;
+  fill: var(--bs-primary);
 }
 [data-sidebar-style=compact] .deznav .metismenu > li.mm-active > a i {
-  background: #363062;
+  background: var(--bs-primary);
   color: #fff;
-  box-shadow: 0 12px 15px 0 rgba(54, 48, 98, 0.13);
+  box-shadow: 0 12px 15px 0 rgba(var(--bs-primary), 0.13);
 }
 
 .deznav .metismenu li {
@@ -15288,7 +15292,7 @@ svg.pulse-svg .third-circle {
   content: "";
   height: 2px;
   width: 6px;
-  background: rgba(54, 48, 98, 0.5);
+  background: rgba(var(--bs-primary), 0.5);
   position: absolute;
   right: 30px;
   top: 50%;
@@ -15799,7 +15803,7 @@ svg.pulse-svg .third-circle {
   display: none;
 }
 [data-sidebar-style=full][data-layout=vertical] .menu-toggle .deznav .metismenu > li.mm-active > a {
-  background: #363062;
+  background: var(--bs-primary);
   border-radius: var(--bs-border-radius);
 }
 [data-sidebar-style=full][data-layout=vertical] .menu-toggle .deznav .metismenu > li.mm-active > a i {
@@ -15812,7 +15816,7 @@ svg.pulse-svg .third-circle {
 }
 [data-sidebar-style=full][data-layout=vertical] .menu-toggle .deznav .metismenu > li:hover > a {
   border-radius: var(--bs-border-radius);
-  background: #363062;
+  background: var(--bs-primary);
   color: #fff;
 }
 [data-sidebar-style=full][data-layout=vertical] .menu-toggle .deznav .metismenu > li:hover > a i {
@@ -16008,15 +16012,15 @@ svg.pulse-svg .third-circle {
     content: none;
   }
   [data-sidebar-style=mini][data-layout=vertical] .deznav .metismenu > li.mm-active > a {
-    background: #363062;
+    background: var(--bs-primary);
     color: #fff;
     border-radius: 12px;
-    box-shadow: 0 12px 15px 0 rgba(54, 48, 98, 0.13);
+    box-shadow: 0 12px 15px 0 rgba(var(--bs-primary), 0.13);
   }
   [data-sidebar-style=mini][data-layout=vertical] .deznav .metismenu > li:hover > a {
-    background: #363062;
+    background: var(--bs-primary);
     color: #fff;
-    box-shadow: 0 12px 15px 0 rgba(54, 48, 98, 0.13);
+    box-shadow: 0 12px 15px 0 rgba(var(--bs-primary), 0.13);
     border-radius: 12px;
     position: unset;
   }
@@ -16186,7 +16190,7 @@ svg.pulse-svg .third-circle {
   }
   [data-theme-version=dark][data-layout=horizontal] .deznav .metismenu li > ul {
     box-shadow: 0px 0px 40px 0px rgba(82, 63, 105, 0.1);
-    background: #363062;
+    background: var(--bs-primary);
   }
   [data-layout=horizontal] .deznav .metismenu li > ul li {
     padding: 0;
@@ -16227,9 +16231,9 @@ svg.pulse-svg .third-circle {
     padding: 0;
   }
   [data-layout=horizontal] .deznav .metismenu > li:hover > a, [data-layout=horizontal] .deznav .metismenu > li.mm-active > a {
-    background: #363062;
+    background: var(--bs-primary);
     color: #fff;
-    box-shadow: 0 12px 15px 0 rgba(54, 48, 98, 0.13);
+    box-shadow: 0 12px 15px 0 rgba(var(--bs-primary), 0.13);
     border-radius: 12px;
   }
   [data-layout=horizontal] .deznav .metismenu > li:hover > a i, [data-layout=horizontal] .deznav .metismenu > li.mm-active > a i {
@@ -16262,7 +16266,7 @@ svg.pulse-svg .third-circle {
   }
   [data-theme-version=dark][data-layout=horizontal] .deznav .metismenu > li:hover > ul {
     box-shadow: -5px 5px 30px 0px rgba(0, 0, 0, 0.1);
-    background: #363062;
+    background: var(--bs-primary);
   }
   [data-layout=horizontal] .deznav .metismenu > li > ul > li:hover ul.collapse {
     display: block !important;
@@ -16442,14 +16446,14 @@ svg.pulse-svg .third-circle {
     color: #b3b3b3;
   }
   [data-sidebar-style=compact][data-theme-version=dark][data-layout=vertical] .deznav .metismenu li.mm-active > a i {
-    background: #363062;
+    background: var(--bs-primary);
     color: #fff;
   }
   [data-sidebar-style=compact][data-layout=vertical] .deznav .metismenu > li > a {
     padding: 1rem 0.5rem !important;
   }
   [data-sidebar-style=compact][data-layout=vertical] .deznav .metismenu li:hover > a i {
-    background: #363062;
+    background: var(--bs-primary);
     color: #fff;
   }
 }
@@ -16563,9 +16567,9 @@ svg.pulse-svg .third-circle {
     padding-left: 0;
   }
   [data-sidebar-style=icon-hover][data-layout=vertical] .deznav .metismenu > li:hover > a, [data-sidebar-style=icon-hover][data-layout=vertical] .deznav .metismenu > li.mm-active > a {
-    background: #363062;
+    background: var(--bs-primary);
     color: #fff;
-    box-shadow: 0 12px 15px 0 rgba(54, 48, 98, 0.13);
+    box-shadow: 0 12px 15px 0 rgba(var(--bs-primary), 0.13);
   }
   [data-sidebar-style=icon-hover][data-layout=vertical] .deznav .metismenu ul {
     border-right: 0;
@@ -16658,10 +16662,10 @@ svg.pulse-svg .third-circle {
     padding: 0;
   }
   [data-sidebar-style=modern] .deznav .metismenu > li:hover > a, [data-sidebar-style=modern] .deznav .metismenu > li.mm-active > a {
-    background: #363062;
+    background: var(--bs-primary);
     color: #fff;
     border-radius: 12px;
-    box-shadow: 0 12px 15px 0 rgba(54, 48, 98, 0.13);
+    box-shadow: 0 12px 15px 0 rgba(var(--bs-primary), 0.13);
   }
   [data-sidebar-style=modern] .deznav .metismenu > li:hover > a i, [data-sidebar-style=modern] .deznav .metismenu > li.mm-active > a i {
     color: #fff;
@@ -16801,9 +16805,9 @@ svg.pulse-svg .third-circle {
   transition: all 0.5s;
 }
 [data-sidebar-style=overlay] .deznav .metismenu > li:hover > a, [data-sidebar-style=overlay] .deznav .metismenu > li.mm-active > a {
-  background: #363062;
+  background: var(--bs-primary);
   color: #fff;
-  box-shadow: 0 12px 15px 0 rgba(54, 48, 98, 0.13);
+  box-shadow: 0 12px 15px 0 rgba(var(--bs-primary), 0.13);
 }
 @media only screen and (max-width: 47.9375rem) {
   [data-sidebar-style=overlay] .deznav .metismenu > li {
@@ -16827,7 +16831,7 @@ svg.pulse-svg .third-circle {
   right: 0;
 }
 [data-sidebar-style=overlay] .nav-header .hamburger.is-active .line {
-  background-color: #363062;
+  background-color: var(--bs-primary);
 }
 [data-sidebar-style=overlay] .menu-toggle .nav-header {
   position: absolute;
@@ -16876,7 +16880,7 @@ svg.pulse-svg .third-circle {
 }
 
 .nav-user {
-  background: #363062;
+  background: var(--bs-primary);
   margin-bottom: 10px;
   padding: 20px 25px 15px;
 }
@@ -17022,7 +17026,7 @@ svg.pulse-svg .third-circle {
 }
 .chatbox .img_cont.primary {
   background: var(--bs-primary-subtle);
-  color: #363062;
+  color: var(--bs-primary);
 }
 .chatbox .img_cont.warning {
   background: var(--bs-warning-subtle);
@@ -17087,7 +17091,7 @@ svg.pulse-svg .third-circle {
 }
 .chatbox .contacts li {
   padding: 7px 1rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--bs-border-color);
   cursor: pointer;
 }
 .chatbox .contacts li > div {
@@ -17095,13 +17099,13 @@ svg.pulse-svg .third-circle {
   align-items: center;
 }
 .chatbox .contacts li:hover {
-  background: #f4f7ff;
+  background: var(--bs-body-bg);
 }
 .chatbox .contacts .name-first-letter {
-  background: #ffffff;
+  background: var(--bs-body-bg);
   padding: 4px 1rem;
   font-weight: 700;
-  color: #000;
+  color: var(--bs-heading-color);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -17127,13 +17131,14 @@ svg.pulse-svg .third-circle {
 }
 .chatbox .chat-list-header {
   justify-content: space-between;
-  background: #fff;
+  background: var(--bs-body-bg);
+  border-radius: 0;
 }
 .chatbox .chat-list-header a {
   text-align: center;
   width: 30px;
   height: 30px;
-  background: #ffffff;
+  background: var(--bs-body-bg);
   border-radius: 6px;
   line-height: 30px;
   display: block;
@@ -17149,7 +17154,7 @@ svg.pulse-svg .third-circle {
   width: 100%;
 }
 .chatbox .msg_cotainer {
-  background: #363062;
+  background: var(--bs-primary);
   margin-right: 10px;
   border-radius: var(--bs-border-radius) 0 var(--bs-border-radius) var(--bs-border-radius);
   padding: 10px 15px;
@@ -17167,7 +17172,7 @@ svg.pulse-svg .third-circle {
   content: "";
   position: absolute;
   right: -10px;
-  border-left: 10px solid #363062;
+  border-left: 10px solid var(--bs-primary);
   border-bottom: 10px solid transparent;
   border-top: 0px solid;
   top: 0;
@@ -23430,369 +23435,369 @@ table thead[class*=table-] th {
 
 @keyframes dzError1 {
   0% {
-    clip: rect(8px, 9999px, 136px, 0);
-    transform: skew(-0.354deg);
+    clip: rect(162px, 9999px, 230px, 0);
+    transform: skew(-0.858deg);
   }
   2.5% {
-    clip: rect(352px, 9999px, 38px, 0);
-    transform: skew(-0.484deg);
+    clip: rect(64px, 9999px, 87px, 0);
+    transform: skew(-0.404deg);
   }
   5% {
-    clip: rect(437px, 9999px, 57px, 0);
-    transform: skew(-0.046deg);
+    clip: rect(180px, 9999px, 248px, 0);
+    transform: skew(-0.326deg);
   }
   7.5% {
-    clip: rect(45px, 9999px, 483px, 0);
-    transform: skew(-0.28deg);
+    clip: rect(181px, 9999px, 193px, 0);
+    transform: skew(-0.45deg);
   }
   10% {
-    clip: rect(213px, 9999px, 330px, 0);
-    transform: skew(-0.962deg);
+    clip: rect(384px, 9999px, 68px, 0);
+    transform: skew(-0.774deg);
   }
   12.5% {
-    clip: rect(266px, 9999px, 184px, 0);
-    transform: skew(-0.982deg);
+    clip: rect(210px, 9999px, 376px, 0);
+    transform: skew(-0.884deg);
   }
   15% {
-    clip: rect(186px, 9999px, 155px, 0);
-    transform: skew(-0.092deg);
-  }
-  17.5% {
-    clip: rect(208px, 9999px, 20px, 0);
-    transform: skew(-0.944deg);
-  }
-  20% {
-    clip: rect(479px, 9999px, 148px, 0);
-    transform: skew(-0.714deg);
-  }
-  22.5% {
-    clip: rect(449px, 9999px, 359px, 0);
-    transform: skew(-0.038deg);
-  }
-  25% {
-    clip: rect(410px, 9999px, 413px, 0);
-    transform: skew(-0.172deg);
-  }
-  27.5% {
-    clip: rect(150px, 9999px, 242px, 0);
-    transform: skew(-0.5deg);
-  }
-  30% {
-    clip: rect(137px, 9999px, 90px, 0);
-    transform: skew(-0.276deg);
-  }
-  32.5% {
-    clip: rect(47px, 9999px, 41px, 0);
-    transform: skew(-0.248deg);
-  }
-  35% {
-    clip: rect(171px, 9999px, 29px, 0);
-    transform: skew(-0.334deg);
-  }
-  37.5% {
-    clip: rect(103px, 9999px, 273px, 0);
-    transform: skew(-0.086deg);
-  }
-  40% {
-    clip: rect(355px, 9999px, 311px, 0);
-    transform: skew(-0.872deg);
-  }
-  42.5% {
-    clip: rect(3px, 9999px, 67px, 0);
-    transform: skew(-0.376deg);
-  }
-  45% {
-    clip: rect(312px, 9999px, 386px, 0);
-    transform: skew(-0.514deg);
-  }
-  47.5% {
-    clip: rect(352px, 9999px, 452px, 0);
-    transform: skew(-0.222deg);
-  }
-  50% {
-    clip: rect(358px, 9999px, 459px, 0);
-    transform: skew(-0.13deg);
-  }
-  52.5% {
-    clip: rect(308px, 9999px, 215px, 0);
-    transform: skew(-0.418deg);
-  }
-  55% {
-    clip: rect(434px, 9999px, 259px, 0);
-    transform: skew(-0.894deg);
-  }
-  57.5% {
-    clip: rect(150px, 9999px, 44px, 0);
-    transform: skew(-0.62deg);
-  }
-  60% {
-    clip: rect(62px, 9999px, 22px, 0);
-    transform: skew(-0.304deg);
-  }
-  62.5% {
-    clip: rect(44px, 9999px, 21px, 0);
-    transform: skew(-0.584deg);
-  }
-  65% {
-    clip: rect(90px, 9999px, 103px, 0);
-    transform: skew(-0.88deg);
-  }
-  67.5% {
-    clip: rect(223px, 9999px, 190px, 0);
-    transform: skew(-0.47deg);
-  }
-  70% {
-    clip: rect(118px, 9999px, 158px, 0);
-    transform: skew(-0.21deg);
-  }
-  72.5% {
-    clip: rect(387px, 9999px, 132px, 0);
-    transform: skew(-0.026deg);
-  }
-  75% {
-    clip: rect(299px, 9999px, 204px, 0);
-    transform: skew(-0.816deg);
-  }
-  77.5% {
-    clip: rect(337px, 9999px, 204px, 0);
-    transform: skew(-0.024deg);
-  }
-  80% {
-    clip: rect(70px, 9999px, 181px, 0);
-    transform: skew(-0.034deg);
-  }
-  82.5% {
-    clip: rect(335px, 9999px, 92px, 0);
-    transform: skew(-0.376deg);
-  }
-  85% {
-    clip: rect(422px, 9999px, 410px, 0);
+    clip: rect(135px, 9999px, 68px, 0);
     transform: skew(-0.242deg);
   }
+  17.5% {
+    clip: rect(265px, 9999px, 171px, 0);
+    transform: skew(-0.884deg);
+  }
+  20% {
+    clip: rect(94px, 9999px, 187px, 0);
+    transform: skew(-0.966deg);
+  }
+  22.5% {
+    clip: rect(237px, 9999px, 250px, 0);
+    transform: skew(-0.23deg);
+  }
+  25% {
+    clip: rect(30px, 9999px, 485px, 0);
+    transform: skew(-0.094deg);
+  }
+  27.5% {
+    clip: rect(155px, 9999px, 382px, 0);
+    transform: skew(-0.042deg);
+  }
+  30% {
+    clip: rect(85px, 9999px, 402px, 0);
+    transform: skew(-0.864deg);
+  }
+  32.5% {
+    clip: rect(291px, 9999px, 337px, 0);
+    transform: skew(-0.686deg);
+  }
+  35% {
+    clip: rect(145px, 9999px, 73px, 0);
+    transform: skew(-0.408deg);
+  }
+  37.5% {
+    clip: rect(25px, 9999px, 33px, 0);
+    transform: skew(-1deg);
+  }
+  40% {
+    clip: rect(327px, 9999px, 429px, 0);
+    transform: skew(-0.512deg);
+  }
+  42.5% {
+    clip: rect(264px, 9999px, 413px, 0);
+    transform: skew(-0.848deg);
+  }
+  45% {
+    clip: rect(103px, 9999px, 478px, 0);
+    transform: skew(-0.21deg);
+  }
+  47.5% {
+    clip: rect(437px, 9999px, 113px, 0);
+    transform: skew(-0.528deg);
+  }
+  50% {
+    clip: rect(43px, 9999px, 47px, 0);
+    transform: skew(-0.876deg);
+  }
+  52.5% {
+    clip: rect(243px, 9999px, 398px, 0);
+    transform: skew(-0.198deg);
+  }
+  55% {
+    clip: rect(152px, 9999px, 398px, 0);
+    transform: skew(-0.472deg);
+  }
+  57.5% {
+    clip: rect(151px, 9999px, 437px, 0);
+    transform: skew(-0.818deg);
+  }
+  60% {
+    clip: rect(269px, 9999px, 440px, 0);
+    transform: skew(-0.568deg);
+  }
+  62.5% {
+    clip: rect(157px, 9999px, 91px, 0);
+    transform: skew(-0.756deg);
+  }
+  65% {
+    clip: rect(139px, 9999px, 431px, 0);
+    transform: skew(-0.944deg);
+  }
+  67.5% {
+    clip: rect(176px, 9999px, 187px, 0);
+    transform: skew(-0.644deg);
+  }
+  70% {
+    clip: rect(439px, 9999px, 339px, 0);
+    transform: skew(-0.688deg);
+  }
+  72.5% {
+    clip: rect(465px, 9999px, 285px, 0);
+    transform: skew(-0.626deg);
+  }
+  75% {
+    clip: rect(239px, 9999px, 462px, 0);
+    transform: skew(-0.664deg);
+  }
+  77.5% {
+    clip: rect(396px, 9999px, 310px, 0);
+    transform: skew(-0.78deg);
+  }
+  80% {
+    clip: rect(69px, 9999px, 483px, 0);
+    transform: skew(-0.394deg);
+  }
+  82.5% {
+    clip: rect(184px, 9999px, 479px, 0);
+    transform: skew(-0.17deg);
+  }
+  85% {
+    clip: rect(409px, 9999px, 40px, 0);
+    transform: skew(-0.348deg);
+  }
   87.5% {
-    clip: rect(486px, 9999px, 181px, 0);
-    transform: skew(-0.94deg);
+    clip: rect(33px, 9999px, 29px, 0);
+    transform: skew(-0.32deg);
   }
   90% {
-    clip: rect(326px, 9999px, 492px, 0);
-    transform: skew(-0.804deg);
+    clip: rect(336px, 9999px, 238px, 0);
+    transform: skew(-0.004deg);
   }
   92.5% {
-    clip: rect(40px, 9999px, 121px, 0);
-    transform: skew(-0.102deg);
+    clip: rect(176px, 9999px, 341px, 0);
+    transform: skew(-0.84deg);
   }
   95% {
-    clip: rect(216px, 9999px, 59px, 0);
-    transform: skew(-0.546deg);
+    clip: rect(300px, 9999px, 104px, 0);
+    transform: skew(-0.034deg);
   }
   97.5% {
-    clip: rect(166px, 9999px, 267px, 0);
-    transform: skew(-0.318deg);
+    clip: rect(401px, 9999px, 58px, 0);
+    transform: skew(-0.928deg);
   }
   100% {
-    clip: rect(216px, 9999px, 34px, 0);
-    transform: skew(-0.324deg);
+    clip: rect(332px, 9999px, 193px, 0);
+    transform: skew(-0.434deg);
   }
 }
 @keyframes dzError2 {
   0% {
-    clip: rect(33px, 9999px, 170px, 0);
-    transform: skew(-0.854deg);
+    clip: rect(228px, 9999px, 198px, 0);
+    transform: skew(-0.012deg);
   }
   2.5% {
-    clip: rect(397px, 9999px, 326px, 0);
-    transform: skew(-0.734deg);
+    clip: rect(112px, 9999px, 258px, 0);
+    transform: skew(-0.91deg);
   }
   5% {
-    clip: rect(193px, 9999px, 463px, 0);
-    transform: skew(-0.71deg);
+    clip: rect(245px, 9999px, 368px, 0);
+    transform: skew(-0.658deg);
   }
   7.5% {
-    clip: rect(206px, 9999px, 109px, 0);
-    transform: skew(-0.914deg);
+    clip: rect(53px, 9999px, 42px, 0);
+    transform: skew(-0.834deg);
   }
   10% {
-    clip: rect(118px, 9999px, 79px, 0);
-    transform: skew(-0.044deg);
-  }
-  12.5% {
-    clip: rect(52px, 9999px, 389px, 0);
-    transform: skew(-0.552deg);
-  }
-  15% {
-    clip: rect(40px, 9999px, 87px, 0);
-    transform: skew(-0.252deg);
-  }
-  17.5% {
-    clip: rect(78px, 9999px, 176px, 0);
-    transform: skew(-0.068deg);
-  }
-  20% {
-    clip: rect(178px, 9999px, 439px, 0);
-    transform: skew(-0.184deg);
-  }
-  22.5% {
-    clip: rect(491px, 9999px, 345px, 0);
-    transform: skew(-0.618deg);
-  }
-  25% {
-    clip: rect(492px, 9999px, 474px, 0);
-    transform: skew(-0.206deg);
-  }
-  27.5% {
-    clip: rect(359px, 9999px, 473px, 0);
-    transform: skew(-0.988deg);
-  }
-  30% {
-    clip: rect(6px, 9999px, 93px, 0);
-    transform: skew(-0.348deg);
-  }
-  32.5% {
-    clip: rect(441px, 9999px, 405px, 0);
-    transform: skew(-0.796deg);
-  }
-  35% {
-    clip: rect(339px, 9999px, 96px, 0);
-    transform: skew(-0.5deg);
-  }
-  37.5% {
-    clip: rect(152px, 9999px, 79px, 0);
-    transform: skew(-0.206deg);
-  }
-  40% {
-    clip: rect(67px, 9999px, 227px, 0);
-    transform: skew(-0.558deg);
-  }
-  42.5% {
-    clip: rect(154px, 9999px, 258px, 0);
-    transform: skew(-0.268deg);
-  }
-  45% {
-    clip: rect(372px, 9999px, 443px, 0);
-    transform: skew(-0.944deg);
-  }
-  47.5% {
-    clip: rect(194px, 9999px, 155px, 0);
-    transform: skew(-0.224deg);
-  }
-  50% {
-    clip: rect(61px, 9999px, 39px, 0);
-    transform: skew(-0.56deg);
-  }
-  52.5% {
-    clip: rect(386px, 9999px, 257px, 0);
-    transform: skew(-0.204deg);
-  }
-  55% {
-    clip: rect(295px, 9999px, 412px, 0);
+    clip: rect(245px, 9999px, 117px, 0);
     transform: skew(-0.182deg);
   }
+  12.5% {
+    clip: rect(189px, 9999px, 56px, 0);
+    transform: skew(-0.43deg);
+  }
+  15% {
+    clip: rect(419px, 9999px, 163px, 0);
+    transform: skew(-0.096deg);
+  }
+  17.5% {
+    clip: rect(187px, 9999px, 21px, 0);
+    transform: skew(-0.904deg);
+  }
+  20% {
+    clip: rect(25px, 9999px, 375px, 0);
+    transform: skew(-0.014deg);
+  }
+  22.5% {
+    clip: rect(209px, 9999px, 271px, 0);
+    transform: skew(-0.674deg);
+  }
+  25% {
+    clip: rect(363px, 9999px, 21px, 0);
+    transform: skew(-0.032deg);
+  }
+  27.5% {
+    clip: rect(124px, 9999px, 115px, 0);
+    transform: skew(-0.79deg);
+  }
+  30% {
+    clip: rect(73px, 9999px, 248px, 0);
+    transform: skew(-0.848deg);
+  }
+  32.5% {
+    clip: rect(440px, 9999px, 105px, 0);
+    transform: skew(-0.752deg);
+  }
+  35% {
+    clip: rect(249px, 9999px, 44px, 0);
+    transform: skew(-0.408deg);
+  }
+  37.5% {
+    clip: rect(276px, 9999px, 330px, 0);
+    transform: skew(-0.624deg);
+  }
+  40% {
+    clip: rect(488px, 9999px, 394px, 0);
+    transform: skew(-0.362deg);
+  }
+  42.5% {
+    clip: rect(236px, 9999px, 387px, 0);
+    transform: skew(-0.766deg);
+  }
+  45% {
+    clip: rect(212px, 9999px, 86px, 0);
+    transform: skew(-0.234deg);
+  }
+  47.5% {
+    clip: rect(283px, 9999px, 258px, 0);
+    transform: skew(-0.928deg);
+  }
+  50% {
+    clip: rect(132px, 9999px, 236px, 0);
+    transform: skew(-0.554deg);
+  }
+  52.5% {
+    clip: rect(424px, 9999px, 30px, 0);
+    transform: skew(-0.964deg);
+  }
+  55% {
+    clip: rect(193px, 9999px, 467px, 0);
+    transform: skew(-0.218deg);
+  }
   57.5% {
-    clip: rect(169px, 9999px, 474px, 0);
-    transform: skew(-0.024deg);
+    clip: rect(241px, 9999px, 283px, 0);
+    transform: skew(-0.354deg);
   }
   60% {
-    clip: rect(190px, 9999px, 165px, 0);
-    transform: skew(-0.734deg);
+    clip: rect(171px, 9999px, 39px, 0);
+    transform: skew(-0.064deg);
   }
   62.5% {
-    clip: rect(392px, 9999px, 130px, 0);
-    transform: skew(-0.974deg);
+    clip: rect(230px, 9999px, 389px, 0);
+    transform: skew(-0.76deg);
   }
   65% {
-    clip: rect(229px, 9999px, 95px, 0);
-    transform: skew(-0.94deg);
+    clip: rect(420px, 9999px, 481px, 0);
+    transform: skew(-0.962deg);
   }
   67.5% {
-    clip: rect(3px, 9999px, 257px, 0);
-    transform: skew(-0.298deg);
+    clip: rect(384px, 9999px, 218px, 0);
+    transform: skew(-0.898deg);
   }
   70% {
-    clip: rect(26px, 9999px, 448px, 0);
-    transform: skew(-0.908deg);
+    clip: rect(422px, 9999px, 207px, 0);
+    transform: skew(-0.628deg);
   }
   72.5% {
-    clip: rect(489px, 9999px, 349px, 0);
-    transform: skew(-0.946deg);
+    clip: rect(68px, 9999px, 373px, 0);
+    transform: skew(-0.238deg);
   }
   75% {
-    clip: rect(448px, 9999px, 481px, 0);
-    transform: skew(-0.398deg);
+    clip: rect(24px, 9999px, 384px, 0);
+    transform: skew(-0.086deg);
   }
   77.5% {
-    clip: rect(491px, 9999px, 137px, 0);
-    transform: skew(-0.838deg);
+    clip: rect(192px, 9999px, 26px, 0);
+    transform: skew(-0.204deg);
   }
   80% {
-    clip: rect(297px, 9999px, 340px, 0);
-    transform: skew(-0.77deg);
+    clip: rect(78px, 9999px, 431px, 0);
+    transform: skew(-0.888deg);
   }
   82.5% {
-    clip: rect(203px, 9999px, 146px, 0);
-    transform: skew(-0.654deg);
+    clip: rect(494px, 9999px, 32px, 0);
+    transform: skew(-0.014deg);
   }
   85% {
-    clip: rect(303px, 9999px, 84px, 0);
-    transform: skew(-0.274deg);
+    clip: rect(120px, 9999px, 469px, 0);
+    transform: skew(-0.976deg);
   }
   87.5% {
-    clip: rect(433px, 9999px, 253px, 0);
-    transform: skew(-0.442deg);
+    clip: rect(483px, 9999px, 360px, 0);
+    transform: skew(-0.032deg);
   }
   90% {
-    clip: rect(244px, 9999px, 463px, 0);
-    transform: skew(-0.778deg);
+    clip: rect(275px, 9999px, 68px, 0);
+    transform: skew(-0.002deg);
   }
   92.5% {
-    clip: rect(382px, 9999px, 383px, 0);
-    transform: skew(-0.258deg);
+    clip: rect(232px, 9999px, 387px, 0);
+    transform: skew(-0.456deg);
   }
   95% {
-    clip: rect(140px, 9999px, 263px, 0);
-    transform: skew(-0.536deg);
+    clip: rect(434px, 9999px, 209px, 0);
+    transform: skew(-0.936deg);
   }
   97.5% {
-    clip: rect(3px, 9999px, 313px, 0);
-    transform: skew(-0.616deg);
+    clip: rect(182px, 9999px, 313px, 0);
+    transform: skew(-0.326deg);
   }
   100% {
-    clip: rect(387px, 9999px, 412px, 0);
-    transform: skew(-0.61deg);
+    clip: rect(365px, 9999px, 36px, 0);
+    transform: skew(-0.846deg);
   }
 }
 @keyframes dzError {
   0% {
-    transform: skew(4deg);
-  }
-  10% {
-    transform: skew(1deg);
-  }
-  20% {
-    transform: skew(-1deg);
-  }
-  30% {
-    transform: skew(0deg);
-  }
-  40% {
-    transform: skew(4deg);
-  }
-  50% {
-    transform: skew(4deg);
-  }
-  60% {
     transform: skew(-4deg);
   }
+  10% {
+    transform: skew(2deg);
+  }
+  20% {
+    transform: skew(0deg);
+  }
+  30% {
+    transform: skew(-5deg);
+  }
+  40% {
+    transform: skew(0deg);
+  }
+  50% {
+    transform: skew(2deg);
+  }
+  60% {
+    transform: skew(0deg);
+  }
   70% {
-    transform: skew(4deg);
+    transform: skew(-2deg);
   }
   80% {
-    transform: skew(2deg);
+    transform: skew(-5deg);
   }
   90% {
-    transform: skew(3deg);
+    transform: skew(-5deg);
   }
   100% {
-    transform: skew(2deg);
+    transform: skew(-1deg);
   }
 }
 .auth-wrapper {
@@ -24157,6 +24162,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 87.5rem) {
+  .coin-holding .card-footer .fs-18 {
+    font-size: 14px !important;
+  }
+}
+
 .dropdown.bootstrap-select {
   background-color: transparent;
 }
@@ -24210,20 +24221,20 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .detault-daterange {
   width: auto;
-  border: 1px solid #363062;
+  border: 1px solid var(--bs-primary);
   border-radius: 2rem;
   overflow: hidden;
 }
 .detault-daterange .form-control {
   border: 0;
-  color: #363062;
+  color: var(--bs-primary);
   height: 50px;
   font-weight: 600;
 }
 .detault-daterange .input-group-text {
   background: transparent;
   padding-left: 0;
-  color: #363062;
+  color: var(--bs-primary);
   border-radius: 0;
 }
 .detault-daterange .input-group-text i {
@@ -24253,7 +24264,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  border-color: #d7dae3;
 }
 .trade-tbl tbody tr td {
   padding: 12px 9px;
@@ -24328,41 +24338,37 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: #363062 !important;
 }
 
-.nav .nav-item .nav-link {
-  align-items: center;
-  padding: 0.5rem 1rem;
-}
-.nav .nav-item .nav-link svg {
-  margin-left: 0.45rem;
-}
-.nav .nav-item .nav-link.active svg path {
-  fill: white;
-}
 .nav .nav-item .nav-link.active.bitcoin {
   background: #FFAB2D;
   border: 0;
   border-radius: 50px;
+}
+.nav .nav-item .nav-link.active.bitcoin svg path {
+  fill: var(--bs-white);
 }
 .nav .nav-item .nav-link.active.etherum {
   background: #3A82EF;
   border: 0;
   border-radius: 50px;
 }
+.nav .nav-item .nav-link.active.etherum svg path {
+  fill: var(--bs-white);
+}
 .nav .nav-item .nav-link.active.dash {
   background: var(--bs-secondary);
   border: 0;
   border-radius: 50px;
+}
+.nav .nav-item .nav-link.active.dash svg path {
+  fill: var(--bs-white);
 }
 .nav .nav-item .nav-link.active.litcoin {
   background: #5e72e4;
   border: 0;
   border-radius: 50px;
 }
-@media only screen and (max-width: 35.9375rem) {
-  .nav .nav-item .nav-link {
-    padding: 0.2rem 0.4rem;
-    margin: 0 0.65rem;
-  }
+.nav .nav-item .nav-link.active.litcoin svg path {
+  fill: var(--bs-white);
 }
 
 .theme-colors .btn-check:checked + .btn i {
@@ -24476,6 +24482,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 [data-bs-theme=dark] .transfer-form .input-group-text {
   background-color: var(--bs-body-bg);
+}
+[data-bs-theme=dark] .transfer-form .input-group.input-group-lg input:focus {
+  border-color: var(--bs-border-color) !important;
 }
 [data-bs-theme=dark] .input-group.detault-daterange {
   border-color: var(--bs-border-color);

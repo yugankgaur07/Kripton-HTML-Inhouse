@@ -42,10 +42,10 @@
 					&.mm-active{
 						padding:0;
 						&>a{
-							background: $primary;
+							background: var(--bs-primary);
 							color:$white;
 							border-radius: 12px;
-							box-shadow:0 12px 15px 0 rgba($primary, 0.13);
+							box-shadow:0 12px 15px 0 rgba(var(--bs-primary), 0.13);
 							i{
 								color:$white;
 							}

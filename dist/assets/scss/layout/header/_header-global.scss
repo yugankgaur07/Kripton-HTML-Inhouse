@@ -94,7 +94,7 @@ svg.pulse-svg {
         transform-origin: center center;
         -webkit-animation: pulse-me 3s linear infinite;
         animation: pulse-me 3s linear infinite;
-        fill: $primary;
+        fill: var(--bs-primary);
     }
     .second-circle {
         @extend .first-circle;

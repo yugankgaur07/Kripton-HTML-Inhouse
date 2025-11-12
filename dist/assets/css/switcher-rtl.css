@@ -63,7 +63,7 @@
 }
 .dz-demo-panel .dz-demo-close {
   height: 1.875rem;
-  color: #000 !important;
+  color: var(--bs-heading-color) !important;
   width: 1.875rem;
   border-radius: 0.5rem;
   background: var(--bs-body-bg);

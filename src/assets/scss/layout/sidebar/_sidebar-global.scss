@@ -243,9 +243,9 @@
 				
                 &>a {
                   //  background-color: lighten($color: $primary, $amount: 40%);
-                    color: $primary;
+                    color: var(--bs-primary);
 					g [fill] {
-						fill: $primary;
+						fill: var(--bs-primary);
 					}
                     // &::after {
                     //     border-color: blue;
@@ -254,7 +254,7 @@
             }
             &.mm-active {
 				&>a {
-					background:$primary;
+					background: var(--bs-primary);
 					color:$white;
 					font-weight: 600;
 					box-shadow:none;
@@ -263,7 +263,7 @@
 						font-weight:100;
 					}
 					g [fill] {
-						fill: $primary;
+						fill: var(--bs-primary);
 					}
 					
 				}
@@ -271,9 +271,9 @@
 					&>a{
 						
 						i{
-							background:$primary;
+							background:var(--bs-primary);
 							color:$white;
-							box-shadow:0 12px 15px 0 rgba($primary, 0.13);
+							box-shadow:0 12px 15px 0 rgba(var(--bs-primary), 0.13);
 						}
 					}
 				}
@@ -307,7 +307,7 @@
 						content: "";
 						height: 2px;
 						width: 6px;
-						background: rgba($primary,0.5);
+						background: rgba(var(--bs-primary),0.5);
 						position: absolute;
 						left: 30px;
 						top: 50%;

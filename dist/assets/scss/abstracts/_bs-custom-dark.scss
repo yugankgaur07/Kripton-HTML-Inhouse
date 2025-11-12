@@ -28,6 +28,16 @@ $border-color-dark: #444444;
 	.btn-primary {
 		&.light{
 			color: #fff !important;
+			background-color: rgba(var(--bs-primary-rgb), 0.5) !important;
+		}
+	}
+	.page-title{
+		.breadcrumb{
+			li{
+				&.active{
+					--bs-primary: #7468cb;
+				}
+			}
 		}
 	}
 	.btn-secondary {

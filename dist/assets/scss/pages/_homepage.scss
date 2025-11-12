@@ -359,6 +359,15 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 		margin-bottom: 0;
 	}
 }
+.coin-holding{
+	.card-footer{
+		@include respond ('laptop'){
+			.fs-18{
+				font-size: 14px !important;
+			}
+		}
+	}
+}
 .dropdown{
 	&.bootstrap-select{
 		background-color: transparent;
@@ -430,19 +439,19 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 .detault-daterange{
 	width: auto;
-	border:1px solid $primary;
+	border:1px solid var(--bs-primary);
     border-radius: 2rem;
 	overflow: hidden;
 	.form-control{
 		border:0;
-		color:$primary;
+		color:var(--bs-primary);
 		height: 50px;
 		font-weight: 600;
 	}
 	.input-group-text{
 		background:transparent;
 		padding-right: 0;
-		color:$primary;
+		color:var(--bs-primary);
 		border-radius: 0;
 		i{
 			font-size:28px;
@@ -476,7 +485,6 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 				font-size: 14px;
 				font-weight: 600;
 				letter-spacing: 0.5px;
-				border-color: #d7dae3;
 			}
 		}
 	}
@@ -597,42 +605,47 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 .nav{
 	.nav-item{
 		.nav-link{
-			align-items: center;
-			// display: flex;
-			svg{
-				margin-right: 0.450rem;
-			}	
-			padding: 0.5rem 1rem;
 			&.active{
-				svg{
-					path{
-						fill:white;
-					}
-				}
 				&.bitcoin{
 					background:$warning;
 					border: 0;
     				border-radius: 50px;
+					svg{
+						path{
+							fill: var(--bs-white);
+						}
+					}
 				}
 				&.etherum{
 					background:$info;
 					border: 0;
     				border-radius: 50px;
+					svg{
+						path{
+							fill: var(--bs-white);
+						}
+					}
 				}
 				&.dash{
 					background:var(--bs-secondary);
 					border: 0;
     				border-radius: 50px;
+					svg{
+						path{
+							fill: var(--bs-white);
+						}
+					}
 				}
 				&.litcoin{
 					background:$blue;
 					border: 0;
     				border-radius: 50px;
+					svg{
+						path{
+							fill: var(--bs-white);
+						}
+					}
 				}
-			}
-			@include respond ('phone'){
-				padding: 0.2rem 0.4rem;
-				margin: 0 0.65rem;
 			}
 		}	
 		
@@ -790,6 +803,14 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 		.input-group-text{
 			background-color: var(--bs-body-bg);
 		}
+		.input-group.input-group-lg{
+			input:focus{
+				border-color: var(--bs-border-color) !important;
+			}
+		}
+		// .form-control:focus{
+		// 	border-color: var(--bs-border-color) !important;
+		// }
 	}
 	.input-group{
 		&.detault-daterange{

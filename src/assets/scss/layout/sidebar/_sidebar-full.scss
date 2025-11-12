@@ -129,7 +129,7 @@
                         }
                     }
                     &.mm-active > a{
-						background:$primary;
+						background:var(--bs-primary);
 						border-radius: var(--bs-border-radius);
 						i{
 							color:$white;
@@ -145,7 +145,7 @@
                         }
                         &>a {
 							border-radius: var(--bs-border-radius);
-							background:$primary;
+							background:var(--bs-primary);
 							color:$white;
 							i{
 								color: $white;

@@ -35,14 +35,14 @@
         }
         .nav-link {
             position: relative;
-            color: var(--bs-primary);
+            color: $primary;
 			background: $white;
 			border-radius: var(--bs-border-radius);
 			border:1px solid #D8B9C3;
 			padding: 15px;
 			line-height: 1;
             svg{
-                stroke: var(--bs-primary);
+                stroke: $primary;
             }
 			@include respond('laptop') {
 				padding: 10px;
@@ -151,7 +151,7 @@
                 &:hover,
                 &:focus,
                 &.active {
-                    color: $primary;
+                    color: var(--bs-primary);
                 }
             }
         }
@@ -175,7 +175,7 @@
             }
         }
         .profile_title {
-            background: $primary;
+            background: var(--bs-primary);
             color: $white;
             padding: 10px 20px;
             h5 {
@@ -225,7 +225,7 @@
         top: 100%;
 		
         .notification_title {
-            background: $primary;
+            background: var(--bs-primary);
             color: $white;
             padding: 10px 20px;
             h5 {
@@ -254,7 +254,7 @@
                 }
                 &.primary {
                     background: var(--bs-primary-subtle);
-                    color: $primary;
+                    color: var(--bs-primary);
                 }
                 &.danger {
                     background: var(--bs-danger-subtle);

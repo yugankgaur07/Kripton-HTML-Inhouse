@@ -83,28 +83,44 @@
 		<!-- Start - Chat box -->
 		<div class="chatbox">
 			<div class="chatbox-close"></div>
-			<div class="custom-tab-1">
-				<ul class="nav nav-tabs">
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="tab" href="#notes">Notes</a>
+			<div class="clearfix">
+				<ul class="nav nav-underline" role="tablist">
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" data-bs-toggle="tab" href="#notes" aria-selected="false" tabindex="-1" role="tab">Notes</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="tab" href="#alerts">Alerts</a>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" data-bs-toggle="tab" href="#alerts" aria-selected="false" tabindex="-1" role="tab">Alerts</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link active" data-bs-toggle="tab" href="#chat">Chat</a>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link active" data-bs-toggle="tab" href="#chat" aria-selected="true" role="tab">Chat</a>
 					</li>
 				</ul>
 				<div class="tab-content">
 					<div class="tab-pane fade active show" id="chat" role="tabpanel">
 						<div class="card mb-sm-3 mb-md-0 contacts_card dz-chat-user-box">
 							<div class="card-header chat-list-header text-center">
-								<a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect fill="#000000" x="4" y="11" width="16" height="2" rx="1"/><rect fill="#000000" opacity="0.3" transform="translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) " x="4" y="11" width="16" height="2" rx="1"/></g></svg></a>
-								<div>
+								<a href="javascript:void(0);">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<rect fill="var(--bs-heading-color)" x="4" y="11" width="16" height="2" rx="1"></rect>
+											<rect fill="var(--bs-heading-color)" opacity="1.0" transform="translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) " x="4" y="11" width="16" height="2" rx="1"></rect>
+										</g>
+									</svg>
+								</a>
+								<div class="clearfix">
 									<h6 class="mb-1">Chat List</h6>
 									<p class="mb-0">Show All</p>
 								</div>
-								<a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="5" cy="12" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="19" cy="12" r="2"/></g></svg></a>
+								<a href="javascript:void(0);">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<rect x="0" y="0" width="24" height="24"></rect>
+											<circle fill="var(--bs-heading-color)" cx="5" cy="12" r="2"></circle>
+											<circle fill="var(--bs-heading-color)" cx="12" cy="12" r="2"></circle>
+											<circle fill="var(--bs-heading-color)" cx="19" cy="12" r="2"></circle>
+										</g>
+									</svg>
+								</a>
 							</div>
 							<div class="card-body contacts_body p-0 dz-scroll  " id="DZ_W_Contacts_Body">
 								<ul class="contacts">
@@ -112,7 +128,7 @@
 									<li class="active dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/images/avatar/1.webp" class="rounded-circle user_img" alt="">
+												<img src="assets/images/avatar/small/avatar1.webp" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -124,7 +140,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/images/avatar/2.webp" class="rounded-circle user_img" alt="">
+												<img src="assets/images/avatar/small/avatar2.webp" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -136,7 +152,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/images/avatar/3.webp" class="rounded-circle user_img" alt="">
+												<img src="assets/images/avatar/small/avatar3.webp" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -148,7 +164,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/images/avatar/4.webp" class="rounded-circle user_img" alt="">
+												<img src="assets/images/avatar/small/avatar4.webp" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -161,7 +177,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/images/avatar/5.webp" class="rounded-circle user_img" alt="">
+												<img src="assets/images/avatar/small/avatar5.webp" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -170,10 +186,10 @@
 											</div>
 										</div>
 									</li>
-									<li class="dz-chat-user">
+									<li class="dz- -user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/images/avatar/1.webp" class="rounded-circle user_img" alt="">
+												<img src="assets/images/avatar/small/avatar6.webp" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -185,7 +201,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/images/avatar/2.webp" class="rounded-circle user_img" alt="">
+												<img src="assets/images/avatar/small/avatar7.webp" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -198,7 +214,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/images/avatar/3.webp" class="rounded-circle user_img" alt="">
+												<img src="assets/images/avatar/small/avatar8.webp" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -210,7 +226,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/images/avatar/4.webp" class="rounded-circle user_img" alt="">
+												<img src="assets/images/avatar/small/avatar9.webp" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -223,7 +239,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/images/avatar/5.webp" class="rounded-circle user_img" alt="">
+												<img src="assets/images/avatar/small/avatar10.webp" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -235,7 +251,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/images/avatar/1.webp" class="rounded-circle user_img" alt="">
+												<img src="assets/images/avatar/small/avatar1.webp" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -247,7 +263,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/images/avatar/2.webp" class="rounded-circle user_img" alt="">
+												<img src="assets/images/avatar/small/avatar2.webp" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -259,7 +275,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/images/avatar/3.webp" class="rounded-circle user_img" alt="">
+												<img src="assets/images/avatar/small/avatar3.webp" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -272,7 +288,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/images/avatar/4.webp" class="rounded-circle user_img" alt="">
+												<img src="assets/images/avatar/small/avatar4.webp" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -284,7 +300,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/images/avatar/5.webp" class="rounded-circle user_img" alt="">
+												<img src="assets/images/avatar/small/avatar5.webp" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -298,27 +314,42 @@
 						</div>
 						<div class="card chat dz-chat-history-box d-none">
 							<div class="card-header chat-list-header text-center">
-								<a href="#" class="dz-chat-history-back">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon points="0 0 24 0 24 24 0 24"/><rect fill="#000000" opacity="0.3" transform="translate(15.000000, 12.000000) scale(-1, 1) rotate(-90.000000) translate(-15.000000, -12.000000) " x="14" y="7" width="2" height="10" rx="1"/><path d="M3.7071045,15.7071045 C3.3165802,16.0976288 2.68341522,16.0976288 2.29289093,15.7071045 C1.90236664,15.3165802 1.90236664,14.6834152 2.29289093,14.2928909 L8.29289093,8.29289093 C8.67146987,7.914312 9.28105631,7.90106637 9.67572234,8.26284357 L15.6757223,13.7628436 C16.0828413,14.136036 16.1103443,14.7686034 15.7371519,15.1757223 C15.3639594,15.5828413 14.7313921,15.6103443 14.3242731,15.2371519 L9.03007346,10.3841355 L3.7071045,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(9.000001, 11.999997) scale(-1, -1) rotate(90.000000) translate(-9.000001, -11.999997) "/></g></svg>
+								<a href="javascript:void(0);" class="dz-chat-history-back">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<polygon points="0 0 24 0 24 24 0 24"></polygon>
+											<rect fill="var(--bs-heading-color)" opacity="0.3" transform="translate(15.000000, 12.000000) scale(-1, 1) rotate(-90.000000) translate(-15.000000, -12.000000)" x="14" y="7" width="2" height="10" rx="1"></rect>
+											<path d="M3.7071045,15.7071045 C3.3165802,16.0976288 2.68341522,16.0976288 2.29289093,15.7071045 C1.90236664,15.3165802 1.90236664,14.6834152 2.29289093,14.2928909 L8.29289093,8.29289093 C8.67146987,7.914312 9.28105631,7.90106637 9.67572234,8.26284357 L15.6757223,13.7628436 C16.0828413,14.136036 16.1103443,14.7686034 15.7371519,15.1757223 C15.3639594,15.5828413 14.7313921,15.6103443 14.3242731,15.2371519 L9.03007346,10.3841355 L3.7071045,15.7071045 Z" fill="var(--bs-heading-color)" fill-rule="nonzero" transform="translate(9.000001, 11.999997) scale(-1, -1) rotate(90.000000) translate(-9.000001, -11.999997) "></path>
+										</g>
+									</svg>
 								</a>
-								<div>
-									<h6 class="mb-1">Chat with Khelesh</h6>
+								<div class="clearfix">
+									<h6 class="mb-1">Chat with Verla Morgano</h6>
 									<p class="mb-0 text-success">Online</p>
 								</div>							
 								<div class="dropdown">
-									<a href="#" data-bs-toggle="dropdown" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="5" cy="12" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="19" cy="12" r="2"/></g></svg></a>
+									<a href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="dz-chat-dropdown dz-chatbox-btn">
+										<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+											<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+												<rect x="0" y="0" width="24" height="24"></rect>
+												<circle fill="var(--bs-heading-color)" cx="5" cy="12" r="2"></circle>
+												<circle fill="var(--bs-heading-color)" cx="12" cy="12" r="2"></circle>
+												<circle fill="var(--bs-heading-color)" cx="19" cy="12" r="2"></circle>
+											</g>
+										</svg>
+									</a>
 									<ul class="dropdown-menu dropdown-menu-end">
-										<li class="dropdown-item"><i class="fa fa-user-circle text-primary me-2"></i> View profile</li>
-										<li class="dropdown-item"><i class="fa fa-users text-primary me-2"></i> Add to close friends</li>
-										<li class="dropdown-item"><i class="fa fa-plus text-primary me-2"></i> Add to group</li>
-										<li class="dropdown-item"><i class="fa fa-ban text-primary me-2"></i> Block</li>
+										<li><a class="dropdown-item" href="javascript:void(0);"><i class="fa fa-user-circle text-primary me-1"></i> View profile</a></li>
+										<li><a class="dropdown-item" href="javascript:void(0);"><i class="fa fa-users text-primary me-1"></i> Add to Friends</a></li>
+										<li><a class="dropdown-item" href="javascript:void(0);"><i class="fa fa-plus text-primary me-1"></i> Add to group</a></li>
+										<li><a class="dropdown-item" href="javascript:void(0);"><i class="fa fa-ban text-primary me-1"></i> Block</a></li>
 									</ul>
 								</div>
 							</div>
-							<div class="card-body msg_card_body dz-scroll" id="DZ_W_Contacts_Body3">
+							<div class="card-body msg_card_body dz-scroll" id="DZ_W_Contacts_Body3" style="height: 626px;">
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/images/avatar/1.webp" class="rounded-circle user_img_msg" alt="">
+										<img src="assets/images/avatar/small/avatar1.webp" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										Hi, how are you samim?
@@ -331,12 +362,12 @@
 										<span class="msg_time_send">8:55 AM, Today</span>
 									</div>
 									<div class="img_cont_msg">
-								<img src="assets/images/avatar/2.webp" class="rounded-circle user_img_msg" alt="">
+										<img src="assets/images/avatar/small/avatar2.webp" class="rounded-circle user_img_msg" alt="">
 									</div>
 								</div>
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/images/avatar/1.webp" class="rounded-circle user_img_msg" alt="">
+										<img src="assets/images/avatar/small/avatar1.webp" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										I am good too, thank you for your chat template
@@ -349,12 +380,12 @@
 										<span class="msg_time_send">9:05 AM, Today</span>
 									</div>
 									<div class="img_cont_msg">
-								<img src="assets/images/avatar/2.webp" class="rounded-circle user_img_msg" alt="">
+										<img src="assets/images/avatar/small/avatar2.webp" class="rounded-circle user_img_msg" alt="">
 									</div>
 								</div>
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/images/avatar/1.webp" class="rounded-circle user_img_msg" alt="">
+										<img src="assets/images/avatar/small/avatar1.webp" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										I am looking for your next templates
@@ -367,12 +398,12 @@
 										<span class="msg_time_send">9:10 AM, Today</span>
 									</div>
 									<div class="img_cont_msg">
-										<img src="assets/images/avatar/2.webp" class="rounded-circle user_img_msg" alt="">
+										<img src="assets/images/avatar/small/avatar2.webp" class="rounded-circle user_img_msg" alt="">
 									</div>
 								</div>
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/images/avatar/1.webp" class="rounded-circle user_img_msg" alt="">
+										<img src="assets/images/avatar/small/avatar1.webp" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										Bye, see you
@@ -381,7 +412,7 @@
 								</div>
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/images/avatar/1.webp" class="rounded-circle user_img_msg" alt="">
+										<img src="assets/images/avatar/small/avatar1.webp" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										Hi, how are you samim?
@@ -394,12 +425,12 @@
 										<span class="msg_time_send">8:55 AM, Today</span>
 									</div>
 									<div class="img_cont_msg">
-								<img src="assets/images/avatar/2.webp" class="rounded-circle user_img_msg" alt="">
+										<img src="assets/images/avatar/small/avatar2.webp" class="rounded-circle user_img_msg" alt="">
 									</div>
 								</div>
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/images/avatar/1.webp" class="rounded-circle user_img_msg" alt="">
+										<img src="assets/images/avatar/small/avatar1.webp" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										I am good too, thank you for your chat template
@@ -412,12 +443,12 @@
 										<span class="msg_time_send">9:05 AM, Today</span>
 									</div>
 									<div class="img_cont_msg">
-								<img src="assets/images/avatar/2.webp" class="rounded-circle user_img_msg" alt="">
+										<img src="assets/images/avatar/small/avatar2.webp" class="rounded-circle user_img_msg" alt="">
 									</div>
 								</div>
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/images/avatar/1.webp" class="rounded-circle user_img_msg" alt="">
+										<img src="assets/images/avatar/small/avatar1.webp" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										I am looking for your next templates
@@ -430,12 +461,12 @@
 										<span class="msg_time_send">9:10 AM, Today</span>
 									</div>
 									<div class="img_cont_msg">
-										<img src="assets/images/avatar/2.webp" class="rounded-circle user_img_msg" alt="">
+										<img src="assets/images/avatar/small/avatar2.webp" class="rounded-circle user_img_msg" alt="">
 									</div>
 								</div>
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/images/avatar/1.webp" class="rounded-circle user_img_msg" alt="">
+										<img src="assets/images/avatar/small/avatar1.webp" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										Bye, see you
@@ -456,12 +487,29 @@
 					<div class="tab-pane fade" id="alerts" role="tabpanel">
 						<div class="card mb-sm-3 mb-md-0 contacts_card">
 							<div class="card-header chat-list-header text-center">
-								<a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="5" cy="12" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="19" cy="12" r="2"/></g></svg></a>
-								<div>
+								<a href="javascript:void(0);" class="dz-chatbox-btn">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<rect x="0" y="0" width="24" height="24"></rect>
+											<circle fill="var(--bs-heading-color)" cx="5" cy="12" r="2"></circle>
+											<circle fill="var(--bs-heading-color)" cx="12" cy="12" r="2"></circle>
+											<circle fill="var(--bs-heading-color)" cx="19" cy="12" r="2"></circle>
+										</g>
+									</svg>
+								</a>
+								<div class="clearfix">
 									<h6 class="mb-1">Notications</h6>
 									<p class="mb-0">Show All</p>
 								</div>
-								<a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/><path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero"/></g></svg></a>
+								<a href="javascript:void(0);" class="dz-chatbox-btn">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<rect x="0" y="0" width="24" height="24"></rect>
+											<path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="var(--bs-heading-color)" fill-rule="nonzero" opacity="1"></path>
+											<path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="var(--bs-heading-color)" fill-rule="nonzero"></path>
+										</g>
+									</svg>
+								</a>
 							</div>
 							<div class="card-body contacts_body p-0 dz-scroll" id="DZ_W_Contacts_Body1">
 								<ul class="contacts">
@@ -509,15 +557,30 @@
 							<div class="card-footer"></div>
 						</div>
 					</div>
-					<div class="tab-pane fade" id="notes">
+					<div class="tab-pane fade" id="notes" role="tabpanel">
 						<div class="card mb-sm-3 mb-md-0 note_card">
 							<div class="card-header chat-list-header text-center">
-								<a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect fill="#000000" x="4" y="11" width="16" height="2" rx="1"/><rect fill="#000000" opacity="0.3" transform="translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) " x="4" y="11" width="16" height="2" rx="1"/></g></svg></a>
-								<div>
+								<a href="javascript:void(0);" class="dz-chatbox-btn">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<rect fill="var(--bs-heading-color)" x="4" y="11" width="16" height="2" rx="1"></rect>
+											<rect fill="var(--bs-heading-color)" opacity="1.0" transform="translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) " x="4" y="11" width="16" height="2" rx="1"></rect>
+										</g>
+									</svg>
+								</a>
+								<div class="clarfix">
 									<h6 class="mb-1">Notes</h6>
 									<p class="mb-0">Add New Nots</p>
 								</div>
-								<a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/><path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero"/></g></svg></a>
+								<a href="javascript:void(0);" class="dz-chatbox-btn">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<rect x="0" y="0" width="24" height="24"></rect>
+											<path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="var(--bs-heading-color)" fill-rule="nonzero" opacity="1"></path>
+											<path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="var(--bs-heading-color)" fill-rule="nonzero"></path>
+										</g>
+									</svg>
+								</a>
 							</div>
 							<div class="card-body contacts_body p-0 dz-scroll" id="DZ_W_Contacts_Body2">
 								<ul class="contacts">
@@ -528,8 +591,8 @@
 												<p>10 Aug 2020</p>
 											</div>
 											<div class="ms-auto">
-												<a href="#" class="btn btn-primary btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
-												<a href="#" class="btn btn-danger btn-xs sharp"><i class="fa fa-trash"></i></a>
+												<a href="javascript:void(0);" class="btn btn-square btn-xs btn-primary light ms-1"><i class="fas fa-pencil-alt"></i></a>
+												<a href="javascript:void(0);" class="btn btn-square btn-xs btn-danger light"><i class="fa fa-trash"></i></a>
 											</div>
 										</div>
 									</li>
@@ -540,8 +603,8 @@
 												<p>10 Aug 2020</p>
 											</div>
 											<div class="ms-auto">
-												<a href="#" class="btn btn-primary btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
-												<a href="#" class="btn btn-danger btn-xs sharp"><i class="fa fa-trash"></i></a>
+												<a href="javascript:void(0);" class="btn btn-square btn-xs btn-primary light ms-1"><i class="fas fa-pencil-alt"></i></a>
+												<a href="javascript:void(0);" class="btn btn-square btn-xs btn-danger light"><i class="fa fa-trash"></i></a>
 											</div>
 										</div>
 									</li>
@@ -552,8 +615,8 @@
 												<p>10 Aug 2020</p>
 											</div>
 											<div class="ms-auto">
-												<a href="#" class="btn btn-primary btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
-												<a href="#" class="btn btn-danger btn-xs sharp"><i class="fa fa-trash"></i></a>
+												<a href="javascript:void(0);" class="btn btn-square btn-xs btn-primary light ms-1"><i class="fas fa-pencil-alt"></i></a>
+												<a href="javascript:void(0);" class="btn btn-square btn-xs btn-danger light"><i class="fa fa-trash"></i></a>
 											</div>
 										</div>
 									</li>
@@ -564,8 +627,8 @@
 												<p>10 Aug 2020</p>
 											</div>
 											<div class="ms-auto">
-												<a href="#" class="btn btn-primary btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
-												<a href="#" class="btn btn-danger btn-xs sharp"><i class="fa fa-trash"></i></a>
+												<a href="javascript:void(0);" class="btn btn-square btn-xs btn-primary light ms-1"><i class="fas fa-pencil-alt"></i></a>
+												<a href="javascript:void(0);" class="btn btn-square btn-xs btn-danger light"><i class="fa fa-trash"></i></a>
 											</div>
 										</div>
 									</li>
@@ -627,7 +690,7 @@
 									</svg>
 								</a>
 							</li>
-                            <li class="nav-item dropdown notification_dropdown">
+                            <li class="nav-item dropdown notification_dropdown d-sm-flex d-none">
                                 <a class="nav-link  ai-icon" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
                                     <i class="flaticon-381-ring"></i>
                                     <div class="pulse-css"></div>
@@ -710,71 +773,11 @@
 									<a class="d-block text-center p-3 border-top" href="javascript:void(0);">See all notifications <i class="fa fa-arrow-right"></i></a>
 								</div>
                             </li>
-							<li class="nav-item dropdown notification_dropdown">
-                                <a class="nav-link bell bell-link" href="#">
-                                    <i class="flaticon-381-pad"></i>
+							<li class="nav-item notification_dropdown">
+								<a class="nav-link btn-chatbox" href="javascript:void(0);" aria-label="Sidabar Chatbox">
+									<i class="flaticon-381-pad"></i>
 									<div class="pulse-css"></div>
-                                </a>
-							</li>
-							<li class="nav-item dropdown notification_dropdown d-xl-inline-flex d-none">
-                                <a class="nav-link" href="#" data-bs-toggle="dropdown">
-									<i class="flaticon-381-gift"></i>
-									<div class="pulse-css"></div>
-                                </a>
-								<div class="dropdown-menu dropdown-menu-end">
-									<div id="DZ_W_TimeLine02" class="widget-timeline dz-scroll style-1 ps ps--active-y p-3 height370">
-                                    <ul class="timeline">
-                                        <li>
-                                            <div class="timeline-badge primary"></div>
-                                            <a class="timeline-panel text-muted" href="#">
-                                                <span>10 minutes ago</span>
-                                                <h6 class="mb-0">Youtube, a video-sharing website, goes live <strong class="text-primary">$500</strong>.</h6>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <div class="timeline-badge info">
-                                            </div>
-                                            <a class="timeline-panel text-muted" href="#">
-                                                <span>20 minutes ago</span>
-                                                <h6 class="mb-0">New order placed <strong class="text-info">#XF-2356.</strong></h6>
-												<p class="mb-0">Quisque a consequat ante Sit amet magna at volutapt...</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <div class="timeline-badge danger">
-                                            </div>
-                                            <a class="timeline-panel text-muted" href="#">
-                                                <span>30 minutes ago</span>
-                                                <h6 class="mb-0">john just buy your product <strong class="text-warning">Sell $250</strong></h6>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <div class="timeline-badge success">
-                                            </div>
-                                            <a class="timeline-panel text-muted" href="#">
-                                                <span>15 minutes ago</span>
-                                                <h6 class="mb-0">StumbleUpon is acquired by eBay. </h6>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <div class="timeline-badge warning">
-                                            </div>
-                                            <a class="timeline-panel text-muted" href="#">
-                                                <span>20 minutes ago</span>
-                                                <h6 class="mb-0">Mashable, a news website and blog, goes live.</h6>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <div class="timeline-badge dark">
-                                            </div>
-                                            <a class="timeline-panel text-muted" href="#">
-                                                <span>20 minutes ago</span>
-                                                <h6 class="mb-0">Mashable, a news website and blog, goes live.</h6>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-								</div>
+								</a>
 							</li>
                             <li class="nav-item dropdown header-profile">
                                 <a class="profile-link" href="#" role="button" data-bs-toggle="dropdown">
@@ -985,9 +988,9 @@
 							<div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
 								<div>
 									<ul class="nav nav-pills" role="tablist">
-										<li class="nav-item pe-3 wow fadeInUp border-end" data-wow-delay="0.2s">
-											<button class="nav-link active bitcoin mx-0" data-bs-toggle="tab" data-bs-target="#Bitcoin" type="button" role="tab" aria-selected="true">
-												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<li class="nav-item pe-2 wow fadeInUp border-end" data-wow-delay="0.2s">
+											<button class="nav-link active bitcoin mx-0 px-3 py-2" data-bs-toggle="tab" data-bs-target="#Bitcoin" type="button" role="tab" aria-selected="true">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
 													<path d="M16 9.50011C15.9993 8.67201 15.328 8.00092 14.5001 8H10V11H14.5001C15.328 10.9993 15.9993 10.328 16 9.50011Z" fill="#FFAB2D"/>
 													<path d="M10 16H14.5001C15.3285 16 16 15.3285 16 14.5001C16 13.6715 15.3285 13 14.5001 13H10V16Z" fill="#FFAB2D"/>
 													<path d="M12 0C5.3726 0 0 5.3726 0 12C0 18.6274 5.3726 24 12 24C18.6274 24 24 18.6274 24 12C23.9924 5.37574 18.6243 0.00758581 12 0ZM18.0001 14.5713C17.9978 16.4641 16.4641 17.9978 14.5716 17.9999V18.8571C14.5716 19.3305 14.1876 19.7143 13.7144 19.7143C13.2409 19.7143 12.8572 19.3305 12.8572 18.8571V17.9999H11.1431V18.8571C11.1431 19.3305 10.7591 19.7143 10.2859 19.7143C9.8124 19.7143 9.42866 19.3305 9.42866 18.8571V17.9999H6.85733C6.38387 17.9999 6.00013 17.6161 6.00013 17.1429C6.00013 16.6695 6.38387 16.2857 6.85733 16.2857H7.71427V7.71427H6.85733C6.38387 7.71427 6.00013 7.33053 6.00013 6.85707C6.00013 6.38361 6.38387 5.99987 6.85733 5.99987H9.42866V5.14293C9.42866 4.66947 9.8124 4.28573 10.2859 4.28573C10.7593 4.28573 11.1431 4.66947 11.1431 5.14293V5.99987H12.8572V5.14293C12.8572 4.66947 13.2409 4.28573 13.7144 4.28573C14.1879 4.28573 14.5716 4.66947 14.5716 5.14293V5.99987C16.4571 5.99202 17.992 7.5139 18.0001 9.39937C18.0043 10.3978 17.5714 11.3481 16.8152 12C17.5643 12.6445 17.9967 13.5828 18.0001 14.5713Z" fill="#FFAB2D"/>
@@ -995,9 +998,9 @@
 												Bitcoin
 											</button>
 										</li>
-										<li class="nav-item px-3 wow fadeInUp border-end" data-wow-delay="0.3s">
-											<button class="nav-link etherum mx-0" data-bs-toggle="tab" data-bs-target="#Ethereum" type="button" role="tab" aria-selected="false">
-												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<li class="nav-item px-2 wow fadeInUp border-end" data-wow-delay="0.3s">
+											<button class="nav-link etherum mx-0 px-3 py-2" data-bs-toggle="tab" data-bs-target="#Ethereum" type="button" role="tab" aria-selected="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
 													<path d="M12.3801 13.8734C12.136 13.9546 11.864 13.9546 11.6199 13.8734L9 13L12 18L15 13L12.3801 13.8734Z" fill="#00ADA3"/>
 													<path d="M12 12L15 10.8001L12 6L9 10.8001L12 12Z" fill="#00ADA3"/>
 													<path d="M12 0C5.3726 0 0 5.3726 0 12C0 18.6274 5.3726 24 12 24C18.6274 24 24 18.6274 24 12C23.9927 5.37574 18.6243 0.00732425 12 0ZM17.0524 11.5263L12.7667 20.0977C12.5551 20.5212 12.04 20.6928 11.6168 20.4812C11.4507 20.3983 11.3162 20.2638 11.2333 20.0977L6.94757 11.5263C6.81443 11.2589 6.8296 10.9416 6.9876 10.6882L11.2733 3.83111C11.5582 3.42984 12.114 3.33515 12.5153 3.62001C12.5972 3.67808 12.6686 3.74923 12.7267 3.83111L17.0121 10.6882C17.1704 10.9416 17.1856 11.2589 17.0524 11.5263Z" fill="#00ADA3"/>
@@ -1006,17 +1009,17 @@
 											</button>
 
 										</li>
-										<li class="nav-item px-3 wow fadeInUp border-end" data-wow-delay="0.4s">
-											<button class="nav-link dash mx-0" data-bs-toggle="tab" data-bs-target="#Dash" type="button" role="tab" aria-selected="false">
-												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<li class="nav-item px-2 wow fadeInUp border-end" data-wow-delay="0.4s">
+											<button class="nav-link dash mx-0 px-3 py-2" data-bs-toggle="tab" data-bs-target="#Dash" type="button" role="tab" aria-selected="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
 													<path d="M12 0C5.3726 0 0 5.3726 0 12C0 18.6274 5.3726 24 12 24C18.6274 24 24 18.6274 24 12C23.9927 5.37574 18.6243 0.00732425 12 0V0ZM7.04462 11.1428H10.4732C10.9466 11.1428 11.3304 11.5265 11.3304 12C11.3304 12.4735 10.9466 12.8572 10.4732 12.8572H7.04462C6.57116 12.8572 6.18742 12.4735 6.18742 12C6.18742 11.5265 6.57142 11.1428 7.04462 11.1428ZM17.7624 9.92331L16.7315 15.0812C16.4887 16.2784 15.4374 17.1401 14.2158 17.1429H7.04462C6.57116 17.1429 6.18742 16.7592 6.18742 16.2857C6.18742 15.8123 6.57142 15.4285 7.04462 15.4285H14.2158C14.621 15.4275 14.9697 15.1418 15.0503 14.7448L16.0814 9.58692C16.173 9.12654 15.8743 8.67924 15.4141 8.58768C15.3595 8.57696 15.304 8.57147 15.2486 8.57147H8.75902C8.28556 8.57147 7.90182 8.18773 7.90182 7.71427C7.90182 7.24081 8.28556 6.85707 8.75902 6.85707H15.2486C16.6648 6.85759 17.8123 8.00567 17.8121 9.42186C17.8121 9.59006 17.7953 9.75799 17.7624 9.92331V9.92331Z" fill="#3693FF"/>
 												</svg>
 												Dash
 											</button>
 										</li>
-										<li class="nav-item px-3 wow fadeInUp border-end" data-wow-delay="0.4s">
-											<button class="nav-link litcoin mx-0" data-bs-toggle="tab" data-bs-target="#Litecoin" type="button" role="tab" aria-selected="false">
-												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<li class="nav-item px-2 wow fadeInUp border-end" data-wow-delay="0.4s">
+											<button class="nav-link litcoin mx-0 px-3 py-2" data-bs-toggle="tab" data-bs-target="#Litecoin" type="button" role="tab" aria-selected="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
 													<path d="M12 0C5.3726 0 0 5.3726 0 12C0 18.6274 5.3726 24 12 24C18.6274 24 24 18.6274 24 12C23.9924 5.37574 18.6243 0.00758581 12 0ZM16.2857 18.0001H9.42866C8.9552 18.0001 8.57147 17.6164 8.57147 17.1429C8.57147 17.1024 8.57434 17.0618 8.5801 17.0216L9.22515 12.5054L7.92222 12.8313C7.85421 12.8486 7.78437 12.8572 7.71427 12.8572C7.24081 12.8567 6.85759 12.4727 6.85785 11.9992C6.85838 11.6063 7.12571 11.2642 7.50683 11.1684L9.48674 10.6735L10.2942 5.0213C10.3612 4.55254 10.7954 4.22714 11.2642 4.2941C11.7329 4.36107 12.0583 4.79529 11.9914 5.26404L11.2825 10.2247L14.3636 9.4543C14.8222 9.33737 15.2886 9.61439 15.4053 10.0729C15.5222 10.5315 15.2452 10.9979 14.7866 11.1148C14.784 11.1153 14.7814 11.1161 14.7788 11.1166L11.0204 12.0562L10.4164 16.2857H16.2857C16.7592 16.2857 17.1429 16.6695 17.1429 17.1429C17.1429 17.6161 16.7592 18.0001 16.2857 18.0001Z" fill="#374C98"/>
 												</svg>
 												Litecoin
@@ -1024,15 +1027,11 @@
 										</li>
 									</ul>
 								</div>
-								<div class="input-group w-auto">
-									<input type="text" class="bg-primary-subtle border-0 form-control" placeholder="Search here...">
-									<span class="input-group-text border-0 bg-primary-subtle">
-										<a href="javascript:void(0)">
-											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M20.5605 18.4395L16.7527 14.6317C17.5395 13.446 18 12.0262 18 10.5C18 6.3645 14.6355 3 10.5 3C6.3645 3 3 6.3645 3 10.5C3 14.6355 6.3645 18 10.5 18C12.0262 18 13.446 17.5395 14.6317 16.7527L18.4395 20.5605C19.0245 21.1462 19.9755 21.1462 20.5605 20.5605C21.1462 19.9747 21.1462 19.0252 20.5605 18.4395V18.4395ZM5.25 10.5C5.25 7.605 7.605 5.25 10.5 5.25C13.395 5.25 15.75 7.605 15.75 10.5C15.75 13.395 13.395 15.75 10.5 15.75C7.605 15.75 5.25 13.395 5.25 10.5V10.5Z" fill="var(--bs-primary)"></path>
-											</svg>
-										</a>
-									</span>
+								<div class="input-group bg-body w-auto rounded">
+									<input type="text" class="border-0 form-control form-control-sm" placeholder="Search here">
+									<div class="input-group-append">
+										<a href="javascript:void(0);" class="border-0 input-group-text bg-body"><i class="fs-22 flaticon-381-search-2"></i></a>
+									</div>
 								</div>
 							</div>
 						</div>
