@@ -208,7 +208,7 @@
 			  labels: {
 			   style: {
 				  colors: '#787878',
-				  fontSize: '12px',
+				  fontSize: '13px',
 				  fontFamily: 'poppins',
 				  fontWeight: 600,
 				  cssClass: 'apexcharts-xaxis-label',

@@ -46,6 +46,8 @@
 
 <body>
 
+	@@include("elements/layout/preloader.html")
+        
     <!-- Start - Main wrapper -->
     <div id="main-wrapper">
 
@@ -322,18 +324,5 @@
 	<script src="assets/js/demo.js"></script>
     <script src="assets/js/styleSwitcher.js"></script>
 
-	<script>
-		document.querySelector(".sweet-confirm").onclick = function () { 
-			Swal.fire({ 
-				title: "Block Profile?", 
-				text: "Are you sure you want to block profile", 
-				type: "warning", showCancelButton: !0, 
-				confirmButtonColor: "#DD6B55", 
-				confirmButtonText: "Block", 
-				closeOnConfirm: !1 
-			})
-		}
-	</script>
-		
 </body>
 </html>

@@ -45,11 +45,10 @@
 		}
 	};
 
+		
 	var handleTheme = function(){
-		$('#preloader').fadeOut(1500);
-        setTimeout(function() {
-            $('#main-wrapper').addClass('show');
-        },1500)
+		$('#preloader').fadeOut(1000);
+		$('#main-wrapper').addClass('show');
 	}
 
 	var handleThemeMode = function () {

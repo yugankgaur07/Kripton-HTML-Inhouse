@@ -23,7 +23,7 @@
 }
 
 .content-body {
-    margin-left: 21.563rem;
+    margin-left: 18.25rem;
     z-index: 0;
     transition: all .2s ease;
     @include custommq($max: 1350px) {
@@ -123,11 +123,11 @@
 // Sidebar
 //////////////
 .deznav {
-    width: 21.563rem;
+    width: 18.25rem;
     padding-bottom: 0;
-    height: calc(100% - 88px);
+    height: calc(100% - 64px);
     position: absolute;
-    top: 5.5rem;
+    top: 4.5rem;
     padding-top: 0;
     z-index: 4;
     background-color: var(--sidebar-bg);
@@ -139,8 +139,8 @@
 	
     @include respond('tab-land') {
         background-color: var(--sidebar-bg);
-		top: 5rem;
-		height: calc(100% - 80px);
+		top: 4rem;
+		height: calc(100% - 60px);
     }
 	@include respond('phone-land') {
          width: 18rem;
@@ -181,15 +181,16 @@
         &>li {
             display: flex;
             flex-direction: column;
+            margin-bottom: 10px;
             a {
 				
 				
                 &>i {
                     //icon will get color from parent "a"
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                     display: inline-block;
                     vertical-align: middle;
-                    padding: 0 1.5rem 0 0;
+                    padding: 0 1.2rem 0 0;
                     position: relative;
                     top: 0;
 					line-height: 1;
@@ -205,7 +206,6 @@
 						line-height: 55px;
 						margin-left: auto;
 						margin-right: auto;
-						margin-bottom: 5px;
 						&[data-theme-version="dark"]{
 							color:$white;
 						}
@@ -222,10 +222,7 @@
 				font-weight: 400;
 				display: inline-block;
 				font-size: 15px;
-				color: #969BA0;		
-				i{
-					color: #969BA0;
-				}
+				color: #969BA0;
 				svg {
 					max-width: 24px;
 					max-height: 24px;
@@ -296,7 +293,7 @@
 				padding-bottom: .5rem;
 				position: relative;
 				font-size: 15px;
-				padding-left: 4.5rem;
+				padding-left: 4rem;
 				@include transitionMedium;
 				@include custommq($max:1350px) {
 					padding-left: 3.5rem;
@@ -307,9 +304,9 @@
 						content: "";
 						height: 2px;
 						width: 6px;
-						background: rgba(var(--bs-primary),0.5);
+						background: var(--bs-primary);
 						position: absolute;
-						left: 30px;
+						left: 25px;
 						top: 50%;
 						transform: translateY(-50%);
 						@include transitionMedium;
@@ -384,7 +381,7 @@
     }
     .deznav {
         left: 0;
-		top: 5rem;
+		top: 4rem;
     }
 }
 .deznav{

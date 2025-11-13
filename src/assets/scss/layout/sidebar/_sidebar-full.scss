@@ -6,11 +6,12 @@
 		.metismenu{
 
 			& > li{
-				padding:0 30px;
+				padding:0 20px;
+                margin-bottom: 10px;
 				
 				& > a{
 					font-size: 16px;
-					padding: 20px 20px;
+					padding: 10px 15px;
 					border-radius: var(--bs-border-radius);
 					@include transitionMedium;
 					@include custommq($max:1350px){
@@ -118,7 +119,7 @@
                 }
                 &>li {
                     transition: all 0.4s ease-in-out;
-					padding: 0 13px;
+					padding: 0 15px;
 					
                     &>a {
 						

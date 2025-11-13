@@ -3,14 +3,14 @@
 /////////////////
 .header {
     // width: 100%;
-    height: 5.5rem;
+    height: 4.5rem;
     z-index: 1;
     position: relative;
     padding: 0rem;
     background: var(--headerbg);
     z-index: 3;
     // box-shadow: 0 0 1rem $l-border;
-    padding-left: 21.563rem;
+    padding-left: 18.25rem;
     transition: all .2s ease;
 	
     // &::before {
@@ -69,7 +69,7 @@
         }
     }
 	@include respond('tab-land'){
-		height:5rem;
+		height:4rem;
 	}
 }
 
@@ -222,9 +222,9 @@ svg.pulse-svg {
         width: 100%;
     }
     .content-body {
-        padding-top: 5.5rem;
+        padding-top: 4.5rem;
 		@include respond('tab-land'){
-			padding-top: 5rem;
+			padding-top: 4rem;
 		}
     }
     .deznav {

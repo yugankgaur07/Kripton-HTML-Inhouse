@@ -7,7 +7,7 @@
     [data-layout="horizontal"] {
         
         .nav-header {
-            width: 21.563rem;
+            width: 18.25rem;
             
             .nav-control {
                 display: none;
@@ -21,7 +21,7 @@
 
         .header {
             width: 100%;
-            padding-left: 21.563rem;
+            padding-left: 18.25rem;
         }
 
         .deznav {
@@ -248,7 +248,10 @@
 
     [data-header-position="fixed"][data-layout="horizontal"] {
         .deznav {
-            top: 5.5rem;
+            top: 4.5rem;
+            @include respond('tab-land'){
+                top: 4rem;
+            }
         }
     } //ok
 

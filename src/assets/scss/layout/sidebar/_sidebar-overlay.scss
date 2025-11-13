@@ -6,9 +6,10 @@
 		.metismenu{
 			& > li {
 				padding: 0 30px;
+                margin-bottom: 10px;
 				& > a {
 					font-size: 16px;
-					padding: 20px 20px;
+					padding: 10px 15px;
 					color: #7f7184;
 					border-radius: 0.75rem;
 					-webkit-transition: all 0.5s;
@@ -23,6 +24,7 @@
 				}
 				@include respond ('phone-land'){
 					padding:0 15px;
+                    margin-bottom: 8px;
 				}
 			}
 			ul a{

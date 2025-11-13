@@ -319,7 +319,7 @@ function addSwitcher(){
                 </div>
             </div>
             <div class="note-text">
-				<span class="text-danger">*Note :</span> This theme switcher is not part of product. It is only for demo. you will get all guideline in documentation. please check <a href="https://coreui.w3itexperts.com/?theme=W3CRM" target="_blank">documentation.</a>
+				<span class="text-danger">*Note :</span> This theme switcher is not part of product. It is only for demo. you will get all guideline in documentation. please check <a href="https://coreui.w3itexperts.com/?theme=Kripton" target="_blank">documentation.</a>
 			</div>
         </div>
 	</div>
@@ -439,7 +439,7 @@ function addSwitcher(){
 			</div>
         </div>
         <div class="fs-14 pt-3">
-			<span class="text-danger">*Note :</span> This theme switcher is not part of product. It is only for demo. you will get all guideline in documentation. please check <a href="https://coreui.w3itexperts.com/?theme=W3CRM" target="_blank" class="text-primary">documentation.</a>
+			<span class="text-danger">*Note :</span> This theme switcher is not part of product. It is only for demo. you will get all guideline in documentation. please check <a href="https://coreui.w3itexperts.com/?theme=Kripton" target="_blank" class="text-primary">documentation.</a>
 		</div>
     </div>
 </div>`;

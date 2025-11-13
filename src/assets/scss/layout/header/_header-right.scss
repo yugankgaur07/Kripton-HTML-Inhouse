@@ -39,17 +39,19 @@
 			background: $white;
 			border-radius: var(--bs-border-radius);
 			border:1px solid #D8B9C3;
-			padding: 15px;
+			padding: 10px;
 			line-height: 1;
             svg{
                 stroke: $primary;
+                width: 20px;
+                height: 20px;
             }
 			@include respond('laptop') {
 				padding: 10px;
 			}
 			
             i {
-                font-size: 24px;
+                font-size: 20px;
 				@include respond('laptop') {
 					font-size: 18px;
 				}
@@ -57,8 +59,8 @@
             }
 			svg{
 				@include respond('laptop') {
-					width:24px;
-					height:24px;
+					width:20px;
+					height:20px;
 				}
 			}
             .badge {
@@ -102,14 +104,14 @@
 			padding:0;
 			display: flex;
 			align-items: center;
-			margin-left: 15px;
-			padding-left: 30px;
-			border-left: 1px solid $border-color;	
+			margin-left: 10px;
+			padding-left: 20px;
+			border-left: 1px solid var(--bs-border-color);	
             i {
                 font-weight: 700;
             }
 			.header-info{
-				padding-left: 20px;
+				padding-left: 12px;
 				text-align: left;
 				@include respond('laptop') {
 					padding-left: 10px;
@@ -118,7 +120,7 @@
 					display:none;
 				}
 				span{
-					font-size:16px;
+					font-size:15px;
 					color: var(--bs-heading-color);
 					display: block;
 					font-weight: 600;
@@ -128,7 +130,7 @@
 				}
 				small{
 					display:block;
-					font-size: 13px;
+					font-size: 12px;
 					color:$muted;
 					font-weight:400;
 					line-height: 1.2;
@@ -156,8 +158,8 @@
             }
         }
         img {
-            width: 55px;
-            height: 55px;
+            width: 45px;
+            height: 45px;
             border-radius: var(--bs-border-radius);
 			@include respond('laptop') {
 				 width: 39px;
@@ -295,6 +297,7 @@
 //search-area
 .search-area{
 	max-width:240px;
+    max-height: 40px;
 	.input-group-append{
 		.input-group-text{
 			background: var(--bs-secondary-bg);
@@ -302,15 +305,16 @@
 			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
 			border: 0;
-			height:3.5rem;
+			height: 40px;
 			i {
-				font-size: 22px;
+				font-size: 18px;
 			}
 		}
 	}
 	.form-control{
 		border:0;
 		background: var(--bs-secondary-bg);
+        max-height: 40px;
 		&:hover,&:active,&:focus{
 			background: var(--bs-secondary-bg);
 		}

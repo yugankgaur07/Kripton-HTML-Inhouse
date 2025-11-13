@@ -359,267 +359,137 @@
 		}
 	}
 	
-	var chartBarRunning = function(){
-		
+	var chartBarRunning = function() {
 		var chartBarRunningOptions = {
-				series: [{
+			series: [
+				{
 					name: 'Buy',
-					data: [{
-					  x: '2:00PM',
-					  y: [9200.00, 9600.00]
-					}, {
-					  x: '2:30PM',
-					  y: [9300.00, 9600.00]
-					}, {
-					  x: '3:00PM',
-					  y: [9150.00, 9500.00]
-					}, {
-					  x: '3:30PM',
-					  y: [9300.00, 9700.00]
-					}, {
-					  x: '4:00PM',
-					  y: [9200.00, 9600.00]
-					}, {
-					  x: '4:30PM',
-					  y: [9400.00, 9700.00]
-					}, {
-					  x: '5:00PM',
-					  y: [9400.00, 9600.00]
-					}, {
-					  x: '5:30PM',
-					  y: [9300.00, 9600.00]
-					}, {
-					  x: '6:00PM',
-					  y: [9300.00, 9500.00]
-					}, {
-					  x: '6:30PM',
-					  y: [9200.00, 9500.00]
-					}, {
-					  x: '7:00PM',
-					  y: [9450.00, 9650.00]
-					}, {
-					  x: '7:30PM',
-					  y: [9400.00, 9700.00]
-					}, {
-					  x: '8:00PM',
-					  y: [9300.00, 9700.00]
-					}]
-				}, {
+					data: [
+						{ x: '2:00PM', y: [9200, 9600] },
+						{ x: '2:30PM', y: [9300, 9600] },
+						{ x: '3:00PM', y: [9150, 9500] },
+						{ x: '3:30PM', y: [9300, 9700] },
+						{ x: '4:00PM', y: [9200, 9600] },
+						{ x: '4:30PM', y: [9400, 9700] },
+						{ x: '5:00PM', y: [9400, 9600] },
+						{ x: '5:30PM', y: [9300, 9600] },
+						{ x: '6:00PM', y: [9300, 9500] },
+						{ x: '6:30PM', y: [9200, 9500] },
+						{ x: '7:00PM', y: [9450, 9650] },
+						{ x: '7:30PM', y: [9400, 9700] },
+						{ x: '8:00PM', y: [9300, 9700] },
+					]
+				},
+				{
 					name: 'Sell',
-					data: [{
-					  x: '2:00PM',
-					  y: [9370.00, 9550.00]
-					}, {
-					  x: '2:30PM',
-					  y: [9350.00, 9700.50]
-					}, {
-					  x: '3:00PM',
-					  y: [9275.00, 9482.00]
-					}, {
-					  x: '3:30PM',
-					  y: [9200.00, 9600.00]
-					}, {
-					  x: '4:00PM',
-					  y: [9250.00, 9500.00]
-					}, {
-					  x: '4:30PM',
-					  y: [9445.00, 9523.00]
-					}, {
-					  x: '5:00PM',
-					  y: [9440.00, 9667.00]
-					}, {
-					  x: '5:30PM',
-					  y: [9300.00, 9600.00]
-					}, {
-					  x: '6:00PM',
-					  y: [9445.00, 9648.00]
-					}, {
-					  x: '6:30PM',
-					  y: [9240.00, 9700.00]
-					}, {
-					  x: '7:00PM',
-					  y: [9130.00, 9550.00]
-					}, {
-					  x: '7:30PM',
-					  y: [9340.00, 9440.00]
-					}, {
-					  x: '8:00PM',
-					  y: [9560.00, 9740.00]
-					}]
-				}],
-				chart: {
+					data: [
+						{ x: '2:00PM', y: [9370, 9550] },
+						{ x: '2:30PM', y: [9350, 9700.5] },
+						{ x: '3:00PM', y: [9275, 9482] },
+						{ x: '3:30PM', y: [9200, 9600] },
+						{ x: '4:00PM', y: [9250, 9500] },
+						{ x: '4:30PM', y: [9445, 9523] },
+						{ x: '5:00PM', y: [9440, 9667] },
+						{ x: '5:30PM', y: [9300, 9600] },
+						{ x: '6:00PM', y: [9445, 9648] },
+						{ x: '6:30PM', y: [9240, 9700] },
+						{ x: '7:00PM', y: [9130, 9550] },
+						{ x: '7:30PM', y: [9340, 9440] },
+						{ x: '8:00PM', y: [9560, 9740] },
+					]
+				}
+			],
+			chart: {
 				type: 'rangeBar',
 				height: 370,
-				
-				toolbar: {
-					show: false,
-				},
-				
+				toolbar: { show: false },
+				animations: { enabled: true, speed: 600 },
 			},
 			plotOptions: {
-			  bar: {
-				horizontal: false,
-				columnWidth: '55%',
-				endingShape: "rounded",
-				startingShape: "rounded",
-				
-			  },
+				bar: {
+					horizontal: false,
+					columnWidth: '55%',
+					borderRadius: 4,
+					borderRadiusApplication: 'end',
+				},
 			},
-			colors:['#61C277', '#FF3E3E'],
-			dataLabels: {
-			  enabled: false,
-			},
-			markers: {
-				shape: "circle",
-			},
+			colors: ['#61C277', '#FF3E3E'],
+			dataLabels: { enabled: false },
 			legend: {
 				show: false,
-				fontSize: '12px',
-				labels: {
-					colors: '#000000',
-					
-					},
-				markers: {
-				width: 18,
-				height: 18,
-				strokeWidth: 0,
-				strokeColor: '#fff',
-				fillColors: undefined,
-				radius: 12,	
-				}
 			},
 			stroke: {
-			  show: true,
-			  width: 6,
-			  colors: ['transparent']
+				show: true,
+				width: 1,
+				colors: ['#fff']
 			},
 			grid: {
-				borderColor: '#eee',
+				borderColor: '#e7e7e7',
+				strokeDashArray: 4,
 			},
 			xaxis: {
-			  labels: {
-			   style: {
-				  colors: '#787878',
-				  fontSize: '13px',
-				  fontFamily: 'poppins',
-				  fontWeight: 500,
-				  cssClass: 'apexcharts-xaxis-label',
+				labels: {
+					style: {
+						colors: '#787878',
+						fontSize: '14px',
+						fontFamily: 'Poppins',
+						fontWeight: 500,
+					},
 				},
-			  },
-			  crosshairs: {
-				show: false,
-			  }
+				axisBorder: { show: false },
+				axisTicks: { show: false },
+				tooltip: { enabled: false },
 			},
 			yaxis: {
 				opposite: true,
+				min: 9000,
+				max: 9800,
+				tickAmount: 4,
 				labels: {
-					offsetX:0,
-				   style: {
-					  colors: '#787878',
-					  fontSize: '12px',
-					   fontFamily: 'poppins',
-					  fontWeight: 500,
-					  cssClass: 'apexcharts-xaxis-label',
-				  },
-			  },
+					style: {
+						colors: '#787878',
+						fontSize: '12px',
+						fontFamily: 'Poppins',
+						fontWeight: 500,
+					},
+				},
 			},
 			fill: {
-			  opacity: 1,
-			  colors:['#61C277', '#FF3E3E'],
+				opacity: 1,
 			},
 			tooltip: {
-				 x: {
-					format: 'dd/MM/yy HH:mm'
-				  },
-			  y: {
-				formatter: function (val) {
-				  return "$ " + val + " thousands"
-				}
-			  }
+				theme: 'light',
+				x: {
+					show: true,
+				},
+				y: {
+					formatter: function (val) {
+						return '$' + val.toFixed(2);
+					},
+				},
 			},
-			 responsive: [{
-				breakpoint: 575,
-				options: {
-					series: [{
-					name: 'Buy',
-					data: [{
-						  x: '2:00PM',
-						  y: [9200.00, 9600.00]
-						}, {
-						  x: '2:30PM',
-						  y: [9300.00, 9600.00]
-						}, {
-						  x: '3:00PM',
-						  y: [9150.00, 9500.00]
-						}, {
-						  x: '3:30PM',
-						  y: [9300.00, 9700.00]
-						}, {
-						  x: '4:00PM',
-						  y: [9200.00, 9600.00]
-						}, {
-						  x: '4:30PM',
-						  y: [9400.00, 9700.00]
-						}, {
-						  x: '5:00PM',
-						  y: [9400.00, 9600.00]
-						}, {
-						  x: '5:30PM',
-						  y: [9300.00, 9600.00]
-						}]
-					}, {
-						name: 'Sell',
-						data: [{
-						  x: '2:00PM',
-						  y: [9370.00, 9550.00]
-						}, {
-						  x: '2:30PM',
-						  y: [9350.00, 9700.50]
-						}, {
-						  x: '3:00PM',
-						  y: [9275.00, 9482.00]
-						}, {
-						  x: '3:30PM',
-						  y: [9200.00, 9600.00]
-						}, {
-						  x: '4:00PM',
-						  y: [9250.00, 9500.00]
-						}, {
-						  x: '4:30PM',
-						  y: [9445.00, 9523.00]
-						}, {
-						  x: '5:00PM',
-						  y: [9440.00, 9667.00]
-						}, {
-						  x: '5:30PM',
-						  y: [9300.00, 9600.00]
-						}]
-					}],
-					plotOptions: {
-					  bar: {
-						columnWidth: '40%',
-						
-					  },
-					},
-					chart:{
-						height:250,
-					},
-					xaxis: {
-					  labels: {
-					   style: {
-						  fontSize: '10px',
+			responsive: [
+				{
+					breakpoint: 767,
+					options: {
+						chart: { height: 250 },
+						plotOptions: {
+							bar: {
+								columnWidth: '40%',
+							},
 						},
-					  },
 					},
-				}
-			 }]
-			};
+				},
+			],
+		};
 
-			var chartBarRunningObject = new ApexCharts(document.querySelector("#chartBarRunning"), chartBarRunningOptions);
-			chartBarRunningObject.render();
+		var chartBarRunningObject = new ApexCharts(
+			document.querySelector("#chartBarRunning"),
+			chartBarRunningOptions
+		);
+		chartBarRunningObject.render();
+	};
 
-			
-	}
 	
 	var chartBarRunning2 = function(){
 		
